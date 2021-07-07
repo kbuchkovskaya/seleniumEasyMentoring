@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SimpleFormTest">
+    <test name="Single Input Field">
+        <classes>
+            <class name="com.seasy.ui.tests.SimpleFormTest">
+                <methods>
+                    <include name="checkEmptyMessageTest"/>
+                    <include name="checkYourMessageTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Two Input Fields">
+        <classes>
+            <class name="com.seasy.ui.tests.SimpleFormTest">
+                <methods>
+                    <include name="checkTotalResultWithIntegerVeluesTest"/>
+                    <include name="checkTotalResultWithSrtingValuesTest"/>
+                    <include name="checkTotalResultWithEmptyFieldsTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!-- Test -->
+</suite> <!-- Suite -->
