@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" ignored="0" total="19" passed="14">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="31071" started-at="2021-07-21T15:54:19 EEST" finished-at="2021-07-21T15:54:50 EEST">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="31071" started-at="2021-07-21T15:54:19 EEST" finished-at="2021-07-21T15:54:50 EEST">
+      <class name="com.seasy.ui.tests.SimpleFormTest">
+        <test-method status="PASS" signature="checkEmptyMessageTest()[pri:0, instance:com.seasy.ui.tests.SimpleFormTest@2286778]" name="checkEmptyMessageTest" duration-ms="1134" started-at="2021-07-21T15:54:46 EEST" finished-at="2021-07-21T15:54:47 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEmptyMessageTest -->
+        <test-method status="PASS" signature="checkTotalResultWithEmptyFieldsTest()[pri:0, instance:com.seasy.ui.tests.SimpleFormTest@2286778]" name="checkTotalResultWithEmptyFieldsTest" duration-ms="778" started-at="2021-07-21T15:54:47 EEST" finished-at="2021-07-21T15:54:48 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTotalResultWithEmptyFieldsTest -->
+        <test-method status="PASS" signature="checkTotalResultWithIntegerVeluesTest()[pri:0, instance:com.seasy.ui.tests.SimpleFormTest@2286778]" name="checkTotalResultWithIntegerVeluesTest" duration-ms="815" started-at="2021-07-21T15:54:48 EEST" finished-at="2021-07-21T15:54:49 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTotalResultWithIntegerVeluesTest -->
+        <test-method status="PASS" signature="checkTotalResultWithSrtingValuesTest()[pri:0, instance:com.seasy.ui.tests.SimpleFormTest@2286778]" name="checkTotalResultWithSrtingValuesTest" duration-ms="897" started-at="2021-07-21T15:54:49 EEST" finished-at="2021-07-21T15:54:50 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTotalResultWithSrtingValuesTest -->
+        <test-method status="PASS" signature="checkYourMessageTest()[pri:0, instance:com.seasy.ui.tests.SimpleFormTest@2286778]" name="checkYourMessageTest" duration-ms="620" started-at="2021-07-21T15:54:50 EEST" finished-at="2021-07-21T15:54:50 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkYourMessageTest -->
+      </class> <!-- com.seasy.ui.tests.SimpleFormTest -->
+      <class name="com.seasy.ui.tests.DropDownTests">
+        <test-method status="PASS" signature="checkSelectedCity(java.lang.String)[pri:0, instance:com.seasy.ui.tests.DropDownTests@3632be31]" name="checkSelectedCity" duration-ms="449" started-at="2021-07-21T15:54:35 EEST" finished-at="2021-07-21T15:54:35 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ohio]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSelectedCity -->
+        <test-method status="FAIL" signature="checkSelectedCity(java.lang.String,java.lang.String)[pri:0, instance:com.seasy.ui.tests.DropDownTests@3632be31]" name="checkSelectedCity" duration-ms="4625" started-at="2021-07-21T15:54:35 EEST" finished-at="2021-07-21T15:54:40 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ohio]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Florida]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.codeborne.selenide.ex.ElementShould">
+            <message>
+              <![CDATA[Element should be visible or transparent: visible or have css value opacity=0 {.getall-selected}
+Element: '<p class="getall-selected" displayed:false></p>'
+Actual value: visible:false, 1
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872080107.2.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872080107.2.html
+Timeout: 4 s.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Element should be visible or transparent: visible or have css value opacity=0 {.getall-selected}
+Element: '<p class="getall-selected" displayed:false></p>'
+Actual value: visible:false, 1
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872080107.2.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872080107.2.html
+Timeout: 4 s.
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
+at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsInteractable(WebElementSource.java:139)
+at com.codeborne.selenide.commands.Click.execute(Click.java:24)
+at com.codeborne.selenide.commands.Click.execute(Click.java:16)
+at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:133)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:85)
+at com.sun.proxy.$Proxy3.click(Unknown Source)
+at com.seasy.ui.pages.DropDownPage.selectFewCitiesFromMultiDropDown(DropDownPage.java:49)
+at com.seasy.ui.tests.DropDownTests.checkSelectedCity(DropDownTests.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codeborne.selenide.ex.ElementShould -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSelectedCity -->
+        <test-method status="FAIL" signature="checkSelectedDayFromDropDown(java.lang.String)[pri:0, instance:com.seasy.ui.tests.DropDownTests@3632be31]" name="checkSelectedDayFromDropDown" duration-ms="0" started-at="2021-07-21T15:54:40 EEST" finished-at="2021-07-21T15:54:40 EEST">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'singleDayDropDown' is required by @Test on method checkSelectedDayFromDropDown but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'singleDayDropDown' is required by @Test on method checkSelectedDayFromDropDown but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSelectedDayFromDropDown -->
+      </class> <!-- com.seasy.ui.tests.DropDownTests -->
+      <class name="com.seasy.ui.tests.RadioButtonPageTest">
+        <test-method status="PASS" signature="checkFemaleGenderAndZeroToFiveAgeGroup()[pri:0, instance:com.seasy.ui.tests.RadioButtonPageTest@5abca1e0]" name="checkFemaleGenderAndZeroToFiveAgeGroup" duration-ms="598" started-at="2021-07-21T15:54:40 EEST" description="Check &#039;Female&#039; gender and &#039;0-5&#039; age group" finished-at="2021-07-21T15:54:40 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFemaleGenderAndZeroToFiveAgeGroup -->
+        <test-method status="PASS" signature="checkMaleGenderAndFiveToFifteenAgeGroup()[pri:0, instance:com.seasy.ui.tests.RadioButtonPageTest@5abca1e0]" name="checkMaleGenderAndFiveToFifteenAgeGroup" duration-ms="510" started-at="2021-07-21T15:54:40 EEST" description="Check &#039;Male&#039; gender and &#039;5-15&#039; age group" finished-at="2021-07-21T15:54:41 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMaleGenderAndFiveToFifteenAgeGroup -->
+        <test-method status="PASS" signature="checkSelectMaleRadioButton()[pri:0, instance:com.seasy.ui.tests.RadioButtonPageTest@5abca1e0]" name="checkSelectMaleRadioButton" duration-ms="343" started-at="2021-07-21T15:54:41 EEST" finished-at="2021-07-21T15:54:41 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSelectMaleRadioButton -->
+        <test-method status="PASS" signature="checkSelectedFemaleRadioButton()[pri:0, instance:com.seasy.ui.tests.RadioButtonPageTest@5abca1e0]" name="checkSelectedFemaleRadioButton" duration-ms="439" started-at="2021-07-21T15:54:41 EEST" finished-at="2021-07-21T15:54:42 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSelectedFemaleRadioButton -->
+        <test-method status="FAIL" signature="checkUnselectedValue()[pri:0, instance:com.seasy.ui.tests.RadioButtonPageTest@5abca1e0]" name="checkUnselectedValue" duration-ms="4469" started-at="2021-07-21T15:54:42 EEST" finished-at="2021-07-21T15:54:46 EEST">
+          <exception class="com.codeborne.selenide.ex.ElementShould">
+            <message>
+              <![CDATA[Element should have text 'Radio button is Not checked' {.groupradiobutton}
+Element: '<p class="groupradiobutton" displayed:false></p>'
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872086487.3.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872086487.3.html
+Timeout: 4 s.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Element should have text 'Radio button is Not checked' {.groupradiobutton}
+Element: '<p class="groupradiobutton" displayed:false></p>'
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872086487.3.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872086487.3.html
+Timeout: 4 s.
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
+at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:133)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:85)
+at com.sun.proxy.$Proxy3.shouldHave(Unknown Source)
+at com.seasy.ui.pages.RadioButtonsPage.verifySingleRadioButtonIsNotSelected(RadioButtonsPage.java:50)
+at com.seasy.ui.tests.RadioButtonPageTest.checkUnselectedValue(RadioButtonPageTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codeborne.selenide.ex.ElementShould -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUnselectedValue -->
+      </class> <!-- com.seasy.ui.tests.RadioButtonPageTest -->
+      <class name="com.seasy.ui.tests.CheckBoxTest">
+        <test-method status="FAIL" signature="checkAllCheckboxesAreSelected()[pri:0, instance:com.seasy.ui.tests.CheckBoxTest@a67c67e]" name="checkAllCheckboxesAreSelected" duration-ms="9265" started-at="2021-07-21T15:54:19 EEST" finished-at="2021-07-21T15:54:29 EEST">
+          <exception class="com.codeborne.selenide.ex.ElementShould">
+            <message>
+              <![CDATA[Element should have attribute value="Uncheck All" {#check1}
+Element: '<input class="btn btn-primary" id="check1" type="button" value="Check All"></input>'
+Actual value: value="Check All"
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872068900.0.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872068900.0.html
+Timeout: 4 s.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Element should have attribute value="Uncheck All" {#check1}
+Element: '<input class="btn btn-primary" id="check1" type="button" value="Check All"></input>'
+Actual value: value="Check All"
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872068900.0.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872068900.0.html
+Timeout: 4 s.
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
+at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:133)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:85)
+at com.sun.proxy.$Proxy3.shouldHave(Unknown Source)
+at com.seasy.ui.pages.CheckBoxPage.verifyAllCheckboxesSelected(CheckBoxPage.java:72)
+at com.seasy.ui.tests.CheckBoxTest.checkAllCheckboxesAreSelected(CheckBoxTest.java:41)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codeborne.selenide.ex.ElementShould -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAllCheckboxesAreSelected -->
+        <test-method status="FAIL" signature="checkMultipleCheckBox1IsSelected()[pri:0, instance:com.seasy.ui.tests.CheckBoxTest@a67c67e]" name="checkMultipleCheckBox1IsSelected" duration-ms="4762" started-at="2021-07-21T15:54:29 EEST" finished-at="2021-07-21T15:54:33 EEST">
+          <exception class="com.codeborne.selenide.ex.ElementShould">
+            <message>
+              <![CDATA[Element should selected {By.xpath: //div[@class="panel panel-default"][contains(., "Multiple Checkbox Demo")]/By.xpath: ../.checkbox.findBy(text 'Option 1')/input}
+Element: '<input class="cb1-element" type="checkbox" value></input>'
+Actual value: false
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872073691.1.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872073691.1.html
+Timeout: 4 s.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Element should selected {By.xpath: //div[@class="panel panel-default"][contains(., "Multiple Checkbox Demo")]/By.xpath: ../.checkbox.findBy(text 'Option 1')/input}
+Element: '<input class="cb1-element" type="checkbox" value></input>'
+Actual value: false
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872073691.1.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1626872073691.1.html
+Timeout: 4 s.
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
+at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:133)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:85)
+at com.sun.proxy.$Proxy3.should(Unknown Source)
+at com.seasy.ui.pages.CheckBoxPage.verifyMultipleCheckBox1Selected(CheckBoxPage.java:47)
+at com.seasy.ui.tests.CheckBoxTest.checkMultipleCheckBox1IsSelected(CheckBoxTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codeborne.selenide.ex.ElementShould -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultipleCheckBox1IsSelected -->
+        <test-method status="PASS" signature="checkOneCheckboxIsUnselected()[pri:0, instance:com.seasy.ui.tests.CheckBoxTest@a67c67e]" name="checkOneCheckboxIsUnselected" duration-ms="520" started-at="2021-07-21T15:54:33 EEST" finished-at="2021-07-21T15:54:34 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOneCheckboxIsUnselected -->
+        <test-method status="PASS" signature="checkUnselectOfSelectedCheckBoxTest()[pri:0, instance:com.seasy.ui.tests.CheckBoxTest@a67c67e]" name="checkUnselectOfSelectedCheckBoxTest" duration-ms="429" started-at="2021-07-21T15:54:34 EEST" finished-at="2021-07-21T15:54:34 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUnselectOfSelectedCheckBoxTest -->
+        <test-method status="PASS" signature="checkUnselectedCheckBox()[pri:0, instance:com.seasy.ui.tests.CheckBoxTest@a67c67e]" name="checkUnselectedCheckBox" duration-ms="157" started-at="2021-07-21T15:54:34 EEST" finished-at="2021-07-21T15:54:34 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUnselectedCheckBox -->
+        <test-method status="PASS" signature="selectSingleCheckBoxTest()[pri:0, instance:com.seasy.ui.tests.CheckBoxTest@a67c67e]" name="selectSingleCheckBoxTest" duration-ms="204" started-at="2021-07-21T15:54:34 EEST" finished-at="2021-07-21T15:54:35 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSingleCheckBoxTest -->
+      </class> <!-- com.seasy.ui.tests.CheckBoxTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

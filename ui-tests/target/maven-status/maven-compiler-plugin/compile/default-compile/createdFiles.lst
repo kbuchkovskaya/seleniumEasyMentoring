@@ -1,0 +1,5 @@
+com\seasy\ui\pages\SimpleFormPage.class
+com\seasy\ui\pages\DropDownPage.class
+com\seasy\ui\pages\CheckBoxPage.class
+com\seasy\ui\pages\RadioButtonsPage.class
+com\travel\ui\pages\HomePage.class

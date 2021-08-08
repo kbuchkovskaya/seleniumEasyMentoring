@@ -1,39 +1,27 @@
 package com.seasy.ui.tests;
 
-import com.codeborne.selenide.Selenide;
-import com.seasy.ui.pages.SimpleFormPage;
-import org.openqa.selenium.Keys;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import static com.codeborne.selenide.Selenide.open;
-
-public class SimpleFormTest {
-
-    @BeforeSuite
-    public void openInputForms() {
-        open("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
-        Selenide.switchTo().activeElement().sendKeys(Keys.ESCAPE);
-    }
+public class SimpleFormTest  extends BaseTest{
 
     @Test
     public void checkEmptyMessageTest() {
-        new SimpleFormPage()
+        openSimpleFormPage()
                 .clickShowMessageButton()
                 .verifyEmptyMessage();
     }
 
     @Test
     public void checkYourMessageTest() {
-        new SimpleFormPage()
+        openSimpleFormPage()
                 .enterSingleInput("22")
                 .clickShowMessageButton()
                 .verifyYourMessage("22");
     }
 
     @Test
-    public void checkTotalResultWithIntegerVeluesTest(){
-        new SimpleFormPage()
+    public void checkTotalResultWithIntegerVeluesTest() {
+        openSimpleFormPage()
                 .enterTwoInput(5, 6)
                 .clickGetTotalButton()
                 .verifySumOfTwoIntegerValues(11);
@@ -41,7 +29,7 @@ public class SimpleFormTest {
 
     @Test
     public void checkTotalResultWithSrtingValuesTest() {
-        new SimpleFormPage()
+        openSimpleFormPage()
                 .enterNegativeValue("test1", "test2")
                 .clickGetTotalButton()
                 .verifySumOfNonValidData("Nan");
@@ -49,7 +37,7 @@ public class SimpleFormTest {
 
     @Test
     public void checkTotalResultWithEmptyFieldsTest() {
-        new SimpleFormPage()
+        openSimpleFormPage()
                 .clearDataFields()
                 .clickGetTotalButton()
                 .verifySumOfNonValidData("Nan");

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SimpleFormTest">
-    <test name="Single Input Field">
+<suite name="Selenium Easy" parallel="methods">
+    <test name="Single Input Field (Simple Form)">
         <classes>
             <class name="com.seasy.ui.tests.SimpleFormTest">
                 <methods>
@@ -11,7 +11,7 @@
             </class>
         </classes>
     </test>
-    <test name="Two Input Fields">
+    <test name="Two Input Fields (Simple Form)">
         <classes>
             <class name="com.seasy.ui.tests.SimpleFormTest">
                 <methods>
@@ -22,5 +22,57 @@
             </class>
         </classes>
     </test>
+    <test name="Single CheckBox (Check Box)">
+        <classes>
+            <class name="com.seasy.ui.tests.CheckBoxTest">
+                <methods>
+                    <include name="checkUnselectedCheckBox"/>
+                    <include name="selectSingleCheckBoxTest"/>
+                    <include name="checkUnselectedCheckBoxTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Multiple Check Boxes (Check Box)">
+        <classes>
+            <class name="com.seasy.ui.tests.CheckBoxTest">
+                <methods>
+                    <exclude name="checkMultipleCheckBox1IsSelected"/>
+                    <include name="checkAllCheckboxesAreSelected"/>
+                    <include name="checkOneCheckboxIsUnselected"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Single Radio Button (Radio Button)">
+        <classes>
+            <class name="com.seasy.ui.tests.RadioButtonPageTest">
+                <methods>
+                    <include name="selectedMaleRadioButton"/>
+                    <include name="selectedFemaleRadioButton"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Single select Drop Down (Drop Down)">
+        <parameter name="singleDayDropDown" value="Monday"/>
+        <classes>
+            <class name="com.seasy.ui.tests.DropDownTests">
+                <methods>
+                    <include name="checkSelectedDayFromDropDown"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Multi select Drop Down (Drop Down)">
+        <classes>
+            <class name="com.seasy.ui.tests.DropDownTests">
+                <methods>
+                    <exclude name="checkSelectedCity"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
     <!-- Test -->
-</suite> <!-- Suite -->
+</suite>
+<!-- Suite -->
