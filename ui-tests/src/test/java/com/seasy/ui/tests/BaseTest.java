@@ -9,33 +9,38 @@ import static com.codeborne.selenide.Selenide.*;
 public class BaseTest {
 
     public CheckBoxPage openCheckBoxPage(){
-        openBrowser("https://www.seleniumeasy.com/test/basic-checkbox-demo.html");
+        openBrowser("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
         return new CheckBoxPage();
     }
 
     public SimpleFormPage openSimpleFormPage(){
-        openBrowser("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
+        openBrowser("https://demo.seleniumeasy.com/basic-first-form-demo.html");
         return new SimpleFormPage();
     }
 
     public RadioButtonsPage openRadioButtonsPage(){
-        openBrowser("https://www.seleniumeasy.com/test/basic-radiobutton-demo.html");
+        openBrowser("https://demo.seleniumeasy.com/basic-radiobutton-demo.html");
         return new RadioButtonsPage();
     }
 
     public DropDownPage openDropDownPage(){
-        openBrowser("https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html");
+        openBrowser("https://demo.seleniumeasy.com/basic-select-dropdown-demo.html");
         return new DropDownPage();
     }
 
     public InputFormSubmitPage openInputFormSubmit(){
-        openBrowser("https://www.seleniumeasy.com/test/input-form-demo.html");
+        openBrowser("https://demo.seleniumeasy.com/input-form-demo.html");
         return new InputFormSubmitPage();
     }
 
     public AjaxFormSubmitPage openAjaxSubmitForm(){
-        openBrowser("https://www.seleniumeasy.com/test/ajax-form-submit-demo.html");
+        openBrowser("https://demo.seleniumeasy.com/ajax-form-submit-demo.html");
         return new AjaxFormSubmitPage();
+    }
+
+    public JQuerySelectDropDownPage openJQuerySelectDropDownPage(){
+        openBrowser("https://demo.seleniumeasy.com/jquery-dropdown-search-demo.html");
+        return new JQuerySelectDropDownPage();
     }
 
     public void openBrowser(String url){

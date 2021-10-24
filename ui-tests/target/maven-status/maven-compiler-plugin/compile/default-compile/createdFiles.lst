@@ -1,5 +1,11 @@
 com\seasy\ui\pages\SimpleFormPage.class
-com\seasy\ui\pages\DropDownPage.class
+com\seasy\ui\pages\AjaxFormSubmitPage.class
 com\seasy\ui\pages\CheckBoxPage.class
+com\seasy\ui\pages\JQuerySelectDropDownPage.class
+com\seasy\ui\pages\SubmitFormFieldsName.class
+com\seasy\ui\pages\DropDownPage.class
+com\seasy\ui\pages\User.class
 com\seasy\ui\pages\RadioButtonsPage.class
 com\travel\ui\pages\HomePage.class
+com\seasy\ui\pages\User$Builder.class
+com\seasy\ui\pages\InputFormSubmitPage.class

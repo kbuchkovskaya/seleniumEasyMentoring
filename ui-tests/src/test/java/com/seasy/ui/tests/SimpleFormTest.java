@@ -28,7 +28,7 @@ public class SimpleFormTest  extends BaseTest{
     }
 
     @Test
-    public void checkTotalResultWithSrtingValuesTest() {
+    public void checkTotalResultWithStringValuesTest() {
         openSimpleFormPage()
                 .enterNegativeValue("test1", "test2")
                 .clickGetTotalButton()
