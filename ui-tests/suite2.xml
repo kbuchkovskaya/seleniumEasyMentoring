@@ -1,8 +1,10 @@
-<suit>
-    <test>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="check for build">
+    <test name="check for build">
         <classes>
-            <class name="com/seasy/ui/tests/CheckBoxTest.java"/>
-            <class name="com/seasy/ui/tests/InputFormSubmitTest.java"/>
+            <class name="com.seasy.ui.tests.CheckBoxTest"/>
+            <class name="com.seasy.ui.tests.InputFormSubmitTest"/>
         </classes>
     </test>
-</suit>
+</suite>

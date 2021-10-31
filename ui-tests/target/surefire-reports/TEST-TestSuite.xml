@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="83.009" tests="33" errors="0" skipped="0" failures="6">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="69.24" tests="33" errors="0" skipped="0" failures="6">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\kbuch\AppData\Local\Temp\surefire5202809413330253614\surefirebooter7653353518350498413.jar C:\Users\kbuch\AppData\Local\Temp\surefire5202809413330253614 2021-10-31T16-24-53_921-jvmRun1 surefire1161091570515905748tmp surefire_01071474135387868224tmp"/>
+    <property name="sun.java.command" value="C:\Users\kbuch\AppData\Local\Temp\surefire1769841580002847485\surefirebooter4629697124544912821.jar C:\Users\kbuch\AppData\Local\Temp\surefire1769841580002847485 2021-10-31T18-02-32_330-jvmRun1 surefire3363493798711693870tmp surefire_0472870958947059270tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\kbuch\Desktop\test-project\ui-tests\target\test-classes;C:\Users\kbuch\Desktop\test-project\ui-tests\target\classes;C:\Users\kbuch\.m2\repository\com\codeborne\selenide\5.22.1\selenide-5.22.1.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\kbuch\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\kbuch\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\kbuch\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\kbuch\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.3\webdrivermanager-4.4.3.jar;C:\Users\kbuch\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\kbuch\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\kbuch\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1\httpclient5-5.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.1\httpcore5-5.1.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.1\httpcore5-h2-5.1.1.jar;C:\Users\kbuch\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\kbuch\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\kbuch\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kbuch\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kbuch\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kbuch\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\kbuch\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\kbuch\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\kbuch\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kbuch\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kbuch\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\kbuch\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\kbuch\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\kbuch"/>
@@ -31,13 +31,13 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\kbuch\AppData\Local\Temp\surefire5202809413330253614\surefirebooter7653353518350498413.jar"/>
-    <property name="suiteXMLFile" value="testng2.xml"/>
+    <property name="surefire.real.class.path" value="C:\Users\kbuch\AppData\Local\Temp\surefire1769841580002847485\surefirebooter4629697124544912821.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_291\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_291-b10"/>
     <property name="user.name" value="kbuch"/>
+    <property name="SuiteXMLFile" value="testng.xml"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\endorsed"/>
@@ -61,38 +61,38 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="checkFormIsSubmitted" classname="com.seasy.ui.tests.AjaxSubmitFormTest" time="15.149"/>
-  <testcase name="checkRequiredNameField" classname="com.seasy.ui.tests.AjaxSubmitFormTest" time="0.589"/>
-  <testcase name="submitForm" classname="com.seasy.ui.tests.AjaxSubmitFormTest" time="1.163"/>
-  <testcase name="checkAllCheckboxesAreSelected" classname="com.seasy.ui.tests.CheckBoxTest" time="6.217">
-    <failure message="Element should have attribute value=&quot;Check All&quot; {#check1}&#10;Element: &apos;&lt;input class=&quot;btn btn-primary&quot; id=&quot;check1&quot; type=&quot;button&quot; value=&quot;Uncheck All&quot;&gt;&lt;/input&gt;&apos;&#10;Actual value: value=&quot;Uncheck All&quot;&#10;Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690319227.0.png&#10;Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690319227.0.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould"><![CDATA[com.codeborne.selenide.ex.ElementShould: 
+  <testcase name="checkFormIsSubmitted" classname="com.seasy.ui.tests.AjaxSubmitFormTest" time="10.229"/>
+  <testcase name="checkRequiredNameField" classname="com.seasy.ui.tests.AjaxSubmitFormTest" time="0.683"/>
+  <testcase name="submitForm" classname="com.seasy.ui.tests.AjaxSubmitFormTest" time="1.026"/>
+  <testcase name="checkAllCheckboxesAreSelected" classname="com.seasy.ui.tests.CheckBoxTest" time="5.834">
+    <failure message="Element should have attribute value=&quot;Check All&quot; {#check1}&#10;Element: &apos;&lt;input class=&quot;btn btn-primary&quot; id=&quot;check1&quot; type=&quot;button&quot; value=&quot;Uncheck All&quot;&gt;&lt;/input&gt;&apos;&#10;Actual value: value=&quot;Uncheck All&quot;&#10;Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696171581.0.png&#10;Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696171581.0.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould"><![CDATA[com.codeborne.selenide.ex.ElementShould: 
 Element should have attribute value="Check All" {#check1}
 Element: '<input class="btn btn-primary" id="check1" type="button" value="Uncheck All"></input>'
 Actual value: value="Uncheck All"
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690319227.0.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690319227.0.html
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696171581.0.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696171581.0.html
 Timeout: 4 s.
 	at com.seasy.ui.tests.CheckBoxTest.checkAllCheckboxesAreSelected(CheckBoxTest.java:42)
 ]]></failure>
   </testcase>
-  <testcase name="checkCheckAllButtonWithOneUnselectedCheckbox" classname="com.seasy.ui.tests.CheckBoxTest" time="1.838"/>
-  <testcase name="checkMultipleCheckBoxIsSelected" classname="com.seasy.ui.tests.CheckBoxTest" time="0.995"/>
-  <testcase name="checkMultipleCheckBoxIsUnselected" classname="com.seasy.ui.tests.CheckBoxTest" time="1.958"/>
-  <testcase name="checkUnselectOfSelectedCheckBoxTest" classname="com.seasy.ui.tests.CheckBoxTest" time="0.752"/>
-  <testcase name="checkUnselectedCheckBox" classname="com.seasy.ui.tests.CheckBoxTest" time="0.594"/>
-  <testcase name="selectSingleCheckBoxTest" classname="com.seasy.ui.tests.CheckBoxTest" time="0.632"/>
-  <testcase name="checkSelectedCities" classname="com.seasy.ui.tests.DropDownTests" time="5.421">
-    <failure message="Element should be text &apos;Options selected are : Ohio,Florida&apos; {.getall-selected}&#10;Element: &apos;&lt;p class=&quot;getall-selected&quot;&gt;Options selected are : Florida&lt;/p&gt;&apos;&#10;Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690331536.1.png&#10;Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690331536.1.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould"><![CDATA[com.codeborne.selenide.ex.ElementShould: 
+  <testcase name="checkCheckAllButtonWithOneUnselectedCheckbox" classname="com.seasy.ui.tests.CheckBoxTest" time="1.435"/>
+  <testcase name="checkMultipleCheckBoxIsSelected" classname="com.seasy.ui.tests.CheckBoxTest" time="0.663"/>
+  <testcase name="checkMultipleCheckBoxIsUnselected" classname="com.seasy.ui.tests.CheckBoxTest" time="1.203"/>
+  <testcase name="checkUnselectOfSelectedCheckBoxTest" classname="com.seasy.ui.tests.CheckBoxTest" time="0.558"/>
+  <testcase name="checkUnselectedCheckBox" classname="com.seasy.ui.tests.CheckBoxTest" time="0.394"/>
+  <testcase name="selectSingleCheckBoxTest" classname="com.seasy.ui.tests.CheckBoxTest" time="0.505"/>
+  <testcase name="checkSelectedCities" classname="com.seasy.ui.tests.DropDownTests" time="5.02">
+    <failure message="Element should be text &apos;Options selected are : Ohio,Florida&apos; {.getall-selected}&#10;Element: &apos;&lt;p class=&quot;getall-selected&quot;&gt;Options selected are : Florida&lt;/p&gt;&apos;&#10;Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696181402.1.png&#10;Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696181402.1.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould"><![CDATA[com.codeborne.selenide.ex.ElementShould: 
 Element should be text 'Options selected are : Ohio,Florida' {.getall-selected}
 Element: '<p class="getall-selected">Options selected are : Florida</p>'
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690331536.1.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690331536.1.html
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696181402.1.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696181402.1.html
 Timeout: 4 s.
 	at com.seasy.ui.tests.DropDownTests.checkSelectedCities(DropDownTests.java:33)
 ]]></failure>
   </testcase>
-  <testcase name="checkSelectedCity" classname="com.seasy.ui.tests.DropDownTests" time="1.497"/>
-  <testcase name="checkSelectedDayFromDropDown" classname="com.seasy.ui.tests.DropDownTests" time="1.747">
+  <testcase name="checkSelectedCity" classname="com.seasy.ui.tests.DropDownTests" time="1.523"/>
+  <testcase name="checkSelectedDayFromDropDown" classname="com.seasy.ui.tests.DropDownTests" time="1.684">
     <failure message="&#10;Parameter &apos;singleDayDropDown&apos; is required by @Test on method checkSelectedDayFromDropDown but has not been marked @Optional or defined&#10;" type="org.testng.TestNGException">org.testng.TestNGException: 
 
 Parameter 'singleDayDropDown' is required by @Test on method checkSelectedDayFromDropDown but has not been marked @Optional or defined
@@ -136,15 +136,15 @@ Parameter &apos;singleDayDropDown&apos; is required by @Test on method checkSele
 
 ]]></system-err>
   </testcase>
-  <testcase name="checkDeletedFirstName" classname="com.seasy.ui.tests.InputFormSubmitTest" time="2.013"/>
-  <testcase name="checkFromSubmitWithAllDataEntered" classname="com.seasy.ui.tests.InputFormSubmitTest" time="5.147"/>
-  <testcase name="checkSubmitButtonIsDisabled" classname="com.seasy.ui.tests.InputFormSubmitTest" time="1.658"/>
-  <testcase name="checkCategoriesOptions" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="5.289">
-    <failure message="Element not found {optgroup.findBy(text &apos;Scripting languages&apos;)}&#10;Expected: exist&#10;Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690347313.2.png&#10;Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690347313.2.html&#10;Timeout: 4 s.&#10;Caused by: Element not found {optgroup.findBy(text &apos;Scripting languages&apos;)}&#10;Expected: text &apos;Scripting languages&apos;&#10;Timeout: 0 ms." type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
+  <testcase name="checkDeletedFirstName" classname="com.seasy.ui.tests.InputFormSubmitTest" time="1.588"/>
+  <testcase name="checkFromSubmitWithAllDataEntered" classname="com.seasy.ui.tests.InputFormSubmitTest" time="3.555"/>
+  <testcase name="checkSubmitButtonIsDisabled" classname="com.seasy.ui.tests.InputFormSubmitTest" time="1.174"/>
+  <testcase name="checkCategoriesOptions" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="5.014">
+    <failure message="Element not found {optgroup.findBy(text &apos;Scripting languages&apos;)}&#10;Expected: exist&#10;Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696194405.2.png&#10;Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696194405.2.html&#10;Timeout: 4 s.&#10;Caused by: Element not found {optgroup.findBy(text &apos;Scripting languages&apos;)}&#10;Expected: text &apos;Scripting languages&apos;&#10;Timeout: 0 ms." type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
 Element not found {optgroup.findBy(text 'Scripting languages')}
 Expected: exist
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690347313.2.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690347313.2.html
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696194405.2.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696194405.2.html
 Timeout: 4 s.
 Caused by: Element not found {optgroup.findBy(text 'Scripting languages')}
 Expected: text 'Scripting languages'
@@ -157,39 +157,39 @@ Timeout: 0 ms.
 	at com.seasy.ui.tests.JQuerySelectDropDownTest.checkCategoriesOptions(JQuerySelectDropDownTest.java:56)
 </failure>
   </testcase>
-  <testcase name="checkCategoriesOptionsInNotEmpty" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="0.712"/>
-  <testcase name="checkNoResultFound" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="1.123"/>
-  <testcase name="checkSelectedCountry" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="1.239"/>
-  <testcase name="checkSelectedRandomItems" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="0.719"/>
-  <testcase name="checkSelectedState" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="8.05">
-    <failure message="Element should not have attribute class=&quot;select2-selection__choice&quot; {$$(2 elements)[0]}&#10;Element: &apos;&lt;li class=&quot;select2-selection__choice&quot; title=&quot;Iowa&quot; type value=&quot;0&quot;&gt;×Iowa&lt;/li&gt;&apos;&#10;Actual value: class=&quot;select2-selection__choice&quot;&#10;Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690359173.3.png&#10;Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690359173.3.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShouldNot"><![CDATA[com.codeborne.selenide.ex.ElementShouldNot: 
+  <testcase name="checkCategoriesOptionsInNotEmpty" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="0.561"/>
+  <testcase name="checkNoResultFound" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="0.758"/>
+  <testcase name="checkSelectedCountry" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="0.72"/>
+  <testcase name="checkSelectedRandomItems" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="0.536"/>
+  <testcase name="checkSelectedState" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="6.928">
+    <failure message="Element should not have attribute class=&quot;select2-selection__choice&quot; {$$(2 elements)[0]}&#10;Element: &apos;&lt;li class=&quot;select2-selection__choice&quot; title=&quot;Iowa&quot; type value=&quot;0&quot;&gt;×Iowa&lt;/li&gt;&apos;&#10;Actual value: class=&quot;select2-selection__choice&quot;&#10;Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696203906.3.png&#10;Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696203906.3.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShouldNot"><![CDATA[com.codeborne.selenide.ex.ElementShouldNot: 
 Element should not have attribute class="select2-selection__choice" {$$(2 elements)[0]}
 Element: '<li class="select2-selection__choice" title="Iowa" type value="0">×Iowa</li>'
 Actual value: class="select2-selection__choice"
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690359173.3.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690359173.3.html
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696203906.3.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696203906.3.html
 Timeout: 4 s.
 	at com.seasy.ui.tests.JQuerySelectDropDownTest.checkSelectedState(JQuerySelectDropDownTest.java:24)
 ]]></failure>
   </testcase>
-  <testcase name="checkSelectedUsTerritories" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="1.598"/>
-  <testcase name="checkFemaleGenderAndZeroToFiveAgeGroup" classname="com.seasy.ui.tests.RadioButtonPageTest" time="1.012"/>
-  <testcase name="checkMaleGenderAndFiveToFifteenAgeGroup" classname="com.seasy.ui.tests.RadioButtonPageTest" time="0.887"/>
-  <testcase name="checkSelectMaleRadioButton" classname="com.seasy.ui.tests.RadioButtonPageTest" time="0.973"/>
-  <testcase name="checkSelectedFemaleRadioButton" classname="com.seasy.ui.tests.RadioButtonPageTest" time="0.754"/>
-  <testcase name="checkUnselectedValue" classname="com.seasy.ui.tests.RadioButtonPageTest" time="4.876">
-    <failure message="Element should have text &apos;Radio button is Not checked&apos; {.groupradiobutton}&#10;Element: &apos;&lt;p class=&quot;groupradiobutton&quot; displayed:false&gt;&lt;/p&gt;&apos;&#10;Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690369336.4.png&#10;Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690369336.4.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould"><![CDATA[com.codeborne.selenide.ex.ElementShould: 
+  <testcase name="checkSelectedUsTerritories" classname="com.seasy.ui.tests.JQuerySelectDropDownTest" time="1.379"/>
+  <testcase name="checkFemaleGenderAndZeroToFiveAgeGroup" classname="com.seasy.ui.tests.RadioButtonPageTest" time="0.779"/>
+  <testcase name="checkMaleGenderAndFiveToFifteenAgeGroup" classname="com.seasy.ui.tests.RadioButtonPageTest" time="1.862"/>
+  <testcase name="checkSelectMaleRadioButton" classname="com.seasy.ui.tests.RadioButtonPageTest" time="0.834"/>
+  <testcase name="checkSelectedFemaleRadioButton" classname="com.seasy.ui.tests.RadioButtonPageTest" time="0.597"/>
+  <testcase name="checkUnselectedValue" classname="com.seasy.ui.tests.RadioButtonPageTest" time="4.646">
+    <failure message="Element should have text &apos;Radio button is Not checked&apos; {.groupradiobutton}&#10;Element: &apos;&lt;p class=&quot;groupradiobutton&quot; displayed:false&gt;&lt;/p&gt;&apos;&#10;Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696214008.4.png&#10;Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696214008.4.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould"><![CDATA[com.codeborne.selenide.ex.ElementShould: 
 Element should have text 'Radio button is Not checked' {.groupradiobutton}
 Element: '<p class="groupradiobutton" displayed:false></p>'
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690369336.4.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635690369336.4.html
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696214008.4.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696214008.4.html
 Timeout: 4 s.
 	at com.seasy.ui.tests.RadioButtonPageTest.checkUnselectedValue(RadioButtonPageTest.java:27)
 ]]></failure>
   </testcase>
-  <testcase name="checkEmptyMessageTest" classname="com.seasy.ui.tests.SimpleFormTest" time="3.44"/>
-  <testcase name="checkTotalResultWithEmptyFieldsTest" classname="com.seasy.ui.tests.SimpleFormTest" time="1.476"/>
-  <testcase name="checkTotalResultWithIntegerValuesTest" classname="com.seasy.ui.tests.SimpleFormTest" time="1.265"/>
-  <testcase name="checkTotalResultWithStringValuesTest" classname="com.seasy.ui.tests.SimpleFormTest" time="1.243"/>
-  <testcase name="checkYourMessageTest" classname="com.seasy.ui.tests.SimpleFormTest" time="1.046"/>
+  <testcase name="checkEmptyMessageTest" classname="com.seasy.ui.tests.SimpleFormTest" time="3.124"/>
+  <testcase name="checkTotalResultWithEmptyFieldsTest" classname="com.seasy.ui.tests.SimpleFormTest" time="1.825"/>
+  <testcase name="checkTotalResultWithIntegerValuesTest" classname="com.seasy.ui.tests.SimpleFormTest" time="1.247"/>
+  <testcase name="checkTotalResultWithStringValuesTest" classname="com.seasy.ui.tests.SimpleFormTest" time="1.032"/>
+  <testcase name="checkYourMessageTest" classname="com.seasy.ui.tests.SimpleFormTest" time="0.954"/>
 </testsuite>
