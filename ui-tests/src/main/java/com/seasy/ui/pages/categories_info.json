@@ -1,49 +1,55 @@
 [
   {
-    "categoryName": "Scripting languages",
-    "categoryItems": [
-      {
-        "itemName": "Phyton",
-        "itemValue": "jquery"
-      },
-      {
-        "itemName": "PHP",
-        "itemValue": "jqueryui"
-      },
-      {
-        "itemName": "Ruby",
-        "itemValue": "jqueryui"
-      }
-    ]
+    "category":  {
+      "name": "Scripting languages",
+      "items": [
+        {
+          "subCategoryName": "Phyton",
+          "value": "jquery"
+        },
+        {
+          "subCategoryName": "PHP",
+          "value": "jqueryui"
+        },
+        {
+          "subCategoryName": "Ruby",
+          "value": "jqueryui"
+        }
+      ]
+    }
   },
   {
-    "categoryName": "Programming languages",
-    "categoryItems": [
-      {
-        "itemName": "C",
-        "itemValue": "jqueryui"
-      },
-      {
-        "itemName": "Java",
-        "itemValue": "jquery"
-      },
-      {
-        "itemName": ".Net",
-        "itemValue": "jqueryui"
-      }
-    ]
+    "category":  {
+      "name": "Programming languages",
+      "items": [
+        {
+          "subCategoryName": "C",
+          "value": "jqueryui"
+        },
+        {
+          "subCategoryName": "Java",
+          "value": "jquery"
+        },
+        {
+          "subCategoryName": ".Net",
+          "value": "jqueryui"
+        }
+      ]
+    }
   },
   {
-    "categoryName": "Other",
-    "categoryItems": [
-      {
-        "itemName": "Unknown Script",
-        "itemValue": "somefile"
-      },
-      {
-        "itemName": "Other file",
-        "itemValue": "someotherfile"
-      }
-    ]
+    "category": {
+      "name": "Other",
+      "items": [
+        {
+          "subCategoryName": "Unknown Script",
+          "value": "somefile"
+        },
+        {
+          "subCategoryName": "Other file",
+          "value": "someotherfile"
+        }
+      ]
+    }
   }
 ]

@@ -3,11 +3,13 @@ package com.seasy.ui.pages;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.Keys;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
@@ -16,15 +18,14 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class JQuerySelectDropDownPage {
 
-    private final SelenideElement dropdownItem = $(".select2-results__options"),
-    //dropdownInput = $(".select2-search__field"),
-    dropdownInput = $("span.select2-container.select2-container--default.select2-container--open input"),
-    openedDropdown = $(".select2-dropdown.select2-dropdown--below"),
+    private final SelenideElement dropdownInput = $("span.select2-container.select2-container--default.select2-container--open input"),
     dropdownWithCategories = $("#files");
 
     private final ElementsCollection selectedItems = $$("ul.select2-selection__rendered > li.select2-selection__choice"),
     dropdownResults = $$(".select2-results__options > li"),
-    dropdowns = $$(".panel-body");
+    dropdowns = $$(".panel-body"),
+            categoryOptionName = $$("optgroup"),
+    options = $$("optgroup > option");
 
     public JQuerySelectDropDownPage selectItemFromDropDown(String dropDownName, String dropDownItem){
         SelenideElement dropdown = dropdowns.findBy(Condition.text(dropDownName)).$(".select2-selection.select2-selection");
@@ -88,13 +89,35 @@ public class JQuerySelectDropDownPage {
         return new JQuerySelectDropDownPage();
     }
 
-    public JQuerySelectDropDownPage checkSubCategories() throws IOException {
-        ObjectMapper mapper = new ObjectMapper();
-        FileReader fileReader = new FileReader("categories_info.json");
-        JsonFactory jsonFactory = new JsonFactory();
-        JsonParser jsonParser = jsonFactory.createParser(fileReader);
-       /* try {
-        }*/
+    public JQuerySelectDropDownPage checkSubCategories() {
+        JSONParser jsonParser = new JSONParser();
+        try {
+            FileReader fileReader = new FileReader("src/main/java/com/seasy/ui/pages/categories_info.json");
+            Object obj = jsonParser.parse(fileReader);
+            JSONArray categoriesList = (JSONArray) obj;
+            for (int i = 0; i < categoriesList.size(); i++){
+                JSONObject categories = (JSONObject) categoriesList.get(i);
+                JSONObject category = (JSONObject) categories.get("category");
+                String categoryName = (String) category.get("name");
+                //dropdownWithCategories.$("optgroup").shouldHave(Condition.attribute("label", categoryName));
+                categoryOptionName.findBy(Condition.text(categoryName)).should(Condition.exist);
+                JSONArray itemsList = (JSONArray) categories.get("items");
+                for (int j = 0; j < itemsList.size(); j++){
+                    JSONObject items = (JSONObject) itemsList.get(i);
+                    String subCategoryName = (String) items.get("subCategoryName");
+                    options.findBy(Condition.text(subCategoryName)).shouldBe(Condition.exist);
+                    String subCategoryValue = (String) items.get("value");
+                    options.findBy(Condition.text(subCategoryValue)).shouldBe(Condition.visible);
+                }
+
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
         return new JQuerySelectDropDownPage();
     }
 

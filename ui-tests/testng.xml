@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Selenium Easy" parallel="methods">
-    <test name="Single Input Field (Simple Form)">
+    <suite-files>
+        <suite-file path="suite2.xml"></suite-file>
+    </suite-files>
+    <!--<test name="Single Input Field (Simple Form)">
         <classes>
             <class name="com.seasy.ui.tests.SimpleFormTest">
                 <methods>
@@ -15,8 +18,8 @@
         <classes>
             <class name="com.seasy.ui.tests.SimpleFormTest">
                 <methods>
-                    <include name="checkTotalResultWithIntegerVeluesTest"/>
-                    <include name="checkTotalResultWithSrtingValuesTest"/>
+                    <include name="checkTotalResultWithIntegerValuesTest"/>
+                    <include name="checkTotalResultWithStringValuesTest"/>
                     <include name="checkTotalResultWithEmptyFieldsTest"/>
                 </methods>
             </class>
@@ -72,7 +75,7 @@
                 </methods>
             </class>
         </classes>
-    </test>
+    </test>-->
     <!-- Test -->
 </suite>
 <!-- Suite -->

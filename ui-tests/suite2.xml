@@ -1,0 +1,8 @@
+<suit>
+    <test>
+        <classes>
+            <class name="com/seasy/ui/tests/CheckBoxTest.java"/>
+            <class name="com/seasy/ui/tests/InputFormSubmitTest.java"/>
+        </classes>
+    </test>
+</suit>

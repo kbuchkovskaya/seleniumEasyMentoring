@@ -20,7 +20,7 @@ public class SimpleFormTest  extends BaseTest{
     }
 
     @Test
-    public void checkTotalResultWithIntegerVeluesTest() {
+    public void checkTotalResultWithIntegerValuesTest() {
         openSimpleFormPage()
                 .enterTwoInput(5, 6)
                 .clickGetTotalButton()

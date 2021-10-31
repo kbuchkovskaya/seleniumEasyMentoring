@@ -49,4 +49,10 @@ public class JQuerySelectDropDownTest extends BaseTest{
         openJQuerySelectDropDownPage()
                 .checkCategoryOptionsIsNotEmpty();
     }
+
+    @Test
+    public void checkCategoriesOptions(){
+        openJQuerySelectDropDownPage()
+                .checkSubCategories();
+    }
 }
