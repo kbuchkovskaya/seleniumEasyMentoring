@@ -1,38 +1,38 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 33, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 69.24 s <<< FAILURE! - in TestSuite
-checkAllCheckboxesAreSelected(com.seasy.ui.tests.CheckBoxTest)  Time elapsed: 5.834 s  <<< FAILURE!
+Tests run: 33, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 103.236 s <<< FAILURE! - in TestSuite
+checkAllCheckboxesAreSelected(com.seasy.ui.tests.CheckBoxTest)  Time elapsed: 7.333 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementShould: 
 Element should have attribute value="Check All" {#check1}
 Element: '<input class="btn btn-primary" id="check1" type="button" value="Uncheck All"></input>'
 Actual value: value="Uncheck All"
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696171581.0.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696171581.0.html
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1636664069770.0.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1636664069770.0.html
 Timeout: 4 s.
 	at com.seasy.ui.tests.CheckBoxTest.checkAllCheckboxesAreSelected(CheckBoxTest.java:42)
 
-checkSelectedCities(com.seasy.ui.tests.DropDownTests)  Time elapsed: 5.02 s  <<< FAILURE!
+checkSelectedCities(com.seasy.ui.tests.DropDownTests)  Time elapsed: 6.248 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementShould: 
 Element should be text 'Options selected are : Ohio,Florida' {.getall-selected}
 Element: '<p class="getall-selected">Options selected are : Florida</p>'
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696181402.1.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696181402.1.html
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1636664085892.1.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1636664085892.1.html
 Timeout: 4 s.
 	at com.seasy.ui.tests.DropDownTests.checkSelectedCities(DropDownTests.java:33)
 
-checkSelectedDayFromDropDown(com.seasy.ui.tests.DropDownTests)  Time elapsed: 1.684 s  <<< FAILURE!
+checkSelectedDayFromDropDown(com.seasy.ui.tests.DropDownTests)  Time elapsed: 2.108 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'singleDayDropDown' is required by @Test on method checkSelectedDayFromDropDown but has not been marked @Optional or defined
 
 
-checkCategoriesOptions(com.seasy.ui.tests.JQuerySelectDropDownTest)  Time elapsed: 5.014 s  <<< FAILURE!
+checkCategoriesOptions(com.seasy.ui.tests.JQuerySelectDropDownTest)  Time elapsed: 5.421 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementNotFound: 
 Element not found {optgroup.findBy(text 'Scripting languages')}
 Expected: exist
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696194405.2.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696194405.2.html
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1636664108365.2.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1636664108365.2.html
 Timeout: 4 s.
 Caused by: Element not found {optgroup.findBy(text 'Scripting languages')}
 Expected: text 'Scripting languages'
@@ -44,22 +44,22 @@ Expected: text 'Scripting languages'
 Timeout: 0 ms.
 	at com.seasy.ui.tests.JQuerySelectDropDownTest.checkCategoriesOptions(JQuerySelectDropDownTest.java:56)
 
-checkSelectedState(com.seasy.ui.tests.JQuerySelectDropDownTest)  Time elapsed: 6.928 s  <<< FAILURE!
+checkSelectedState(com.seasy.ui.tests.JQuerySelectDropDownTest)  Time elapsed: 10.389 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementShouldNot: 
-Element should not have attribute class="select2-selection__choice" {$$(2 elements)[0]}
+Element should not have attribute class="select2-selection__choice" {$$(1 elements)[0]}
 Element: '<li class="select2-selection__choice" title="Iowa" type value="0">×Iowa</li>'
 Actual value: class="select2-selection__choice"
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696203906.3.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696203906.3.html
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1636664124455.3.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1636664124455.3.html
 Timeout: 4 s.
 	at com.seasy.ui.tests.JQuerySelectDropDownTest.checkSelectedState(JQuerySelectDropDownTest.java:24)
 
-checkUnselectedValue(com.seasy.ui.tests.RadioButtonPageTest)  Time elapsed: 4.646 s  <<< FAILURE!
+checkUnselectedValue(com.seasy.ui.tests.RadioButtonPageTest)  Time elapsed: 5.258 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementShould: 
 Element should have text 'Radio button is Not checked' {.groupradiobutton}
 Element: '<p class="groupradiobutton" displayed:false></p>'
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696214008.4.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1635696214008.4.html
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1636664137654.4.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1636664137654.4.html
 Timeout: 4 s.
 	at com.seasy.ui.tests.RadioButtonPageTest.checkUnselectedValue(RadioButtonPageTest.java:27)
 
