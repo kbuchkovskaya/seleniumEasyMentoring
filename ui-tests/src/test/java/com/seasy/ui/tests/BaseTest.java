@@ -1,8 +1,12 @@
 package com.seasy.ui.tests;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.seasy.ui.pages.*;
 import org.openqa.selenium.Keys;
+import org.testng.annotations.BeforeMethod;
+
+import java.lang.reflect.Method;
 
 import static com.codeborne.selenide.Selenide.*;
 
@@ -44,8 +48,15 @@ public class BaseTest {
     }
 
     public void openBrowser(String url){
+        Configuration.browser = SelenoidChromeDriverProvider.class.getName();
         open(url);
         Selenide.switchTo().activeElement().sendKeys(Keys.ESCAPE);
     }
 
+ /*   @BeforeMethod
+    protected void setUp(Method method){
+        String browser = System.getProperty("Browser", "chrome");
+
+    }
+*/
 }
