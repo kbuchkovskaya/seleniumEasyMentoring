@@ -2,6 +2,7 @@ com\seasy\ui\tests\AjaxSubmitFormTest.class
 com\seasy\ui\tests\SimpleFormTest.class
 com\seasy\ui\tests\CheckBoxTest.class
 com\seasy\ui\tests\BaseTest.class
+com\seasy\ui\tests\DatePickerTests.class
 com\seasy\ui\tests\InputFormSubmitTest.class
 com\seasy\ui\tests\RadioButtonPageTest.class
 com\seasy\ui\tests\SelenoidChromeDriverProvider.class

@@ -8,4 +8,5 @@ com\seasy\ui\pages\User.class
 com\seasy\ui\pages\RadioButtonsPage.class
 com\travel\ui\pages\HomePage.class
 com\seasy\ui\pages\User$Builder.class
+com\seasy\ui\pages\DatePickers\BootstrapDatePickerPage.class
 com\seasy\ui\pages\InputFormSubmitPage.class
