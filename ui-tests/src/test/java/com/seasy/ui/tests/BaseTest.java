@@ -1,5 +1,6 @@
 package com.seasy.ui.tests;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.seasy.ui.pages.*;
 import com.seasy.ui.pages.DatePickers.BootstrapDatePickerPage;
