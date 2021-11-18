@@ -56,7 +56,7 @@ public class BaseTest {
     }
 
     public void openBrowser(String url){
-        //Configuration.browser = SelenoidChromeDriverProvider.class.getName();
+        Configuration.browser = SelenoidChromeDriverProvider.class.getName();
         open(url);
         Selenide.switchTo().activeElement().sendKeys(Keys.ESCAPE);
     }
