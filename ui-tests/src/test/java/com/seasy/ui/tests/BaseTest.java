@@ -1,5 +1,6 @@
 package com.seasy.ui.tests;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.seasy.ui.pages.*;
 import com.seasy.ui.pages.DatePickers.BootstrapDatePickerPage;
@@ -55,7 +56,7 @@ public class BaseTest {
     }
 
     public void openBrowser(String url){
-        //Configuration.browser = SelenoidChromeDriverProvider.class.getName();
+        Configuration.browser = SelenoidChromeDriverProvider.class.getName();
         open(url);
         Selenide.switchTo().activeElement().sendKeys(Keys.ESCAPE);
     }
