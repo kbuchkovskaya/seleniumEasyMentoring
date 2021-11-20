@@ -2,10 +2,9 @@ package com.seasy.ui.pages.DatePickers;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.Keys;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import static com.codeborne.selenide.Selenide.$;
 
@@ -19,31 +18,41 @@ public class BootstrapDatePickerPage {
     dayInInputDateExample = $(".input-group.date input"),
     clearDateInDateExample = $(".datepicker-days .clear");
 
-    //public SimpleDateFormat formatter = new SimpleDateFormat("d/MM/yyyy");
-
     public BootstrapDatePickerPage openDateExampleDatePicker(){
         openDateExampleDatePicker.click();
         dateExampleDatePicker.shouldBe(Condition.visible);
         return new BootstrapDatePickerPage();
     }
 
-    public void selectTodayExampleDate(String today){
-        openDateExampleDatePicker.click();
+    public BootstrapDatePickerPage selectTodayExampleDatePicker(){
         todayDateExampleButton.click();
-        openDateExampleDatePicker.click();
-        LocalDate currentDate = LocalDate.parse(today);
-        int day = currentDate.getDayOfMonth();
+        return new BootstrapDatePickerPage();
+    }
+
+    public void checkTodayDayExampleDatePicker(LocalDate localDate){
+        int day = localDate.getDayOfMonth();//Parses text from a string to produce a Date.
         selectedDayDateExample.shouldHave(Condition.text(String.valueOf(day)));
         new BootstrapDatePickerPage();
     }
 
-    public void selectFutureDateExampleDate(String today){
-        openDateExampleDatePicker.click();
+    public BootstrapDatePickerPage clearDateDateExampleDatePicker(){
         clearDateInDateExample.click();
-        LocalDate currentDate = LocalDate.parse(today);
-        dayInInputDateExample.setValue(String.valueOf(currentDate.plusMonths(1)));//.sendKeys(Keys.ENTER);
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-        dayInInputDateExample.shouldHave(Condition.text(today));//invalid date displayed (2021-12-14)
+        dayInInputDateExample.shouldBe(Condition.empty);
+        return new BootstrapDatePickerPage();
+    }
+
+    public BootstrapDatePickerPage selectFutureDateExampleDatePicker(LocalDate localDate){
+        //LocalDate.parse(today) - Parses text from a string to produce a Date.
+        //format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) - Create formatter
+        String futureDate = (localDate.plusMonths(1).format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+        if(!localDate.getDayOfWeek().name().equals("Sunday")){
+            dayInInputDateExample.setValue(futureDate).pressEnter();
+        } //log that future day is sunday
+        return new BootstrapDatePickerPage();
+    }
+
+    public void checkTodayIsSelectedExampleDatePicker(LocalDate localDate){
+        dayInInputDateExample.shouldHave(Condition.attribute("value", localDate.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))));
         new BootstrapDatePickerPage();
     }
 

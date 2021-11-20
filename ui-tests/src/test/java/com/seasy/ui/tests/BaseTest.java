@@ -2,11 +2,10 @@ package com.seasy.ui.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import com.seasy.ui.pages.*;
 import com.seasy.ui.pages.DatePickers.BootstrapDatePickerPage;
+import com.seasy.ui.pages.Forms.*;
 import org.openqa.selenium.Keys;
 
-import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Date;
@@ -56,15 +55,15 @@ public class BaseTest {
     }
 
     public void openBrowser(String url){
-        Configuration.browser = SelenoidChromeDriverProvider.class.getName();
+        //Configuration.browser = SelenoidChromeDriverProvider.class.getName();
         open(url);
         Selenide.switchTo().activeElement().sendKeys(Keys.ESCAPE);
     }
 
-    public String getDayToday(){
+    public LocalDate getDayToday(){
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
-        return formatter.format(date);
+        return LocalDate.parse(formatter.format(date));
     }
 
  /*   @BeforeMethod
