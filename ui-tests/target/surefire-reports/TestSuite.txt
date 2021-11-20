@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 33, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 62.873 s <<< FAILURE! - in TestSuite
+checkSelectedCities(com.seasy.ui.tests.FormTests.DropDownTests)  Time elapsed: 1.167 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementShould: 
+Element should be text 'Options selected are : Ohio,Florida' {.getall-selected}
+Element: '<p class="getall-selected">Options selected are : Florida</p>'
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1637430119795.0.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1637430119795.0.html
+Timeout: 4 s.
+	at com.seasy.ui.tests.FormTests.DropDownTests.checkSelectedCities(DropDownTests.java:32)
+
+checkCategoriesOptions(com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest)  Time elapsed: 0.88 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {optgroup.findBy(text 'Scripting languages')}
+Expected: exist
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1637430121059.1.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1637430121059.1.html
+Timeout: 4 s.
+Caused by: Element not found {optgroup.findBy(text 'Scripting languages')}
+Expected: text 'Scripting languages'
+Timeout: 0 ms.
+	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest.checkCategoriesOptions(JQuerySelectDropDownTest.java:57)
+Caused by: com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {optgroup.findBy(text 'Scripting languages')}
+Expected: text 'Scripting languages'
+Timeout: 0 ms.
+	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest.checkCategoriesOptions(JQuerySelectDropDownTest.java:57)
+
+checkSelectedState(com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest)  Time elapsed: 6.377 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementShouldNot: 
+Element should not have attribute class="select2-selection__choice" {$$(2 elements)[0]}
+Element: '<li class="select2-selection__choice" title="Iowa" type value="0">×Iowa</li>'
+Actual value: class="select2-selection__choice"
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1637430129677.2.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1637430129677.2.html
+Timeout: 4 s.
+	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest.checkSelectedState(JQuerySelectDropDownTest.java:25)
+

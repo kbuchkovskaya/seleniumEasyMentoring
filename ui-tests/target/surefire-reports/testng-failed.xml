@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Selenium Easy]" parallel="methods">
+  <test thread-count="5" verbose="0" name="Form tests(failed)" parallel="methods">
+    <classes>
+      <class name="com.seasy.ui.tests.FormTests.DropDownTests">
+        <methods>
+          <include name="checkSelectedCities" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.seasy.ui.tests.FormTests.DropDownTests -->
+      <class name="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest">
+        <methods>
+          <include name="checkCategoriesOptions"/>
+          <include name="checkSelectedState" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest -->
+    </classes>
+  </test> <!-- Form tests(failed) -->
+</suite> <!-- Failed suite [Selenium Easy] -->

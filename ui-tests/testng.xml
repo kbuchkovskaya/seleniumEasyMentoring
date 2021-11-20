@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Selenium Easy" parallel="methods">
- <!--   <suite-files>
-        <suite-file path="suite2.xml"></suite-file>
-    </suite-files>-->
-    <test name="Single Input Field (Simple Form)">
+    <test name="Form tests">
         <classes>
-            <class name="com.seasy.ui.tests.SimpleFormTest">
-                <methods>
-                    <include name="checkEmptyMessageTest"/>
-                    <include name="checkYourMessageTest"/>
-                </methods>
-            </class>
+            <class name="com.seasy.ui.tests.FormTests.SimpleFormTest"/>
+            <class name="com.seasy.ui.tests.FormTests.AjaxSubmitFormTest"/>
+            <class name="com.seasy.ui.tests.FormTests.CheckBoxTest"/>
+            <class name="com.seasy.ui.tests.FormTests.DropDownTests"/>
+            <class name="com.seasy.ui.tests.FormTests.InputFormSubmitTest"/>
+            <class name="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest"/>
+            <class name="com.seasy.ui.tests.FormTests.RadioButtonPageTest"/>
         </classes>
     </test>
     <!--<test name="Single Input Field (Simple Form)">
         <classes>
-            <class name="com.seasy.ui.tests.SimpleFormTest">
+            <class name="com.seasy.ui.tests.FormTests.SimpleFormTest">
                 <methods>
                     <include name="checkEmptyMessageTest"/>
                     <include name="checkYourMessageTest"/>
@@ -26,7 +24,7 @@
     </test>
     <test name="Two Input Fields (Simple Form)">
         <classes>
-            <class name="com.seasy.ui.tests.SimpleFormTest">
+            <class name="com.seasy.ui.tests.FormTests.SimpleFormTest">
                 <methods>
                     <include name="checkTotalResultWithIntegerValuesTest"/>
                     <include name="checkTotalResultWithStringValuesTest"/>
@@ -37,7 +35,7 @@
     </test>
     <test name="Single CheckBox (Check Box)">
         <classes>
-            <class name="com.seasy.ui.tests.CheckBoxTest">
+            <class name="com.seasy.ui.tests.FormTests.CheckBoxTest">
                 <methods>
                     <include name="checkUnselectedCheckBox"/>
                     <include name="selectSingleCheckBoxTest"/>
@@ -48,7 +46,7 @@
     </test>
     <test name="Multiple Check Boxes (Check Box)">
         <classes>
-            <class name="com.seasy.ui.tests.CheckBoxTest">
+            <class name="com.seasy.ui.tests.FormTests.CheckBoxTest">
                 <methods>
                     <exclude name="checkMultipleCheckBox1IsSelected"/>
                     <include name="checkAllCheckboxesAreSelected"/>
@@ -59,7 +57,7 @@
     </test>
     <test name="Single Radio Button (Radio Button)">
         <classes>
-            <class name="com.seasy.ui.tests.RadioButtonPageTest">
+            <class name="com.seasy.ui.tests.FormTests.RadioButtonPageTest">
                 <methods>
                     <include name="selectedMaleRadioButton"/>
                     <include name="selectedFemaleRadioButton"/>
@@ -70,7 +68,7 @@
     <test name="Single select Drop Down (Drop Down)">
         <parameter name="singleDayDropDown" value="Monday"/>
         <classes>
-            <class name="com.seasy.ui.tests.DropDownTests">
+            <class name="com.seasy.ui.tests.FormTests.DropDownTests">
                 <methods>
                     <include name="checkSelectedDayFromDropDown"/>
                 </methods>
@@ -79,7 +77,7 @@
     </test>
     <test name="Multi select Drop Down (Drop Down)">
         <classes>
-            <class name="com.seasy.ui.tests.DropDownTests">
+            <class name="com.seasy.ui.tests.FormTests.DropDownTests">
                 <methods>
                     <exclude name="checkSelectedCity"/>
                 </methods>
