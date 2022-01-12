@@ -11,10 +11,10 @@ public enum SubmitFormFieldsName {
     WEBSITE_FIELD("Website"),
     PROJECT_DESCRIPTION_FIELD("Project Description");
 
-        public String val;
+        public final String value;
 
         SubmitFormFieldsName(String fieldName){
-            this.val = fieldName;
+            this.value = fieldName;
         }
 
 }

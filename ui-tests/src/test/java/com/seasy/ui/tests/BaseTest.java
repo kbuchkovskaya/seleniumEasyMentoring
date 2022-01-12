@@ -4,6 +4,9 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.seasy.ui.pages.DatePickers.BootstrapDatePickerPage;
 import com.seasy.ui.pages.Forms.*;
+import com.seasy.ui.pages.ListBox.JQueryDualListBoxPage;
+import com.seasy.ui.pages.Table.TableDataSearchPage;
+import com.seasy.ui.pages.Table.TablePaginationPage;
 import org.openqa.selenium.Keys;
 
 import java.text.SimpleDateFormat;
@@ -52,6 +55,21 @@ public class BaseTest {
     public BootstrapDatePickerPage openBootstrapDatePickerPage(){
         openBrowser("https://demo.seleniumeasy.com/bootstrap-date-picker-demo.html");
         return new BootstrapDatePickerPage();
+    }
+
+    public JQueryDualListBoxPage openJQueryDualListBoxPage(){
+        openBrowser("https://demo.seleniumeasy.com/jquery-dual-list-box-demo.html");
+        return new JQueryDualListBoxPage();
+    }
+
+    public TablePaginationPage openTablePaginationPage(){
+        openBrowser("https://demo.seleniumeasy.com/table-pagination-demo.html");
+        return new TablePaginationPage();
+    }
+
+    public TableDataSearchPage openTableDataSearchPage(){
+        openBrowser("https://demo.seleniumeasy.com/table-search-filter-demo.html");
+        return new TableDataSearchPage();
     }
 
     public void openBrowser(String url){

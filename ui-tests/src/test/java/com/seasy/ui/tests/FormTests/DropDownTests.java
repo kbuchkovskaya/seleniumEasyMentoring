@@ -30,6 +30,5 @@ public class DropDownTests extends BaseTest {
                 .selectCityFromMultiDropDown(city2)
                 .clickGetAllCitiesFromMultiDropDownButton()
                 .verifySelectedCities(city1, city2);
-
     }
 }

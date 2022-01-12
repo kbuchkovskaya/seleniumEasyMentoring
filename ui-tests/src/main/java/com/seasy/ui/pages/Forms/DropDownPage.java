@@ -22,20 +22,18 @@ public class DropDownPage{
         Random random = new Random();
         int randomItem = random.nextInt(daysList.size());
         daysList.get(randomItem).click();
-        selectedDay.shouldHave(Condition.text(daysList.get(randomItem).text()));
-        new DropDownPage();
+        //selectedDay.shouldHave(Condition.text(daysList.get(randomItem).text()));
     }
 
     public void verifyOneSelectedCity(String city){
         checkSelectedCities.shouldHave(Condition.text(city));
-        new DropDownPage();
     }
 
     public DropDownPage selectCityFromMultiDropDown(String city){
         citiesList.filterBy(Condition.text(city)).forEach(SelenideElement::click);
         //citiesList.forEach(cit -> cit.text(city)..;
         //sendKeys(Keys.chord(Keys.CONTROL, Keys.DOWN))
-        return new DropDownPage();
+        return this;
     }
 
     public DropDownPage clickGetFirstCityFromMultiDropDownButton(){

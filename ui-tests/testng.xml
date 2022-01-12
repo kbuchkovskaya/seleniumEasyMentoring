@@ -4,12 +4,12 @@
     <test name="Form tests">
         <classes>
             <class name="com.seasy.ui.tests.FormTests.SimpleFormTest"/>
-            <class name="com.seasy.ui.tests.FormTests.AjaxSubmitFormTest"/>
-            <class name="com.seasy.ui.tests.FormTests.CheckBoxTest"/>
+            <class name="com.seasy.ui.tests.FormTests.AjaxSubmitFormTests"/>
+            <class name="com.seasy.ui.tests.FormTests.CheckBoxTests"/>
             <class name="com.seasy.ui.tests.FormTests.DropDownTests"/>
-            <class name="com.seasy.ui.tests.FormTests.InputFormSubmitTest"/>
-            <class name="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest"/>
-            <class name="com.seasy.ui.tests.FormTests.RadioButtonPageTest"/>
+            <class name="com.seasy.ui.tests.FormTests.InputFormSubmitTests"/>
+            <class name="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests"/>
+            <class name="com.seasy.ui.tests.FormTests.RadioButtonPageTests"/>
         </classes>
     </test>
     <!--<test name="Single Input Field (Simple Form)">
@@ -35,7 +35,7 @@
     </test>
     <test name="Single CheckBox (Check Box)">
         <classes>
-            <class name="com.seasy.ui.tests.FormTests.CheckBoxTest">
+            <class name="com.seasy.ui.tests.FormTests.CheckBoxTests">
                 <methods>
                     <include name="checkUnselectedCheckBox"/>
                     <include name="selectSingleCheckBoxTest"/>
@@ -46,7 +46,7 @@
     </test>
     <test name="Multiple Check Boxes (Check Box)">
         <classes>
-            <class name="com.seasy.ui.tests.FormTests.CheckBoxTest">
+            <class name="com.seasy.ui.tests.FormTests.CheckBoxTests">
                 <methods>
                     <exclude name="checkMultipleCheckBox1IsSelected"/>
                     <include name="checkAllCheckboxesAreSelected"/>
@@ -57,7 +57,7 @@
     </test>
     <test name="Single Radio Button (Radio Button)">
         <classes>
-            <class name="com.seasy.ui.tests.FormTests.RadioButtonPageTest">
+            <class name="com.seasy.ui.tests.FormTests.RadioButtonPageTests">
                 <methods>
                     <include name="selectedMaleRadioButton"/>
                     <include name="selectedFemaleRadioButton"/>
