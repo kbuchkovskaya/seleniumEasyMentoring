@@ -44,7 +44,7 @@ public class BootstrapDatePickerPage {
     public BootstrapDatePickerPage selectFutureDateExampleDatePicker(LocalDate localDate){
         //LocalDate.parse(today) - Parses text from a string to produce a Date.
         //format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) - Create formatter
-        String futureDate = (localDate.plusMonths(1).format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+        String futureDate = localDate.plusMonths(1).format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         if(!localDate.getDayOfWeek().name().equals("Sunday")){
             dayInInputDateExample.setValue(futureDate).pressEnter();
         } //log that future day is sunday

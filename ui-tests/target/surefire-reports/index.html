@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">33 methods, 3 failed,   30 passed</span>
+                    <span class="method-stats">33 methods, 2 failed,   31 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,11 +102,6 @@
                       <a href="#" panel-name="suite-Selenium_Easy" class="show-methods failed suite-Selenium_Easy"> (show)</a> <!-- show-methods failed suite-Selenium_Easy -->
                     </span>
                     <div class="method-list-content failed suite-Selenium_Easy">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Easy" title="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest" hash-for-method="checkCategoriesOptions">checkCategoriesOptions</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Selenium_Easy" title="com.seasy.ui.tests.FormTests.DropDownTests" hash-for-method="checkSelectedCities(Ohio, Florida)">checkSelectedCities(Ohio, Florida)</a> <!-- method navigator-link -->
@@ -129,6 +124,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Selenium_Easy" title="com.seasy.ui.tests.FormTests.CheckBoxTest" hash-for-method="checkAllCheckboxesAreSelected">checkAllCheckboxesAreSelected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Easy" title="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest" hash-for-method="checkCategoriesOptions">checkCategoriesOptions</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -291,29 +291,32 @@
           <div class="suite-Selenium_Easy-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.seasy.ui.tests.FormTests.DropDownTests</span>
+              <span class="class-name">com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkSelectedCities(Ohio, Florida)">
-                  </a> <!-- checkSelectedCities(Ohio, Florida) -->
-                  <span class="method-name">checkSelectedCities</span>
-                  <span class="parameters">(Ohio, Florida)</span>
-                  <div class="stack-trace">Element should be text &apos;Options selected are : Ohio,Florida&apos; {.getall-selected}
-Element: &apos;&lt;p class=&quot;getall-selected&quot;&gt;Options selected are : Florida&lt;/p&gt;&apos;
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1637430119795.0.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1637430119795.0.html
+                  <a name="checkSelectedState(Select State)">
+                  </a> <!-- checkSelectedState(Select State) -->
+                  <span class="method-name">checkSelectedState</span>
+                  <span class="parameters">(Select State)</span>
+                  <div class="stack-trace">Element should not have attribute class=&quot;select2-selection__choice&quot; {$$(2 elements)[0]}
+Element: &apos;&lt;li class=&quot;select2-selection__choice&quot; title=&quot;Iowa&quot; type value=&quot;0&quot;&gt;×Iowa&lt;/li&gt;&apos;
+Actual value: class=&quot;select2-selection__choice&quot;
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1639326462314.1.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1639326462314.1.html
 Timeout: 4 s.
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
-	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
-	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:118)
+	at com.codeborne.selenide.commands.ShouldNot.execute(ShouldNot.java:30)
+	at com.codeborne.selenide.commands.ShouldNot.execute(ShouldNot.java:14)
 	at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
 	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:133)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:85)
-	at com.sun.proxy.$Proxy3.shouldBe(Unknown Source)
-	at com.seasy.ui.pages.Forms.DropDownPage.verifySelectedCities(DropDownPage.java:52)
-	at com.seasy.ui.tests.FormTests.DropDownTests.checkSelectedCities(DropDownTests.java:32)
+	at com.sun.proxy.$Proxy7.shouldNotHave(Unknown Source)
+	at com.seasy.ui.pages.Forms.JQuerySelectDropDownPage.lambda$checkEmptyMultipleDropDown$0(JQuerySelectDropDownPage.java:70)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at com.seasy.ui.pages.Forms.JQuerySelectDropDownPage.checkEmptyMultipleDropDown(JQuerySelectDropDownPage.java:70)
+	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest.checkSelectedState(JQuerySelectDropDownTest.java:25)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
@@ -326,68 +329,29 @@ Timeout: 4 s.
           <div class="suite-Selenium_Easy-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest</span>
+              <span class="class-name">com.seasy.ui.tests.FormTests.DropDownTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkCategoriesOptions">
-                  </a> <!-- checkCategoriesOptions -->
-                  <span class="method-name">checkCategoriesOptions</span>
-                  <div class="stack-trace">Element not found {optgroup.findBy(text &apos;Scripting languages&apos;)}
-Expected: exist
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1637430121059.1.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1637430121059.1.html
+                  <a name="checkSelectedCities(Ohio, Florida)">
+                  </a> <!-- checkSelectedCities(Ohio, Florida) -->
+                  <span class="method-name">checkSelectedCities</span>
+                  <span class="parameters">(Ohio, Florida)</span>
+                  <div class="stack-trace">Element should be text &apos;Options selected are : Ohio,Florida&apos; {.getall-selected}
+Element: &apos;&lt;p class=&quot;getall-selected&quot;&gt;Options selected are : Florida&lt;/p&gt;&apos;
+Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1639326453525.0.png
+Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1639326453525.0.html
 Timeout: 4 s.
-Caused by: Element not found {optgroup.findBy(text &apos;Scripting languages&apos;)}
-Expected: text &apos;Scripting languages&apos;
-Timeout: 0 ms.
-	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:83)
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:114)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
 	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
 	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
 	at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
 	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:133)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:85)
-	at com.sun.proxy.$Proxy3.should(Unknown Source)
-	at com.seasy.ui.pages.Forms.JQuerySelectDropDownPage.checkSubCategories(JQuerySelectDropDownPage.java:102)
-	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest.checkCategoriesOptions(JQuerySelectDropDownTest.java:57)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: Element not found {optgroup.findBy(text &apos;Scripting languages&apos;)}
-Expected: text &apos;Scripting languages&apos;
-Timeout: 0 ms.
-	at com.codeborne.selenide.impl.CollectionElementByCondition.getWebElement(CollectionElementByCondition.java:53)
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:99)
-	... 23 more
-... Removed 12 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkSelectedState(Select State)">
-                  </a> <!-- checkSelectedState(Select State) -->
-                  <span class="method-name">checkSelectedState</span>
-                  <span class="parameters">(Select State)</span>
-                  <div class="stack-trace">Element should not have attribute class=&quot;select2-selection__choice&quot; {$$(2 elements)[0]}
-Element: &apos;&lt;li class=&quot;select2-selection__choice&quot; title=&quot;Iowa&quot; type value=&quot;0&quot;&gt;×Iowa&lt;/li&gt;&apos;
-Actual value: class=&quot;select2-selection__choice&quot;
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1637430129677.2.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1637430129677.2.html
-Timeout: 4 s.
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:118)
-	at com.codeborne.selenide.commands.ShouldNot.execute(ShouldNot.java:30)
-	at com.codeborne.selenide.commands.ShouldNot.execute(ShouldNot.java:14)
-	at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
-	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:133)
-	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:85)
-	at com.sun.proxy.$Proxy3.shouldNotHave(Unknown Source)
-	at com.seasy.ui.pages.Forms.JQuerySelectDropDownPage.lambda$checkEmptyMultipleDropDown$0(JQuerySelectDropDownPage.java:68)
-	at java.lang.Iterable.forEach(Iterable.java:75)
-	at com.seasy.ui.pages.Forms.JQuerySelectDropDownPage.checkEmptyMultipleDropDown(JQuerySelectDropDownPage.java:68)
-	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest.checkSelectedState(JQuerySelectDropDownTest.java:25)
+	at com.sun.proxy.$Proxy7.shouldBe(Unknown Source)
+	at com.seasy.ui.pages.Forms.DropDownPage.verifySelectedCities(DropDownPage.java:50)
+	at com.seasy.ui.tests.FormTests.DropDownTests.checkSelectedCities(DropDownTests.java:32)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
@@ -400,32 +364,16 @@ Timeout: 4 s.
           <div class="suite-Selenium_Easy-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.seasy.ui.tests.FormTests.DropDownTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkSelectedCity(Ohio)">
-                  </a> <!-- checkSelectedCity(Ohio) -->
-                  <span class="method-name">checkSelectedCity</span>
-                  <span class="parameters">(Ohio)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkSelectedDayFromDropDown">
-                  </a> <!-- checkSelectedDayFromDropDown -->
-                  <span class="method-name">checkSelectedDayFromDropDown</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Selenium_Easy-class-passed -->
-          <div class="suite-Selenium_Easy-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCategoriesOptions">
+                  </a> <!-- checkCategoriesOptions -->
+                  <span class="method-name">checkCategoriesOptions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="checkCategoriesOptionsInNotEmpty">
@@ -463,35 +411,6 @@ Timeout: 4 s.
                   </a> <!-- checkSelectedUsTerritories(Select US Outlying Territories) -->
                   <span class="method-name">checkSelectedUsTerritories</span>
                   <span class="parameters">(Select US Outlying Territories)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Selenium_Easy-class-passed -->
-          <div class="suite-Selenium_Easy-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.seasy.ui.tests.FormTests.InputFormSubmitTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkDeletedFirstName">
-                  </a> <!-- checkDeletedFirstName -->
-                  <span class="method-name">checkDeletedFirstName</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkFromSubmitWithAllDataEntered">
-                  </a> <!-- checkFromSubmitWithAllDataEntered -->
-                  <span class="method-name">checkFromSubmitWithAllDataEntered</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkSubmitButtonIsDisabled">
-                  </a> <!-- checkSubmitButtonIsDisabled -->
-                  <span class="method-name">checkSubmitButtonIsDisabled</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -585,42 +504,22 @@ Timeout: 4 s.
           <div class="suite-Selenium_Easy-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.seasy.ui.tests.FormTests.SimpleFormTest</span>
+              <span class="class-name">com.seasy.ui.tests.FormTests.DropDownTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkEmptyMessageTest">
-                  </a> <!-- checkEmptyMessageTest -->
-                  <span class="method-name">checkEmptyMessageTest</span>
+                  <a name="checkSelectedCity(Ohio)">
+                  </a> <!-- checkSelectedCity(Ohio) -->
+                  <span class="method-name">checkSelectedCity</span>
+                  <span class="parameters">(Ohio)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="checkTotalResultWithEmptyFieldsTest">
-                  </a> <!-- checkTotalResultWithEmptyFieldsTest -->
-                  <span class="method-name">checkTotalResultWithEmptyFieldsTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkTotalResultWithIntegerValuesTest">
-                  </a> <!-- checkTotalResultWithIntegerValuesTest -->
-                  <span class="method-name">checkTotalResultWithIntegerValuesTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkTotalResultWithStringValuesTest">
-                  </a> <!-- checkTotalResultWithStringValuesTest -->
-                  <span class="method-name">checkTotalResultWithStringValuesTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkYourMessageTest">
-                  </a> <!-- checkYourMessageTest -->
-                  <span class="method-name">checkYourMessageTest</span>
+                  <a name="checkSelectedDayFromDropDown">
+                  </a> <!-- checkSelectedDayFromDropDown -->
+                  <span class="method-name">checkSelectedDayFromDropDown</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -668,6 +567,78 @@ Timeout: 4 s.
                   <a name="checkUnselectedValue">
                   </a> <!-- checkUnselectedValue -->
                   <span class="method-name">checkUnselectedValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_Easy-class-passed -->
+          <div class="suite-Selenium_Easy-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.seasy.ui.tests.FormTests.InputFormSubmitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDeletedFirstName">
+                  </a> <!-- checkDeletedFirstName -->
+                  <span class="method-name">checkDeletedFirstName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFromSubmitWithAllDataEntered">
+                  </a> <!-- checkFromSubmitWithAllDataEntered -->
+                  <span class="method-name">checkFromSubmitWithAllDataEntered</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSubmitButtonIsDisabled">
+                  </a> <!-- checkSubmitButtonIsDisabled -->
+                  <span class="method-name">checkSubmitButtonIsDisabled</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_Easy-class-passed -->
+          <div class="suite-Selenium_Easy-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.seasy.ui.tests.FormTests.SimpleFormTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEmptyMessageTest">
+                  </a> <!-- checkEmptyMessageTest -->
+                  <span class="method-name">checkEmptyMessageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTotalResultWithEmptyFieldsTest">
+                  </a> <!-- checkTotalResultWithEmptyFieldsTest -->
+                  <span class="method-name">checkTotalResultWithEmptyFieldsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTotalResultWithIntegerValuesTest">
+                  </a> <!-- checkTotalResultWithIntegerValuesTest -->
+                  <span class="method-name">checkTotalResultWithIntegerValuesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTotalResultWithStringValuesTest">
+                  </a> <!-- checkTotalResultWithStringValuesTest -->
+                  <span class="method-name">checkTotalResultWithStringValuesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkYourMessageTest">
+                  </a> <!-- checkYourMessageTest -->
+                  <span class="method-name">checkYourMessageTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -734,140 +705,140 @@ data.addRows(33);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkTotalResultWithStringValuesTest')
 data.setCell(0, 2, 'com.seasy.ui.tests.FormTests.SimpleFormTest')
-data.setCell(0, 3, 41937);
+data.setCell(0, 3, 12478);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'checkTotalResultWithIntegerValuesTest')
 data.setCell(1, 2, 'com.seasy.ui.tests.FormTests.SimpleFormTest')
-data.setCell(1, 3, 41683);
+data.setCell(1, 3, 11178);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'checkYourMessageTest')
 data.setCell(2, 2, 'com.seasy.ui.tests.FormTests.SimpleFormTest')
-data.setCell(2, 3, 41669);
+data.setCell(2, 3, 11046);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'checkTotalResultWithEmptyFieldsTest')
 data.setCell(3, 2, 'com.seasy.ui.tests.FormTests.SimpleFormTest')
-data.setCell(3, 3, 41251);
+data.setCell(3, 3, 10989);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'checkEmptyMessageTest')
 data.setCell(4, 2, 'com.seasy.ui.tests.FormTests.SimpleFormTest')
-data.setCell(4, 3, 41039);
+data.setCell(4, 3, 10813);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'checkSelectedState')
 data.setCell(5, 2, 'com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest')
-data.setCell(5, 3, 9616);
+data.setCell(5, 3, 9546);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'checkFromSubmitWithAllDataEntered')
 data.setCell(6, 2, 'com.seasy.ui.tests.FormTests.InputFormSubmitTest')
-data.setCell(6, 3, 9348);
+data.setCell(6, 3, 9060);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'checkFormIsSubmitted')
-data.setCell(7, 2, 'com.seasy.ui.tests.FormTests.AjaxSubmitFormTest')
-data.setCell(7, 3, 6388);
+data.setCell(7, 1, 'checkSelectedCities')
+data.setCell(7, 2, 'com.seasy.ui.tests.FormTests.DropDownTests')
+data.setCell(7, 3, 5989);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'checkSelectedCities')
-data.setCell(8, 2, 'com.seasy.ui.tests.FormTests.DropDownTests')
-data.setCell(8, 3, 5756);
+data.setCell(8, 1, 'checkFormIsSubmitted')
+data.setCell(8, 2, 'com.seasy.ui.tests.FormTests.AjaxSubmitFormTest')
+data.setCell(8, 3, 5577);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'checkCategoriesOptions')
-data.setCell(9, 2, 'com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest')
-data.setCell(9, 3, 5282);
+data.setCell(9, 1, 'submitForm')
+data.setCell(9, 2, 'com.seasy.ui.tests.FormTests.AjaxSubmitFormTest')
+data.setCell(9, 3, 4445);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'submitForm')
-data.setCell(10, 2, 'com.seasy.ui.tests.FormTests.AjaxSubmitFormTest')
-data.setCell(10, 3, 4305);
+data.setCell(10, 1, 'checkDeletedFirstName')
+data.setCell(10, 2, 'com.seasy.ui.tests.FormTests.InputFormSubmitTest')
+data.setCell(10, 3, 3208);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'checkMultipleCheckBoxIsUnselected')
-data.setCell(11, 2, 'com.seasy.ui.tests.FormTests.CheckBoxTest')
-data.setCell(11, 3, 2676);
+data.setCell(11, 1, 'checkSubmitButtonIsDisabled')
+data.setCell(11, 2, 'com.seasy.ui.tests.FormTests.InputFormSubmitTest')
+data.setCell(11, 3, 3185);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'checkDeletedFirstName')
-data.setCell(12, 2, 'com.seasy.ui.tests.FormTests.InputFormSubmitTest')
-data.setCell(12, 3, 2632);
+data.setCell(12, 1, 'checkRequiredNameField')
+data.setCell(12, 2, 'com.seasy.ui.tests.FormTests.AjaxSubmitFormTest')
+data.setCell(12, 3, 2569);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'checkSubmitButtonIsDisabled')
-data.setCell(13, 2, 'com.seasy.ui.tests.FormTests.InputFormSubmitTest')
-data.setCell(13, 3, 2500);
+data.setCell(13, 1, 'checkCheckAllButtonWithOneUnselectedCheckbox')
+data.setCell(13, 2, 'com.seasy.ui.tests.FormTests.CheckBoxTest')
+data.setCell(13, 3, 2080);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'checkCheckAllButtonWithOneUnselectedCheckbox')
-data.setCell(14, 2, 'com.seasy.ui.tests.FormTests.CheckBoxTest')
-data.setCell(14, 3, 2454);
+data.setCell(14, 1, 'checkSelectedCountry')
+data.setCell(14, 2, 'com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest')
+data.setCell(14, 3, 2072);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'checkRequiredNameField')
-data.setCell(15, 2, 'com.seasy.ui.tests.FormTests.AjaxSubmitFormTest')
-data.setCell(15, 3, 2451);
+data.setCell(15, 1, 'checkMultipleCheckBoxIsUnselected')
+data.setCell(15, 2, 'com.seasy.ui.tests.FormTests.CheckBoxTest')
+data.setCell(15, 3, 2016);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'checkMaleGenderAndFiveToFifteenAgeGroup')
-data.setCell(16, 2, 'com.seasy.ui.tests.FormTests.RadioButtonPageTest')
-data.setCell(16, 3, 1955);
+data.setCell(16, 1, 'checkSelectedUsTerritories')
+data.setCell(16, 2, 'com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest')
+data.setCell(16, 3, 1808);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'checkFemaleGenderAndZeroToFiveAgeGroup')
-data.setCell(17, 2, 'com.seasy.ui.tests.FormTests.RadioButtonPageTest')
-data.setCell(17, 3, 1938);
+data.setCell(17, 1, 'checkCategoriesOptionsInNotEmpty')
+data.setCell(17, 2, 'com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest')
+data.setCell(17, 3, 1691);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'checkAllCheckboxesAreSelected')
-data.setCell(18, 2, 'com.seasy.ui.tests.FormTests.CheckBoxTest')
-data.setCell(18, 3, 1841);
+data.setCell(18, 1, 'checkFemaleGenderAndZeroToFiveAgeGroup')
+data.setCell(18, 2, 'com.seasy.ui.tests.FormTests.RadioButtonPageTest')
+data.setCell(18, 3, 1554);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'checkNoResultFound')
+data.setCell(19, 1, 'checkSelectedRandomItems')
 data.setCell(19, 2, 'com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest')
-data.setCell(19, 3, 1778);
+data.setCell(19, 3, 1521);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'checkSelectMaleRadioButton')
-data.setCell(20, 2, 'com.seasy.ui.tests.FormTests.RadioButtonPageTest')
-data.setCell(20, 3, 1686);
+data.setCell(20, 1, 'checkNoResultFound')
+data.setCell(20, 2, 'com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest')
+data.setCell(20, 3, 1511);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'checkSelectedCountry')
-data.setCell(21, 2, 'com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest')
-data.setCell(21, 3, 1514);
+data.setCell(21, 1, 'checkAllCheckboxesAreSelected')
+data.setCell(21, 2, 'com.seasy.ui.tests.FormTests.CheckBoxTest')
+data.setCell(21, 3, 1410);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'checkSelectedRandomItems')
-data.setCell(22, 2, 'com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest')
-data.setCell(22, 3, 1478);
+data.setCell(22, 1, 'checkSelectedCity')
+data.setCell(22, 2, 'com.seasy.ui.tests.FormTests.DropDownTests')
+data.setCell(22, 3, 1333);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'checkSelectedUsTerritories')
-data.setCell(23, 2, 'com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest')
-data.setCell(23, 3, 1469);
+data.setCell(23, 1, 'checkMaleGenderAndFiveToFifteenAgeGroup')
+data.setCell(23, 2, 'com.seasy.ui.tests.FormTests.RadioButtonPageTest')
+data.setCell(23, 3, 1266);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'checkSelectedCity')
+data.setCell(24, 1, 'checkSelectedDayFromDropDown')
 data.setCell(24, 2, 'com.seasy.ui.tests.FormTests.DropDownTests')
-data.setCell(24, 3, 1420);
+data.setCell(24, 3, 1120);
 data.setCell(25, 0, 25)
 data.setCell(25, 1, 'checkMultipleCheckBoxIsSelected')
 data.setCell(25, 2, 'com.seasy.ui.tests.FormTests.CheckBoxTest')
-data.setCell(25, 3, 1382);
+data.setCell(25, 3, 1091);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'checkUnselectOfSelectedCheckBoxTest')
-data.setCell(26, 2, 'com.seasy.ui.tests.FormTests.CheckBoxTest')
-data.setCell(26, 3, 1317);
+data.setCell(26, 1, 'checkSelectMaleRadioButton')
+data.setCell(26, 2, 'com.seasy.ui.tests.FormTests.RadioButtonPageTest')
+data.setCell(26, 3, 976);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'checkCategoriesOptionsInNotEmpty')
-data.setCell(27, 2, 'com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest')
-data.setCell(27, 3, 1306);
+data.setCell(27, 1, 'checkSelectedFemaleRadioButton')
+data.setCell(27, 2, 'com.seasy.ui.tests.FormTests.RadioButtonPageTest')
+data.setCell(27, 3, 958);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'checkSelectedFemaleRadioButton')
+data.setCell(28, 1, 'checkUnselectedValue')
 data.setCell(28, 2, 'com.seasy.ui.tests.FormTests.RadioButtonPageTest')
-data.setCell(28, 3, 962);
+data.setCell(28, 3, 815);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'checkSelectedDayFromDropDown')
-data.setCell(29, 2, 'com.seasy.ui.tests.FormTests.DropDownTests')
-data.setCell(29, 3, 767);
+data.setCell(29, 1, 'selectSingleCheckBoxTest')
+data.setCell(29, 2, 'com.seasy.ui.tests.FormTests.CheckBoxTest')
+data.setCell(29, 3, 652);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'selectSingleCheckBoxTest')
+data.setCell(30, 1, 'checkUnselectOfSelectedCheckBoxTest')
 data.setCell(30, 2, 'com.seasy.ui.tests.FormTests.CheckBoxTest')
-data.setCell(30, 3, 737);
+data.setCell(30, 3, 617);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'checkUnselectedValue')
-data.setCell(31, 2, 'com.seasy.ui.tests.FormTests.RadioButtonPageTest')
-data.setCell(31, 3, 702);
+data.setCell(31, 1, 'checkUnselectedCheckBox')
+data.setCell(31, 2, 'com.seasy.ui.tests.FormTests.CheckBoxTest')
+data.setCell(31, 3, 436);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'checkUnselectedCheckBox')
-data.setCell(32, 2, 'com.seasy.ui.tests.FormTests.CheckBoxTest')
-data.setCell(32, 3, 501);
+data.setCell(32, 1, 'checkCategoriesOptions')
+data.setCell(32, 2, 'com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest')
+data.setCell(32, 3, 4);
 window.suiteTableData['Selenium_Easy']= { tableData: data, tableDiv: 'times-div-Selenium_Easy'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Selenium_Easy">
               </div> <!-- times-div-Selenium_Easy -->
             </div> <!-- times-div -->
@@ -895,11 +866,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.seasy.ui.tests.FormTests.SimpleFormTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">checkTotalResultWithIntegerValuesTest</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">checkEmptyMessageTest</span>
+                <span class="method-name">checkYourMessageTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
@@ -907,11 +874,15 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">checkYourMessageTest</span>
+                <span class="method-name">checkTotalResultWithIntegerValuesTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkTotalResultWithEmptyFieldsTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkEmptyMessageTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
@@ -919,46 +890,46 @@ return data;
               <div class="chronological-class-name">com.seasy.ui.tests.FormTests.AjaxSubmitFormTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkFormIsSubmitted</span>
-                <span class="method-start">41043 ms</span>
+                <span class="method-start">10969 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkRequiredNameField</span>
-                <span class="method-start">41251 ms</span>
+                <span class="method-start">10995 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">submitForm</span>
-                <span class="method-start">41670 ms</span>
+                <span class="method-start">11047 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.seasy.ui.tests.FormTests.CheckBoxTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkAllCheckboxesAreSelected</span>
-                <span class="method-start">41684 ms</span>
+                <span class="method-start">11180 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkCheckAllButtonWithOneUnselectedCheckbox</span>
-                <span class="method-start">41938 ms</span>
+                <span class="method-start">12481 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkMultipleCheckBoxIsSelected</span>
-                <span class="method-start">43526 ms</span>
+                <span class="method-start">12594 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkMultipleCheckBoxIsUnselected</span>
-                <span class="method-start">43702 ms</span>
+                <span class="method-start">13567 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkUnselectOfSelectedCheckBoxTest</span>
-                <span class="method-start">44392 ms</span>
+                <span class="method-start">13689 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkUnselectedCheckBox</span>
-                <span class="method-start">44908 ms</span>
+                <span class="method-start">14308 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectSingleCheckBoxTest</span>
-                <span class="method-start">45409 ms</span>
+                <span class="method-start">14563 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -967,88 +938,86 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkSelectedCities(Ohio, Florida)</span>
-                <span class="method-start">45715 ms</span>
+                <span class="method-start">14750 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkSelectedCity(Ohio)</span>
-                <span class="method-start">45977 ms</span>
+                <span class="method-start">15217 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkSelectedDayFromDropDown</span>
-                <span class="method-start">46147 ms</span>
+                <span class="method-start">15495 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.seasy.ui.tests.FormTests.InputFormSubmitTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkDeletedFirstName</span>
-                <span class="method-start">46379 ms</span>
+                <span class="method-start">15586 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkFromSubmitWithAllDataEntered</span>
-                <span class="method-start">46915 ms</span>
+                <span class="method-start">16549 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkSubmitButtonIsDisabled</span>
-                <span class="method-start">47398 ms</span>
+                <span class="method-start">16563 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">checkCategoriesOptions</span>
-                <span class="method-start">47432 ms</span>
+                <span class="method-start">16619 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkCategoriesOptionsInNotEmpty</span>
-                <span class="method-start">49012 ms</span>
+                <span class="method-start">16625 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkNoResultFound(Select Country)</span>
-                <span class="method-start">49901 ms</span>
+                <span class="method-start">18321 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkSelectedCountry(Select Country)</span>
-                <span class="method-start">50319 ms</span>
+                <span class="method-start">18797 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkSelectedRandomItems(Select US Outlying Territories)</span>
-                <span class="method-start">51486 ms</span>
+                <span class="method-start">19752 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkSelectedState(Select State)</span>
-                <span class="method-start">51680 ms</span>
+                <span class="method-start">19836 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkSelectedUsTerritories(Select US Outlying Territories)</span>
-                <span class="method-start">51834 ms</span>
+                <span class="method-start">20760 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.seasy.ui.tests.FormTests.RadioButtonPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkFemaleGenderAndZeroToFiveAgeGroup</span>
-                <span class="method-start">52715 ms</span>
+                <span class="method-start">20872 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkMaleGenderAndFiveToFifteenAgeGroup</span>
-                <span class="method-start">52965 ms</span>
+                <span class="method-start">21277 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkSelectMaleRadioButton</span>
-                <span class="method-start">53304 ms</span>
+                <span class="method-start">22429 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkSelectedFemaleRadioButton</span>
-                <span class="method-start">54654 ms</span>
+                <span class="method-start">22547 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkUnselectedValue</span>
-                <span class="method-start">54920 ms</span>
+                <span class="method-start">22571 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

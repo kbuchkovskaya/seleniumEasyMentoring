@@ -1,12 +1,13 @@
-com\seasy\ui\pages\Forms\InputFormSubmitPage.class
-com\seasy\ui\pages\Forms\DropDownPage.class
 com\seasy\ui\pages\SubmitFormFieldsName.class
 com\seasy\ui\pages\Forms\AjaxFormSubmitPage.class
+com\seasy\ui\pages\User$Builder.class
+com\seasy\ui\pages\Forms\JQuerySelectDropDownPage.class
+com\seasy\ui\pages\Forms\InputFormSubmitPage.class
+com\seasy\ui\pages\Forms\DropDownPage.class
+com\seasy\ui\pages\Forms\Language.class
 com\seasy\ui\pages\Forms\RadioButtonsPage.class
 com\seasy\ui\pages\Forms\CheckBoxPage.class
 com\seasy\ui\pages\User.class
 com\travel\ui\pages\HomePage.class
 com\seasy\ui\pages\Forms\SimpleFormPage.class
-com\seasy\ui\pages\User$Builder.class
 com\seasy\ui\pages\DatePickers\BootstrapDatePickerPage.class
-com\seasy\ui\pages\Forms\JQuerySelectDropDownPage.class

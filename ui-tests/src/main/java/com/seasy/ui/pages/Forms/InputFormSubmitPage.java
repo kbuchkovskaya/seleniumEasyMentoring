@@ -19,7 +19,7 @@ public class InputFormSubmitPage {
     formInput = $$("div.form-group");
 
     public InputFormSubmitPage inputData(SubmitFormFieldsName fieldName, String fieldValue){
-        SelenideElement input = formInput.findBy(Condition.have(Condition.text(fieldName.val))).$("input");
+        SelenideElement input = formInput.findBy(Condition.have(Condition.text(fieldName.value))).$("input");
         input.setValue(fieldValue);
         return new InputFormSubmitPage();
     }
@@ -31,13 +31,13 @@ public class InputFormSubmitPage {
     }
 
     public InputFormSubmitPage inputTextAreaData(SubmitFormFieldsName fieldName, String fieldValue){
-        SelenideElement input = formInput.findBy(Condition.have(Condition.text(fieldName.val))).$("textarea");
+        SelenideElement input = formInput.findBy(Condition.have(Condition.text(fieldName.value))).$("textarea");
         input.setValue(fieldValue);
         return new InputFormSubmitPage();
     }
 
     public InputFormSubmitPage deleteEnteredData(SubmitFormFieldsName fieldName){
-        SelenideElement input = formInput.findBy(Condition.have(Condition.text(fieldName.val))).$("input");
+        SelenideElement input = formInput.findBy(Condition.have(Condition.text(fieldName.value))).$("input");
         int length = Objects.requireNonNull(input.val()).length();
         for(int i = 0; i < length; i++){
             input.sendKeys(Keys.BACK_SPACE);
@@ -46,7 +46,7 @@ public class InputFormSubmitPage {
     }
 
     public InputFormSubmitPage checkFieldValidation(SubmitFormFieldsName fieldName, Condition condition){
-        ElementsCollection validations = formInput.findBy(Condition.have(Condition.text(fieldName.val))).$$("small");
+        ElementsCollection validations = formInput.findBy(Condition.have(Condition.text(fieldName.value))).$$("small");
         SelenideElement validation = validations.filterBy((Condition.attribute("data-bv-result", "INVALID"))).get(0);
         validation.shouldBe(condition);
         return new InputFormSubmitPage();
