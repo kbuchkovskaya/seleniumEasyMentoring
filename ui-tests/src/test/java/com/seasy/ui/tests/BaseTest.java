@@ -73,7 +73,7 @@ public class BaseTest {
     }
 
     public void openBrowser(String url){
-        //Configuration.browser = SelenoidChromeDriverProvider.class.getName();
+        Configuration.browser = SelenoidChromeDriverProvider.class.getName();
         open(url);
         Selenide.switchTo().activeElement().sendKeys(Keys.ESCAPE);
     }
@@ -84,7 +84,8 @@ public class BaseTest {
         return LocalDate.parse(formatter.format(date));
     }
 
- /*   @BeforeMethod
+/*
+    @BeforeMethod
     protected void setUp(Method method){
         String browser = System.getProperty("Browser", "chrome");
 
