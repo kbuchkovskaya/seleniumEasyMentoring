@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="30.851" tests="33" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="4.52" tests="33" errors="0" skipped="0" failures="33">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="surefire.suiteXmlFiles" value="testng.xml"/>
+    <property name="surefire.suiteXmlFiles" value="Testng.xml"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\kbuch\Desktop\test-project\ui-tests\target\test-classes;C:\Users\kbuch\Desktop\test-project\ui-tests\target\classes;C:\Users\kbuch\.m2\repository\com\codeborne\selenide\5.22.1\selenide-5.22.1.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\kbuch\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\kbuch\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\kbuch\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\kbuch\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.3\webdrivermanager-4.4.3.jar;C:\Users\kbuch\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\kbuch\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\kbuch\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1\httpclient5-5.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.1\httpcore5-5.1.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.1\httpcore5-h2-5.1.1.jar;C:\Users\kbuch\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\kbuch\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\kbuch\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kbuch\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kbuch\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kbuch\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\kbuch\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\kbuch\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\kbuch\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kbuch\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kbuch\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\kbuch\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\kbuch\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-testng\2.17.1\allure-testng-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-java-commons\2.17.1\allure-java-commons-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-model\2.17.1\allure-model-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-test-filter\2.17.1\allure-test-filter-2.17.1.jar;"/>
+    <property name="java.class.path" value="C:\Users\kbuch\Desktop\test-project\ui-tests\target\test-classes;C:\Users\kbuch\Desktop\test-project\ui-tests\target\classes;C:\Users\kbuch\.m2\repository\com\codeborne\selenide\5.22.1\selenide-5.22.1.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\kbuch\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\kbuch\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\kbuch\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\kbuch\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.3\webdrivermanager-4.4.3.jar;C:\Users\kbuch\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\kbuch\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\kbuch\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1\httpclient5-5.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.1\httpcore5-5.1.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.1\httpcore5-h2-5.1.1.jar;C:\Users\kbuch\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\kbuch\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\kbuch\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kbuch\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kbuch\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kbuch\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\kbuch\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\kbuch\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\kbuch\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;C:\Users\kbuch\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kbuch\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kbuch\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\kbuch\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\kbuch\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-testng\2.17.1\allure-testng-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-java-commons\2.17.1\allure-java-commons-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-model\2.17.1\allure-model-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-test-filter\2.17.1\allure-test-filter-2.17.1.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -19,8 +19,8 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\kbuch\AppData\Local\Temp\surefire4551058447758305345\surefirebooter8130523682409721072.jar C:\Users\kbuch\AppData\Local\Temp\surefire4551058447758305345 2021-12-12T18-27-10_959-jvmRun1 surefire7734359209791740651tmp surefire_04535037939492913162tmp"/>
-    <property name="surefire.test.class.path" value="C:\Users\kbuch\Desktop\test-project\ui-tests\target\test-classes;C:\Users\kbuch\Desktop\test-project\ui-tests\target\classes;C:\Users\kbuch\.m2\repository\com\codeborne\selenide\5.22.1\selenide-5.22.1.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\kbuch\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\kbuch\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\kbuch\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\kbuch\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.3\webdrivermanager-4.4.3.jar;C:\Users\kbuch\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\kbuch\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\kbuch\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1\httpclient5-5.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.1\httpcore5-5.1.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.1\httpcore5-h2-5.1.1.jar;C:\Users\kbuch\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\kbuch\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\kbuch\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kbuch\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kbuch\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kbuch\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\kbuch\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\kbuch\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\kbuch\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kbuch\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kbuch\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\kbuch\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\kbuch\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-testng\2.17.1\allure-testng-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-java-commons\2.17.1\allure-java-commons-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-model\2.17.1\allure-model-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-test-filter\2.17.1\allure-test-filter-2.17.1.jar;"/>
+    <property name="sun.java.command" value="C:\Users\kbuch\AppData\Local\Temp\surefire8458362160021249148\surefirebooter466084905731106624.jar C:\Users\kbuch\AppData\Local\Temp\surefire8458362160021249148 2022-01-16T14-51-48_832-jvmRun1 surefire5274205839496930261tmp surefire_06772922758443059379tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\kbuch\Desktop\test-project\ui-tests\target\test-classes;C:\Users\kbuch\Desktop\test-project\ui-tests\target\classes;C:\Users\kbuch\.m2\repository\com\codeborne\selenide\5.22.1\selenide-5.22.1.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\kbuch\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\kbuch\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\kbuch\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\kbuch\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.3\webdrivermanager-4.4.3.jar;C:\Users\kbuch\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\kbuch\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\kbuch\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1\httpclient5-5.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.1\httpcore5-5.1.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.1\httpcore5-h2-5.1.1.jar;C:\Users\kbuch\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\kbuch\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\kbuch\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kbuch\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kbuch\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kbuch\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\kbuch\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\kbuch\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\kbuch\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;C:\Users\kbuch\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kbuch\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kbuch\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\kbuch\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\kbuch\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\kbuch\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-testng\2.17.1\allure-testng-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-java-commons\2.17.1\allure-java-commons-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-model\2.17.1\allure-model-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-test-filter\2.17.1\allure-test-filter-2.17.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\kbuch"/>
     <property name="user.language" value="en"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\kbuch\AppData\Local\Temp\surefire4551058447758305345\surefirebooter8130523682409721072.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kbuch\AppData\Local\Temp\surefire8458362160021249148\surefirebooter466084905731106624.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_291\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,56 +61,687 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="checkEmptyMessageTest" classname="com.seasy.ui.tests.FormTests.SimpleFormTest" time="10.921"/>
-  <testcase name="checkTotalResultWithEmptyFieldsTest" classname="com.seasy.ui.tests.FormTests.SimpleFormTest" time="0.018"/>
-  <testcase name="checkYourMessageTest" classname="com.seasy.ui.tests.FormTests.SimpleFormTest" time="0.05"/>
-  <testcase name="checkTotalResultWithIntegerValuesTest" classname="com.seasy.ui.tests.FormTests.SimpleFormTest" time="0.132"/>
-  <testcase name="checkTotalResultWithStringValuesTest" classname="com.seasy.ui.tests.FormTests.SimpleFormTest" time="1.299"/>
-  <testcase name="checkAllCheckboxesAreSelected" classname="com.seasy.ui.tests.FormTests.CheckBoxTest" time="0.111"/>
-  <testcase name="checkRequiredNameField" classname="com.seasy.ui.tests.FormTests.AjaxSubmitFormTest" time="0.969"/>
-  <testcase name="checkMultipleCheckBoxIsSelected" classname="com.seasy.ui.tests.FormTests.CheckBoxTest" time="0.118"/>
-  <testcase name="checkUnselectOfSelectedCheckBoxTest" classname="com.seasy.ui.tests.FormTests.CheckBoxTest" time="0.617"/>
-  <testcase name="checkCheckAllButtonWithOneUnselectedCheckbox" classname="com.seasy.ui.tests.FormTests.CheckBoxTest" time="0.254"/>
-  <testcase name="checkUnselectedCheckBox" classname="com.seasy.ui.tests.FormTests.CheckBoxTest" time="0.181"/>
-  <testcase name="selectSingleCheckBoxTest" classname="com.seasy.ui.tests.FormTests.CheckBoxTest" time="0.463"/>
-  <testcase name="submitForm" classname="com.seasy.ui.tests.FormTests.AjaxSubmitFormTest" time="0.275"/>
-  <testcase name="checkMultipleCheckBoxIsUnselected" classname="com.seasy.ui.tests.FormTests.CheckBoxTest" time="0.089"/>
-  <testcase name="checkFormIsSubmitted" classname="com.seasy.ui.tests.FormTests.AjaxSubmitFormTest" time="0.957"/>
-  <testcase name="checkSelectedCity" classname="com.seasy.ui.tests.FormTests.DropDownTests" time="0.009"/>
-  <testcase name="checkSelectedDayFromDropDown" classname="com.seasy.ui.tests.FormTests.DropDownTests" time="0.054"/>
-  <testcase name="checkCategoriesOptions" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest" time="0.002"/>
-  <testcase name="checkCategoriesOptionsInNotEmpty" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest" time="1.692"/>
-  <testcase name="checkDeletedFirstName" classname="com.seasy.ui.tests.FormTests.InputFormSubmitTest" time="0.474"/>
-  <testcase name="checkSubmitButtonIsDisabled" classname="com.seasy.ui.tests.FormTests.InputFormSubmitTest" time="0.951"/>
-  <testcase name="checkNoResultFound" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest" time="0.081"/>
-  <testcase name="checkSelectedCities" classname="com.seasy.ui.tests.FormTests.DropDownTests" time="0.922">
-    <failure message="Element should be text &apos;Options selected are : Ohio,Florida&apos; {.getall-selected}&#10;Element: &apos;&lt;p class=&quot;getall-selected&quot;&gt;Options selected are : Florida&lt;/p&gt;&apos;&#10;Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1639326453525.0.png&#10;Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1639326453525.0.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould"><![CDATA[com.codeborne.selenide.ex.ElementShould: 
-Element should be text 'Options selected are : Ohio,Florida' {.getall-selected}
-Element: '<p class="getall-selected">Options selected are : Florida</p>'
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1639326453525.0.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1639326453525.0.html
-Timeout: 4 s.
-	at com.seasy.ui.tests.FormTests.DropDownTests.checkSelectedCities(DropDownTests.java:32)
-]]></failure>
+  <testcase name="checkEmptyMessageTest" classname="com.seasy.ui.tests.FormTests.SimpleFormTest" time="1.743">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 454 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 454 milliseconds
+	at com.seasy.ui.tests.FormTests.SimpleFormTest.checkEmptyMessageTest(SimpleFormTest.java:10)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Jan 16, 2022 2:51:51 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:51 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:51 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:51 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:51 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
   </testcase>
-  <testcase name="checkSelectedCountry" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest" time="0.109"/>
-  <testcase name="checkSelectedRandomItems" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest" time="0.404"/>
-  <testcase name="checkFemaleGenderAndZeroToFiveAgeGroup" classname="com.seasy.ui.tests.FormTests.RadioButtonPageTest" time="1.146"/>
-  <testcase name="checkMaleGenderAndFiveToFifteenAgeGroup" classname="com.seasy.ui.tests.FormTests.RadioButtonPageTest" time="0.114"/>
-  <testcase name="checkSelectedUsTerritories" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest" time="0.022"/>
-  <testcase name="checkUnselectedValue" classname="com.seasy.ui.tests.FormTests.RadioButtonPageTest" time="0.817"/>
-  <testcase name="checkSelectMaleRadioButton" classname="com.seasy.ui.tests.FormTests.RadioButtonPageTest" time="0.833"/>
-  <testcase name="checkSelectedFemaleRadioButton" classname="com.seasy.ui.tests.FormTests.RadioButtonPageTest" time="0.933"/>
-  <testcase name="checkFromSubmitWithAllDataEntered" classname="com.seasy.ui.tests.FormTests.InputFormSubmitTest" time="3.038"/>
-  <testcase name="checkSelectedState" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest" time="6.812">
-    <failure message="Element should not have attribute class=&quot;select2-selection__choice&quot; {$$(2 elements)[0]}&#10;Element: &apos;&lt;li class=&quot;select2-selection__choice&quot; title=&quot;Iowa&quot; type value=&quot;0&quot;&gt;×Iowa&lt;/li&gt;&apos;&#10;Actual value: class=&quot;select2-selection__choice&quot;&#10;Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1639326462314.1.png&#10;Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1639326462314.1.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShouldNot"><![CDATA[com.codeborne.selenide.ex.ElementShouldNot: 
-Element should not have attribute class="select2-selection__choice" {$$(2 elements)[0]}
-Element: '<li class="select2-selection__choice" title="Iowa" type value="0">×Iowa</li>'
-Actual value: class="select2-selection__choice"
-Screenshot: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1639326462314.1.png
-Page source: file:/C:/Users/kbuch/Desktop/test-project/ui-tests/build/reports/tests/1639326462314.1.html
-Timeout: 4 s.
-	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest.checkSelectedState(JQuerySelectDropDownTest.java:25)
-]]></failure>
+  <testcase name="checkTotalResultWithEmptyFieldsTest" classname="com.seasy.ui.tests.FormTests.SimpleFormTest" time="1.748">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 455 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 455 milliseconds
+	at com.seasy.ui.tests.FormTests.SimpleFormTest.checkTotalResultWithEmptyFieldsTest(SimpleFormTest.java:41)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+  </testcase>
+  <testcase name="checkYourMessageTest" classname="com.seasy.ui.tests.FormTests.SimpleFormTest" time="1.748">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 455 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 455 milliseconds
+	at com.seasy.ui.tests.FormTests.SimpleFormTest.checkYourMessageTest(SimpleFormTest.java:17)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+  </testcase>
+  <testcase name="checkTotalResultWithIntegerValuesTest" classname="com.seasy.ui.tests.FormTests.SimpleFormTest" time="1.749">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 454 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 454 milliseconds
+	at com.seasy.ui.tests.FormTests.SimpleFormTest.checkTotalResultWithIntegerValuesTest(SimpleFormTest.java:25)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+  </testcase>
+  <testcase name="checkTotalResultWithStringValuesTest" classname="com.seasy.ui.tests.FormTests.SimpleFormTest" time="1.749">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 453 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 453 milliseconds
+	at com.seasy.ui.tests.FormTests.SimpleFormTest.checkTotalResultWithStringValuesTest(SimpleFormTest.java:33)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+  </testcase>
+  <testcase name="submitForm" classname="com.seasy.ui.tests.FormTests.AjaxSubmitFormTests" time="0.154">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 107 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 107 milliseconds
+	at com.seasy.ui.tests.FormTests.AjaxSubmitFormTests.submitForm(AjaxSubmitFormTests.java:16)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkRequiredNameField" classname="com.seasy.ui.tests.FormTests.AjaxSubmitFormTests" time="0.154">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 112 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 112 milliseconds
+	at com.seasy.ui.tests.FormTests.AjaxSubmitFormTests.checkRequiredNameField(AjaxSubmitFormTests.java:34)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+  </testcase>
+  <testcase name="checkFormIsSubmitted" classname="com.seasy.ui.tests.FormTests.AjaxSubmitFormTests" time="0.612">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 130 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 130 milliseconds
+	at com.seasy.ui.tests.FormTests.AjaxSubmitFormTests.checkFormIsSubmitted(AjaxSubmitFormTests.java:24)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkCheckAllButtonWithOneUnselectedCheckbox" classname="com.seasy.ui.tests.FormTests.CheckBoxTests" time="0.01">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 205 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 205 milliseconds
+	at com.seasy.ui.tests.FormTests.CheckBoxTests.checkCheckAllButtonWithOneUnselectedCheckbox(CheckBoxTests.java:59)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkAllCheckboxesAreSelected" classname="com.seasy.ui.tests.FormTests.CheckBoxTests" time="0.084">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 217 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 217 milliseconds
+	at com.seasy.ui.tests.FormTests.CheckBoxTests.checkAllCheckboxesAreSelected(CheckBoxTests.java:40)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkMultipleCheckBoxIsUnselected" classname="com.seasy.ui.tests.FormTests.CheckBoxTests" time="0.099">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 183 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 183 milliseconds
+	at com.seasy.ui.tests.FormTests.CheckBoxTests.checkMultipleCheckBoxIsUnselected(CheckBoxTests.java:48)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkUnselectOfSelectedCheckBoxTest" classname="com.seasy.ui.tests.FormTests.CheckBoxTests" time="0.099">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 166 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 166 milliseconds
+	at com.seasy.ui.tests.FormTests.CheckBoxTests.checkUnselectOfSelectedCheckBoxTest(CheckBoxTests.java:19)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+  </testcase>
+  <testcase name="checkMultipleCheckBoxIsSelected" classname="com.seasy.ui.tests.FormTests.CheckBoxTests" time="0.006">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 215 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 215 milliseconds
+	at com.seasy.ui.tests.FormTests.CheckBoxTests.checkMultipleCheckBoxIsSelected(CheckBoxTests.java:33)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkUnselectedCheckBox" classname="com.seasy.ui.tests.FormTests.CheckBoxTests" time="0.014">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 211 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 211 milliseconds
+	at com.seasy.ui.tests.FormTests.CheckBoxTests.checkUnselectedCheckBox(CheckBoxTests.java:27)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="selectSingleCheckBoxTest" classname="com.seasy.ui.tests.FormTests.CheckBoxTests" time="0.061">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 211 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 211 milliseconds
+	at com.seasy.ui.tests.FormTests.CheckBoxTests.selectSingleCheckBoxTest(CheckBoxTests.java:12)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkSelectedCity" classname="com.seasy.ui.tests.FormTests.DropDownTests" time="0.014">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 120 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 120 milliseconds
+	at com.seasy.ui.tests.FormTests.DropDownTests.checkSelectedCity(DropDownTests.java:19)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkSelectedCities" classname="com.seasy.ui.tests.FormTests.DropDownTests" time="0.006">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 155 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 155 milliseconds
+	at com.seasy.ui.tests.FormTests.DropDownTests.checkSelectedCities(DropDownTests.java:28)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkDeletedFirstName" classname="com.seasy.ui.tests.FormTests.InputFormSubmitTests" time="0.008">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 156 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 156 milliseconds
+	at com.seasy.ui.tests.FormTests.InputFormSubmitTests.checkDeletedFirstName(InputFormSubmitTests.java:27)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkFromSubmitWithAllDataEntered" classname="com.seasy.ui.tests.FormTests.InputFormSubmitTests" time="0.049">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 144 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 144 milliseconds
+	at com.seasy.ui.tests.FormTests.InputFormSubmitTests.checkFromSubmitWithAllDataEntered(InputFormSubmitTests.java:35)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkCategoriesOptions" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests" time="0.011">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 96 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 96 milliseconds
+	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests.checkCategoriesOptions(JQuerySelectDropDownTests.java:59)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkSelectedDayFromDropDown" classname="com.seasy.ui.tests.FormTests.DropDownTests" time="0.011">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 292 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 292 milliseconds
+	at com.seasy.ui.tests.FormTests.DropDownTests.checkSelectedDayFromDropDown(DropDownTests.java:12)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkSubmitButtonIsDisabled" classname="com.seasy.ui.tests.FormTests.InputFormSubmitTests" time="0.012">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 144 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 144 milliseconds
+	at com.seasy.ui.tests.FormTests.InputFormSubmitTests.checkSubmitButtonIsDisabled(InputFormSubmitTests.java:52)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+  </testcase>
+  <testcase name="checkSelectedCountry" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests" time="0.022">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 141 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 141 milliseconds
+	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests.checkSelectedCountry(JQuerySelectDropDownTests.java:14)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkNoResultFound" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests" time="0.022">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 149 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 149 milliseconds
+	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests.checkNoResultFound(JQuerySelectDropDownTests.java:46)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+  </testcase>
+  <testcase name="checkCategoriesOptionsInNotEmpty" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests" time="0.013">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 165 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 165 milliseconds
+	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests.checkCategoriesOptionsInNotEmpty(JQuerySelectDropDownTests.java:53)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkSelectedState" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests" time="0.007">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 158 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 158 milliseconds
+	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests.checkSelectedState(JQuerySelectDropDownTests.java:21)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkSelectedRandomItems" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests" time="0.007">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 201 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 201 milliseconds
+	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests.checkSelectedRandomItems(JQuerySelectDropDownTests.java:33)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkSelectedUsTerritories" classname="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests" time="0">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 76 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 76 milliseconds
+	at com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests.checkSelectedUsTerritories(JQuerySelectDropDownTests.java:40)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+  </testcase>
+  <testcase name="checkMaleGenderAndFiveToFifteenAgeGroup" classname="com.seasy.ui.tests.FormTests.RadioButtonPageTests" time="0.007">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 83 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 83 milliseconds
+	at com.seasy.ui.tests.FormTests.RadioButtonPageTests.checkMaleGenderAndFiveToFifteenAgeGroup(RadioButtonPageTests.java:33)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jan 16, 2022 2:51:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="checkFemaleGenderAndZeroToFiveAgeGroup" classname="com.seasy.ui.tests.FormTests.RadioButtonPageTests" time="0.007">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 96 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 96 milliseconds
+	at com.seasy.ui.tests.FormTests.RadioButtonPageTests.checkFemaleGenderAndZeroToFiveAgeGroup(RadioButtonPageTests.java:43)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+  </testcase>
+  <testcase name="checkSelectMaleRadioButton" classname="com.seasy.ui.tests.FormTests.RadioButtonPageTests" time="0.007">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 127 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 127 milliseconds
+	at com.seasy.ui.tests.FormTests.RadioButtonPageTests.checkSelectMaleRadioButton(RadioButtonPageTests.java:10)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+  </testcase>
+  <testcase name="checkSelectedFemaleRadioButton" classname="com.seasy.ui.tests.FormTests.RadioButtonPageTests" time="0.007">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 93 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 93 milliseconds
+	at com.seasy.ui.tests.FormTests.RadioButtonPageTests.checkSelectedFemaleRadioButton(RadioButtonPageTests.java:18)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
+  </testcase>
+  <testcase name="checkUnselectedValue" classname="com.seasy.ui.tests.FormTests.RadioButtonPageTests" time="0.007">
+    <failure message="Unable to create new service: ChromeDriverService&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;5CD110DGDQ&apos;, ip: &apos;172.21.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 92 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Command duration or timeout: 92 milliseconds
+	at com.seasy.ui.tests.FormTests.RadioButtonPageTests.checkUnselectedValue(RadioButtonPageTests.java:26)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD110DGDQ', ip: '172.21.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</failure>
   </testcase>
 </testsuite>

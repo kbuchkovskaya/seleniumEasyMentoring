@@ -3,16 +3,67 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Selenium Easy]" parallel="methods">
   <test thread-count="5" verbose="0" name="Form tests(failed)" parallel="methods">
     <classes>
-      <class name="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest">
-        <methods>
-          <include name="checkSelectedState" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.seasy.ui.tests.FormTests.JQuerySelectDropDownTest -->
       <class name="com.seasy.ui.tests.FormTests.DropDownTests">
         <methods>
+          <include name="checkSelectedDayFromDropDown"/>
           <include name="checkSelectedCities" invocation-numbers="0"/>
+          <include name="checkSelectedCity" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.seasy.ui.tests.FormTests.DropDownTests -->
+      <class name="com.seasy.ui.tests.FormTests.SimpleFormTest">
+        <methods>
+          <include name="checkTotalResultWithEmptyFieldsTest"/>
+          <include name="checkYourMessageTest"/>
+          <include name="checkEmptyMessageTest"/>
+          <include name="checkTotalResultWithIntegerValuesTest"/>
+          <include name="checkTotalResultWithStringValuesTest"/>
+        </methods>
+      </class> <!-- com.seasy.ui.tests.FormTests.SimpleFormTest -->
+      <class name="com.seasy.ui.tests.FormTests.AjaxSubmitFormTests">
+        <methods>
+          <include name="checkFormIsSubmitted"/>
+          <include name="checkRequiredNameField"/>
+          <include name="submitForm"/>
+        </methods>
+      </class> <!-- com.seasy.ui.tests.FormTests.AjaxSubmitFormTests -->
+      <class name="com.seasy.ui.tests.FormTests.InputFormSubmitTests">
+        <methods>
+          <include name="checkDeletedFirstName"/>
+          <include name="checkSubmitButtonIsDisabled"/>
+          <include name="checkFromSubmitWithAllDataEntered"/>
+        </methods>
+      </class> <!-- com.seasy.ui.tests.FormTests.InputFormSubmitTests -->
+      <class name="com.seasy.ui.tests.FormTests.CheckBoxTests">
+        <methods>
+          <include name="checkCheckAllButtonWithOneUnselectedCheckbox"/>
+          <include name="checkAllCheckboxesAreSelected"/>
+          <include name="selectSingleCheckBoxTest"/>
+          <include name="checkUnselectedCheckBox"/>
+          <include name="checkMultipleCheckBoxIsSelected"/>
+          <include name="checkMultipleCheckBoxIsUnselected"/>
+          <include name="checkUnselectOfSelectedCheckBoxTest"/>
+        </methods>
+      </class> <!-- com.seasy.ui.tests.FormTests.CheckBoxTests -->
+      <class name="com.seasy.ui.tests.FormTests.RadioButtonPageTests">
+        <methods>
+          <include name="checkMaleGenderAndFiveToFifteenAgeGroup"/>
+          <include name="checkSelectMaleRadioButton"/>
+          <include name="checkSelectedFemaleRadioButton"/>
+          <include name="checkFemaleGenderAndZeroToFiveAgeGroup"/>
+          <include name="checkUnselectedValue"/>
+        </methods>
+      </class> <!-- com.seasy.ui.tests.FormTests.RadioButtonPageTests -->
+      <class name="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests">
+        <methods>
+          <include name="checkSelectedUsTerritories" invocation-numbers="0"/>
+          <include name="checkSelectedRandomItems" invocation-numbers="0"/>
+          <include name="checkNoResultFound" invocation-numbers="0"/>
+          <include name="checkCategoriesOptions"/>
+          <include name="checkSelectedState" invocation-numbers="0"/>
+          <include name="checkSelectedCountry" invocation-numbers="0"/>
+          <include name="checkCategoriesOptionsInNotEmpty"/>
+        </methods>
+      </class> <!-- com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests -->
     </classes>
   </test> <!-- Form tests(failed) -->
 </suite> <!-- Failed suite [Selenium Easy] -->
