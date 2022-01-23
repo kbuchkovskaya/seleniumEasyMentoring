@@ -1,6 +1,5 @@
 package com.seasy.ui.tests;
 
-import com.codeborne.selenide.WebDriverProvider;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
@@ -12,11 +11,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 
-public class SelenoidChromeDriverProvider implements WebDriverProvider {
+public class SelenoidChromeDriverProvider implements SelenoidProvider {
     @Nonnull
     @Override
     public WebDriver createDriver(@Nonnull DesiredCapabilities desiredCapabilities) {
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        //WebDriverManager.chromedriver().browserVersion("97").setup();
         capabilities.setCapability(ChromeOptions.CAPABILITY, getChromeOptions());
         try {
             return new RemoteWebDriver(new URL(System.getProperty("remoteUrl") == null ? "http://localhost:4444/wd/hub" : System.getProperty("remoteUrl")), capabilities);
