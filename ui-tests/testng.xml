@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Selenium Easy" parallel="methods">
-    <test name="Form tests">
+    <test name="Chrome tests">
+<!--        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="Port" value="5900"></parameter>-->
         <classes>
             <class name="com.seasy.ui.tests.FormTests.SimpleFormTest"/>
-            <class name="com.seasy.ui.tests.FormTests.AjaxSubmitFormTests"/>
+<!--            <class name="com.seasy.ui.tests.FormTests.AjaxSubmitFormTests"/>
             <class name="com.seasy.ui.tests.FormTests.CheckBoxTests"/>
             <class name="com.seasy.ui.tests.FormTests.DropDownTests"/>
             <class name="com.seasy.ui.tests.FormTests.InputFormSubmitTests"/>
             <class name="com.seasy.ui.tests.FormTests.JQuerySelectDropDownTests"/>
-            <class name="com.seasy.ui.tests.FormTests.RadioButtonPageTests"/>
+            <class name="com.seasy.ui.tests.FormTests.RadioButtonPageTests"/>-->
         </classes>
     </test>
     <!--<test name="Single Input Field (Simple Form)">
