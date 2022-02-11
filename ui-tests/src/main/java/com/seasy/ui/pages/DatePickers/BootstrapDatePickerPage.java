@@ -13,7 +13,6 @@ public class BootstrapDatePickerPage {
     private final SelenideElement openDateExampleDatePicker = $(".input-group.date .input-group-addon"),
     dateExampleDatePicker = $(".datepicker-days"),
     todayDateExampleButton = $(".datepicker-days tfoot tr .today"),
-    //todayActiveDayDateExample = $(".today.active.disabled.disabled-date.day"),
     selectedDayDateExample = $(".active.day"),
     dayInInputDateExample = $(".input-group.date input"),
     clearDateInDateExample = $(".datepicker-days .clear");

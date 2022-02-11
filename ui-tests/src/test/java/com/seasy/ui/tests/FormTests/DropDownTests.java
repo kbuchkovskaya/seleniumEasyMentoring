@@ -26,8 +26,9 @@ public class DropDownTests extends BaseTest {
     @Test
     public void checkSelectedCities(@Optional("Ohio") String city1, @Optional("Florida") String city2) {
         openDropDownPage()
-                .selectCityFromMultiDropDown(city1)
-                .selectCityFromMultiDropDown(city2)
+               /* .selectCityFromMultiDropDown(city1)
+                .selectCityFromMultiDropDown(city2)*/
+                .selectTwoCitiesFromList(city1, city2)
                 .clickGetAllCitiesFromMultiDropDownButton()
                 .verifySelectedCities(city1, city2);
     }

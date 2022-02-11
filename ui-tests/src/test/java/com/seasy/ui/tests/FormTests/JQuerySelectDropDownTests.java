@@ -5,8 +5,6 @@ import com.seasy.ui.tests.BaseTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
 public class JQuerySelectDropDownTests extends BaseTest {
 
     @Test
