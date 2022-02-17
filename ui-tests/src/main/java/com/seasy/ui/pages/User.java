@@ -1,17 +1,23 @@
 package com.seasy.ui.pages;
 
-public class User {
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NonNull;
 
-    public String firstName;
-    public String lastName;
-    public String email;
-    public String phone;
-    public String address;
-    public String city;
-    public String state;
-    public String zipCode;
-    public String projectDescription;
-    public String webSite;
+/*@Builder
+@Getter*/
+public class User {
+   // @NonNull
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String phone;
+    private String address;
+    private String city;
+    private String state;
+    private String zipCode;
+    private String projectDescription;
+    private String webSite;
 
     public static class Builder {
 
@@ -69,6 +75,45 @@ public class User {
         public User build(){
             return user;
         }
+    }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public String getProjectDescription() {
+        return projectDescription;
+    }
+
+    public String getWebSite() {
+        return webSite;
     }
 }

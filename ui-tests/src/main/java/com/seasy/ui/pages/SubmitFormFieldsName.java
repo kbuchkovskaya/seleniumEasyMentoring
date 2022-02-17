@@ -1,7 +1,8 @@
 package com.seasy.ui.pages;
 
 public enum SubmitFormFieldsName {
-        FIRST_NAME_FIELD("First Name"),
+
+    FIRST_NAME_FIELD("First Name"),
     LAST_NAME_FIELD("Last Name"),
     EMAIL_FIELD("E-Mail"),
     PHONE_FIELD("Phone"),

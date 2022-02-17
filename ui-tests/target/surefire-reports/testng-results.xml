@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Selenium Easy" duration-ms="6525" started-at="2022-02-15T14:04:31 EET" finished-at="2022-02-15T14:04:37 EET">
+    <groups>
+    </groups>
+    <test name="Chrome tests" duration-ms="6525" started-at="2022-02-15T14:04:31 EET" finished-at="2022-02-15T14:04:37 EET">
+      <class name="com.seasy.ui.tests.FormTests.SimpleFormTest">
+        <test-method status="PASS" signature="checkEmptyMessageTest()[pri:0, instance:com.seasy.ui.tests.FormTests.SimpleFormTest@a1153bc]" name="checkEmptyMessageTest" duration-ms="6516" started-at="2022-02-15T14:04:31 EET" finished-at="2022-02-15T14:04:37 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEmptyMessageTest -->
+      </class> <!-- com.seasy.ui.tests.FormTests.SimpleFormTest -->
+    </test> <!-- Chrome tests -->
+  </suite> <!-- Selenium Easy -->
+  <suite name="Selenium Easy (0)" duration-ms="1" started-at="2022-02-15T14:04:37 EET" finished-at="2022-02-15T14:04:37 EET">
+    <groups>
+    </groups>
+    <test name="Table tests" duration-ms="1" started-at="2022-02-15T14:04:37 EET" finished-at="2022-02-15T14:04:37 EET">
+    </test> <!-- Table tests -->
+  </suite> <!-- Selenium Easy (0) -->
+  <suite name="check for build" duration-ms="10381" started-at="2022-02-15T14:04:20 EET" finished-at="2022-02-15T14:04:31 EET">
+    <groups>
+    </groups>
+    <test name="check for build" duration-ms="10381" started-at="2022-02-15T14:04:20 EET" finished-at="2022-02-15T14:04:31 EET">
+      <class name="com.seasy.ui.tests.FormTests.InputFormSubmitTests">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.seasy.ui.tests.FormTests.InputFormSubmitTests@5b8dfcc1]" name="init" is-config="true" duration-ms="15" started-at="2022-02-15T14:04:20 EET" finished-at="2022-02-15T14:04:20 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="checkDeletedFirstName()[pri:0, instance:com.seasy.ui.tests.FormTests.InputFormSubmitTests@5b8dfcc1]" name="checkDeletedFirstName" duration-ms="10244" started-at="2022-02-15T14:04:20 EET" finished-at="2022-02-15T14:04:31 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDeletedFirstName -->
+        <test-method status="PASS" signature="checkFromSubmitWithAllDataEntered()[pri:0, instance:com.seasy.ui.tests.FormTests.InputFormSubmitTests@5b8dfcc1]" name="checkFromSubmitWithAllDataEntered" duration-ms="3" started-at="2022-02-15T14:04:31 EET" finished-at="2022-02-15T14:04:31 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFromSubmitWithAllDataEntered -->
+        <test-method status="PASS" signature="checkSubmitButtonIsDisabled()[pri:0, instance:com.seasy.ui.tests.FormTests.InputFormSubmitTests@5b8dfcc1]" name="checkSubmitButtonIsDisabled" duration-ms="2" started-at="2022-02-15T14:04:31 EET" finished-at="2022-02-15T14:04:31 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSubmitButtonIsDisabled -->
+      </class> <!-- com.seasy.ui.tests.FormTests.InputFormSubmitTests -->
+    </test> <!-- check for build -->
+  </suite> <!-- check for build -->
+</testng-results>

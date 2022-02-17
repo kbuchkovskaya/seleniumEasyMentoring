@@ -1,87 +1,20 @@
 package com.seasy.ui.tests;
 
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import com.seasy.ui.pages.DatePickers.BootstrapDatePickerPage;
-import com.seasy.ui.pages.Forms.*;
-import com.seasy.ui.pages.ListBox.JQueryDualListBoxPage;
-import com.seasy.ui.pages.Table.TableDataSearchPage;
-import com.seasy.ui.pages.Table.TablePaginationPage;
+import com.seasy.ui.tests.utils.ReadProperties;
 import org.openqa.selenium.Keys;
-
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.Date;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class BaseTest {
+public abstract class BaseTest {
 
-    public CheckBoxPage openCheckBoxPage(){
-        openBrowser("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
-        return new CheckBoxPage();
-    }
+    ReadProperties path = new ReadProperties();
 
-    public SimpleFormPage openSimpleFormPage(){
-        openBrowser("https://demo.seleniumeasy.com/basic-first-form-demo.html");
-        return new SimpleFormPage();
-    }
-
-    public RadioButtonsPage openRadioButtonsPage(){
-        openBrowser("https://demo.seleniumeasy.com/basic-radiobutton-demo.html");
-        return new RadioButtonsPage();
-    }
-
-    public DropDownPage openDropDownPage(){
-        openBrowser("https://demo.seleniumeasy.com/basic-select-dropdown-demo.html");
-        return new DropDownPage();
-    }
-
-    public InputFormSubmitPage openInputFormSubmit(){
-        openBrowser("https://demo.seleniumeasy.com/input-form-demo.html");
-        return new InputFormSubmitPage();
-    }
-
-    public AjaxFormSubmitPage openAjaxSubmitForm(){
-        openBrowser("https://demo.seleniumeasy.com/ajax-form-submit-demo.html");
-        return new AjaxFormSubmitPage();
-    }
-
-    public JQuerySelectDropDownPage openJQuerySelectDropDownPage(){
-        openBrowser("https://demo.seleniumeasy.com/jquery-dropdown-search-demo.html");
-        return new JQuerySelectDropDownPage();
-    }
-
-    public BootstrapDatePickerPage openBootstrapDatePickerPage(){
-        openBrowser("https://demo.seleniumeasy.com/bootstrap-date-picker-demo.html");
-        return new BootstrapDatePickerPage();
-    }
-
-    public JQueryDualListBoxPage openJQueryDualListBoxPage(){
-        openBrowser("https://demo.seleniumeasy.com/jquery-dual-list-box-demo.html");
-        return new JQueryDualListBoxPage();
-    }
-
-    public TablePaginationPage openTablePaginationPage(){
-        openBrowser("https://demo.seleniumeasy.com/table-pagination-demo.html");
-        return new TablePaginationPage();
-    }
-
-    public TableDataSearchPage openTableDataSearchPage(){
-        openBrowser("https://demo.seleniumeasy.com/table-search-filter-demo.html");
-        return new TableDataSearchPage();
-    }
-
-    public void openBrowser(String url){
+    public <PageObjectClass> PageObjectClass openBrowser(String pageName, Class<PageObjectClass> pageObjectClassClass){
         //Configuration.browser = SelenoidChromeDriverProvider.class.getName();
-        open(url);
-        Selenide.switchTo().activeElement().sendKeys(Keys.ESCAPE);
-    }
-
-    public LocalDate getDayToday(){
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = new Date();
-        return LocalDate.parse(formatter.format(date));
+        open(path.getPath(pageName));
+        Selenide.switchTo().activeElement().sendKeys(Keys.ESCAPE); //close adv popup
+        return page(pageObjectClassClass);
     }
 
 /*

@@ -23,6 +23,12 @@
             <version>3.22.0</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+            <scope>provided</scope>
+        </dependency>
 
 
     </dependencies>
@@ -43,6 +49,7 @@
                         <suiteXmlFiles>
                             <suiteXmlFile>suite2.xml</suiteXmlFile>
                             <suiteXmlFile>testng.xml</suiteXmlFile>
+                            <suiteXmlFile>suite3.xml</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>
