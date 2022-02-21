@@ -14,26 +14,26 @@ public class AjaxSubmitFormTests extends BaseTest {
             .projectDescription("Project description")
             .build();
 */
-
-    User user = new User.Builder()
-            .withFirstName("Kateryna")
-            .withProjectDescription("Project Description")
-            .build();
-
-    @Test
-    public void checkFormIsSubmitted(){
-        openBrowser(InputFormsPageName.AJAX_FORM_SUBMIT, AjaxFormSubmitPage.class)
-                .enterName(user.getFirstName())
-                .enterDescription(user.getProjectDescription())
-                .clickSubmitButton()
-                .verifyFormIsProcessing()
-                .verifyFormIsSubmitted();
-    }
-
-    @Test
-    public void checkRequiredNameField(){
-        openBrowser(InputFormsPageName.AJAX_FORM_SUBMIT, AjaxFormSubmitPage.class)
-                .clickSubmitButton()
-                .checkNameIsRequiredField();
-    }
+	
+	User user = new User.Builder()
+			.withFirstName("Kateryna")
+			.withProjectDescription("Project Description")
+			.build();
+	
+	@Test
+	public void checkFormIsSubmitted() {
+		openBrowser(InputFormsPageName.AJAX_FORM_SUBMIT, AjaxFormSubmitPage.class)
+				.enterName(user.getFirstName())
+				.enterDescription(user.getProjectDescription())
+				.clickSubmitButton()
+				.verifyFormIsProcessing()
+				.verifyFormIsSubmitted();
+	}
+	
+	@Test
+	public void checkRequiredNameField() {
+		openBrowser(InputFormsPageName.AJAX_FORM_SUBMIT, AjaxFormSubmitPage.class)
+				.clickSubmitButton()
+				.checkNameIsRequiredField();
+	}
 }

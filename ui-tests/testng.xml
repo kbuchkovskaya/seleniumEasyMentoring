@@ -2,10 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Selenium Easy" parallel="methods">
     <test name="Chrome tests">
+        <parameter name="state1" value="Iowa"></parameter>
+        <parameter name="state2" value="Alaska"></parameter>
+        <parameter name="state3" value="Nevada"></parameter>
+        <parameter name="state4" value="Colorado"></parameter>
+        <parameter name="state5" value="Kansas"></parameter>
 <!--        <parameter name="browser" value="chrome"></parameter>
         <parameter name="Port" value="5900"></parameter>-->
         <classes>
-            <class name="SimpleFormTest"/>
+            <class name="com.seasy.ui.tests.form.tests.SimpleFormTest"/>
 <!--            <class name="AjaxSubmitFormTests"/>
             <class name="CheckBoxTests"/>
             <class name="DropDownTests"/>

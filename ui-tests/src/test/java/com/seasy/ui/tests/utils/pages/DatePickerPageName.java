@@ -4,7 +4,7 @@ import lombok.experimental.UtilityClass;
 
 @UtilityClass
 public class DatePickerPageName {
-
-    public String BOOTSTRAP_DATE_PICKER = "bootstrapDatePicker";
-
+	
+	public String BOOTSTRAP_DATE_PICKER = "bootstrapDatePicker";
+	
 }

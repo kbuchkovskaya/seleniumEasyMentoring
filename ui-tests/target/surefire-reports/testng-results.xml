@@ -1,47 +1,218 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="1" failed="1" ignored="0" total="27" passed="25">
   <reporter-output>
   </reporter-output>
-  <suite name="Selenium Easy" duration-ms="6525" started-at="2022-02-15T14:04:31 EET" finished-at="2022-02-15T14:04:37 EET">
+  <suite name="Selenium Easy" duration-ms="10438" started-at="2022-02-20T16:41:02 EET" finished-at="2022-02-20T16:41:13 EET">
     <groups>
     </groups>
-    <test name="Chrome tests" duration-ms="6525" started-at="2022-02-15T14:04:31 EET" finished-at="2022-02-15T14:04:37 EET">
-      <class name="com.seasy.ui.tests.FormTests.SimpleFormTest">
-        <test-method status="PASS" signature="checkEmptyMessageTest()[pri:0, instance:com.seasy.ui.tests.FormTests.SimpleFormTest@a1153bc]" name="checkEmptyMessageTest" duration-ms="6516" started-at="2022-02-15T14:04:31 EET" finished-at="2022-02-15T14:04:37 EET">
+    <test name="Chrome tests" duration-ms="10438" started-at="2022-02-20T16:41:02 EET" finished-at="2022-02-20T16:41:13 EET">
+      <class name="com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests">
+        <test-method status="PASS" signature="checkCategoriesOptions()[pri:0, instance:com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests@5bd03f44]" name="checkCategoriesOptions" duration-ms="1030" started-at="2022-02-20T16:41:10 EET" finished-at="2022-02-20T16:41:11 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCategoriesOptions -->
+        <test-method status="PASS" signature="checkCategoriesOptionsInNotEmpty()[pri:0, instance:com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests@5bd03f44]" name="checkCategoriesOptionsInNotEmpty" duration-ms="1285" started-at="2022-02-20T16:41:11 EET" finished-at="2022-02-20T16:41:12 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCategoriesOptionsInNotEmpty -->
+        <test-method status="PASS" signature="checkNoResultFound(java.lang.String)[pri:0, instance:com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests@5bd03f44]" name="checkNoResultFound" duration-ms="1666" started-at="2022-02-20T16:41:11 EET" finished-at="2022-02-20T16:41:12 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Select Country]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNoResultFound -->
+        <test-method status="PASS" signature="checkSelectedCountry(java.lang.String)[pri:0, instance:com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests@5bd03f44]" name="checkSelectedCountry" duration-ms="1686" started-at="2022-02-20T16:41:11 EET" finished-at="2022-02-20T16:41:13 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Select Country]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSelectedCountry -->
+        <test-method status="PASS" signature="checkSelectedRandomItems(java.lang.String)[pri:0, instance:com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests@5bd03f44]" name="checkSelectedRandomItems" duration-ms="1127" started-at="2022-02-20T16:41:11 EET" finished-at="2022-02-20T16:41:12 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Select US Outlying Territories]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSelectedRandomItems -->
+        <test-method status="SKIP" signature="checkSelectedState(java.lang.String)[pri:0, instance:com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests@5bd03f44]" name="checkSelectedState" duration-ms="0" started-at="2022-02-20T16:41:11 EET" finished-at="2022-02-20T16:41:11 EET">
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: 1
+at org.testng.internal.Parameters.createParams(Parameters.java:273)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSelectedState -->
+        <test-method status="FAIL" signature="checkSelectedUsTerritories(java.lang.String,java.lang.String)[pri:0, instance:com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests@5bd03f44]" name="checkSelectedUsTerritories" duration-ms="1" started-at="2022-02-20T16:41:11 EET" finished-at="2022-02-20T16:41:11 EET">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests.checkSelectedUsTerritories(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkSelectedUsTerritories([Parameter{index=0, type=java.lang.String, declaredAnnotations=[@org.testng.annotations.Optional(value=Select US Outlying Territories)]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Puerto Rico]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests.checkSelectedUsTerritories(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkSelectedUsTerritories([Parameter{index=0, type=java.lang.String, declaredAnnotations=[@org.testng.annotations.Optional(value=Select US Outlying Territories)]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Puerto Rico]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSelectedUsTerritories -->
+      </class> <!-- com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests -->
+      <class name="com.seasy.ui.tests.form.tests.SimpleFormTest">
+        <test-method status="PASS" signature="checkTotalResultWithEmptyFieldsTest()[pri:0, instance:com.seasy.ui.tests.form.tests.SimpleFormTest@17046283]" name="checkTotalResultWithEmptyFieldsTest" duration-ms="8163" started-at="2022-02-20T16:41:02 EET" finished-at="2022-02-20T16:41:10 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTotalResultWithEmptyFieldsTest -->
+        <test-method status="PASS" signature="checkEmptyMessageTest()[pri:0, instance:com.seasy.ui.tests.form.tests.SimpleFormTest@17046283]" name="checkEmptyMessageTest" duration-ms="9074" started-at="2022-02-20T16:41:02 EET" finished-at="2022-02-20T16:41:11 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkEmptyMessageTest -->
-      </class> <!-- com.seasy.ui.tests.FormTests.SimpleFormTest -->
+        <test-method status="PASS" signature="checkTotalResultWithStringValuesTest()[pri:0, instance:com.seasy.ui.tests.form.tests.SimpleFormTest@17046283]" name="checkTotalResultWithStringValuesTest" duration-ms="8733" started-at="2022-02-20T16:41:02 EET" finished-at="2022-02-20T16:41:11 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTotalResultWithStringValuesTest -->
+        <test-method status="PASS" signature="checkTotalResultWithIntegerValuesTest()[pri:0, instance:com.seasy.ui.tests.form.tests.SimpleFormTest@17046283]" name="checkTotalResultWithIntegerValuesTest" duration-ms="8572" started-at="2022-02-20T16:41:02 EET" finished-at="2022-02-20T16:41:11 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTotalResultWithIntegerValuesTest -->
+        <test-method status="PASS" signature="checkYourMessageTest()[pri:0, instance:com.seasy.ui.tests.form.tests.SimpleFormTest@17046283]" name="checkYourMessageTest" duration-ms="8645" started-at="2022-02-20T16:41:02 EET" finished-at="2022-02-20T16:41:11 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkYourMessageTest -->
+      </class> <!-- com.seasy.ui.tests.form.tests.SimpleFormTest -->
     </test> <!-- Chrome tests -->
   </suite> <!-- Selenium Easy -->
-  <suite name="Selenium Easy (0)" duration-ms="1" started-at="2022-02-15T14:04:37 EET" finished-at="2022-02-15T14:04:37 EET">
+  <suite name="Selenium Easy (0)" duration-ms="10819" started-at="2022-02-20T16:41:13 EET" finished-at="2022-02-20T16:41:23 EET">
     <groups>
     </groups>
-    <test name="Table tests" duration-ms="1" started-at="2022-02-15T14:04:37 EET" finished-at="2022-02-15T14:04:37 EET">
+    <test name="Table tests" duration-ms="10819" started-at="2022-02-20T16:41:13 EET" finished-at="2022-02-20T16:41:23 EET">
+      <class name="com.seasy.ui.tests.table.tests.TablePaginationTests">
+        <test-method status="PASS" signature="checkQuantityOfRowsPerPage()[pri:0, instance:com.seasy.ui.tests.table.tests.TablePaginationTests@19bb07ed]" name="checkQuantityOfRowsPerPage" duration-ms="9541" started-at="2022-02-20T16:41:13 EET" finished-at="2022-02-20T16:41:22 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuantityOfRowsPerPage -->
+        <test-method status="PASS" signature="checkActiveButtons()[pri:0, instance:com.seasy.ui.tests.table.tests.TablePaginationTests@19bb07ed]" name="checkActiveButtons" duration-ms="9416" started-at="2022-02-20T16:41:13 EET" finished-at="2022-02-20T16:41:22 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkActiveButtons -->
+      </class> <!-- com.seasy.ui.tests.table.tests.TablePaginationTests -->
+      <class name="com.seasy.ui.tests.table.tests.TableDataSearchTests">
+        <test-method status="PASS" signature="checkFilterInSimpleTable()[pri:0, instance:com.seasy.ui.tests.table.tests.TableDataSearchTests@4b0b0854]" name="checkFilterInSimpleTable" duration-ms="9451" started-at="2022-02-20T16:41:13 EET" finished-at="2022-02-20T16:41:22 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFilterInSimpleTable -->
+        <test-method status="PASS" signature="checkFiltersInTableWithFilters()[pri:0, instance:com.seasy.ui.tests.table.tests.TableDataSearchTests@4b0b0854]" name="checkFiltersInTableWithFilters" duration-ms="10814" started-at="2022-02-20T16:41:13 EET" finished-at="2022-02-20T16:41:23 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFiltersInTableWithFilters -->
+        <test-method status="PASS" signature="removingDataAfterSearchingInSimpleTable()[pri:0, instance:com.seasy.ui.tests.table.tests.TableDataSearchTests@4b0b0854]" name="removingDataAfterSearchingInSimpleTable" duration-ms="9591" started-at="2022-02-20T16:41:13 EET" finished-at="2022-02-20T16:41:22 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removingDataAfterSearchingInSimpleTable -->
+      </class> <!-- com.seasy.ui.tests.table.tests.TableDataSearchTests -->
     </test> <!-- Table tests -->
   </suite> <!-- Selenium Easy (0) -->
-  <suite name="check for build" duration-ms="10381" started-at="2022-02-15T14:04:20 EET" finished-at="2022-02-15T14:04:31 EET">
+  <suite name="check for build" duration-ms="17971" started-at="2022-02-20T16:40:44 EET" finished-at="2022-02-20T16:41:02 EET">
     <groups>
     </groups>
-    <test name="check for build" duration-ms="10381" started-at="2022-02-15T14:04:20 EET" finished-at="2022-02-15T14:04:31 EET">
-      <class name="com.seasy.ui.tests.FormTests.InputFormSubmitTests">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.seasy.ui.tests.FormTests.InputFormSubmitTests@5b8dfcc1]" name="init" is-config="true" duration-ms="15" started-at="2022-02-15T14:04:20 EET" finished-at="2022-02-15T14:04:20 EET">
+    <test name="check for build" duration-ms="17971" started-at="2022-02-20T16:40:44 EET" finished-at="2022-02-20T16:41:02 EET">
+      <class name="com.seasy.ui.tests.form.tests.CheckBoxTests">
+        <test-method status="PASS" signature="checkAllCheckboxesAreSelected()[pri:0, instance:com.seasy.ui.tests.form.tests.CheckBoxTests@1ffe63b9]" name="checkAllCheckboxesAreSelected" duration-ms="7235" started-at="2022-02-20T16:40:44 EET" finished-at="2022-02-20T16:40:51 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAllCheckboxesAreSelected -->
+        <test-method status="PASS" signature="checkCheckAllButtonWithOneUnselectedCheckbox()[pri:0, instance:com.seasy.ui.tests.form.tests.CheckBoxTests@1ffe63b9]" name="checkCheckAllButtonWithOneUnselectedCheckbox" duration-ms="1252" started-at="2022-02-20T16:40:51 EET" finished-at="2022-02-20T16:40:53 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCheckAllButtonWithOneUnselectedCheckbox -->
+        <test-method status="PASS" signature="checkMultipleCheckBoxIsSelected()[pri:0, instance:com.seasy.ui.tests.form.tests.CheckBoxTests@1ffe63b9]" name="checkMultipleCheckBoxIsSelected" duration-ms="648" started-at="2022-02-20T16:40:53 EET" finished-at="2022-02-20T16:40:53 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultipleCheckBoxIsSelected -->
+        <test-method status="PASS" signature="checkMultipleCheckBoxIsUnselected()[pri:0, instance:com.seasy.ui.tests.form.tests.CheckBoxTests@1ffe63b9]" name="checkMultipleCheckBoxIsUnselected" duration-ms="1258" started-at="2022-02-20T16:40:53 EET" finished-at="2022-02-20T16:40:55 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultipleCheckBoxIsUnselected -->
+        <test-method status="PASS" signature="checkUnselectOfSelectedCheckBoxTest()[pri:0, instance:com.seasy.ui.tests.form.tests.CheckBoxTests@1ffe63b9]" name="checkUnselectOfSelectedCheckBoxTest" duration-ms="485" started-at="2022-02-20T16:40:55 EET" finished-at="2022-02-20T16:40:55 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUnselectOfSelectedCheckBoxTest -->
+        <test-method status="PASS" signature="checkUnselectedCheckBox()[pri:0, instance:com.seasy.ui.tests.form.tests.CheckBoxTests@1ffe63b9]" name="checkUnselectedCheckBox" duration-ms="344" started-at="2022-02-20T16:40:55 EET" finished-at="2022-02-20T16:40:55 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUnselectedCheckBox -->
+        <test-method status="PASS" signature="selectSingleCheckBoxTest()[pri:0, instance:com.seasy.ui.tests.form.tests.CheckBoxTests@1ffe63b9]" name="selectSingleCheckBoxTest" duration-ms="390" started-at="2022-02-20T16:40:55 EET" finished-at="2022-02-20T16:40:56 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSingleCheckBoxTest -->
+      </class> <!-- com.seasy.ui.tests.form.tests.CheckBoxTests -->
+      <class name="com.seasy.ui.tests.form.tests.InputFormSubmitTests">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.seasy.ui.tests.form.tests.InputFormSubmitTests@149e0f5d]" name="init" is-config="true" duration-ms="4" started-at="2022-02-20T16:40:56 EET" finished-at="2022-02-20T16:40:56 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="checkDeletedFirstName()[pri:0, instance:com.seasy.ui.tests.FormTests.InputFormSubmitTests@5b8dfcc1]" name="checkDeletedFirstName" duration-ms="10244" started-at="2022-02-15T14:04:20 EET" finished-at="2022-02-15T14:04:31 EET">
+        <test-method status="PASS" signature="checkDeletedFirstName()[pri:0, instance:com.seasy.ui.tests.form.tests.InputFormSubmitTests@149e0f5d]" name="checkDeletedFirstName" duration-ms="1524" started-at="2022-02-20T16:40:56 EET" finished-at="2022-02-20T16:40:57 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDeletedFirstName -->
-        <test-method status="PASS" signature="checkFromSubmitWithAllDataEntered()[pri:0, instance:com.seasy.ui.tests.FormTests.InputFormSubmitTests@5b8dfcc1]" name="checkFromSubmitWithAllDataEntered" duration-ms="3" started-at="2022-02-15T14:04:31 EET" finished-at="2022-02-15T14:04:31 EET">
+        <test-method status="PASS" signature="checkFromSubmitWithAllDataEntered()[pri:0, instance:com.seasy.ui.tests.form.tests.InputFormSubmitTests@149e0f5d]" name="checkFromSubmitWithAllDataEntered" duration-ms="3650" started-at="2022-02-20T16:40:57 EET" finished-at="2022-02-20T16:41:01 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFromSubmitWithAllDataEntered -->
-        <test-method status="PASS" signature="checkSubmitButtonIsDisabled()[pri:0, instance:com.seasy.ui.tests.FormTests.InputFormSubmitTests@5b8dfcc1]" name="checkSubmitButtonIsDisabled" duration-ms="2" started-at="2022-02-15T14:04:31 EET" finished-at="2022-02-15T14:04:31 EET">
+        <test-method status="PASS" signature="checkSubmitButtonIsDisabled()[pri:0, instance:com.seasy.ui.tests.form.tests.InputFormSubmitTests@149e0f5d]" name="checkSubmitButtonIsDisabled" duration-ms="1053" started-at="2022-02-20T16:41:01 EET" finished-at="2022-02-20T16:41:02 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSubmitButtonIsDisabled -->
-      </class> <!-- com.seasy.ui.tests.FormTests.InputFormSubmitTests -->
+      </class> <!-- com.seasy.ui.tests.form.tests.InputFormSubmitTests -->
     </test> <!-- check for build -->
   </suite> <!-- check for build -->
 </testng-results>

@@ -1,5 +1,0 @@
-inputFormDemo = https://demo.seleniumeasy.com/input-form-demo.html
-simpleFormDemo = https://demo.seleniumeasy.com/basic-first-form-demo.html
-jQuerySelectDropdown = https://demo.seleniumeasy.com/jquery-dropdown-search-demo.html
-tableDataSearch = https://demo.seleniumeasy.com/table-search-filter-demo.html
-ajaxFormSubmit = https://demo.seleniumeasy.com/ajax-form-submit-demo.html
