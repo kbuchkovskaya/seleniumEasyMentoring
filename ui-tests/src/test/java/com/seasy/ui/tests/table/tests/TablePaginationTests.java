@@ -6,17 +6,18 @@ import com.seasy.ui.tests.utils.pages.TablePageName;
 import org.testng.annotations.Test;
 
 public class TablePaginationTests extends BaseTest {
-
-    @Test
-    public void checkActiveButtons(){
-        openBrowser(TablePageName.TABLE_PAGINATION, TablePaginationPage.class)
-                .clickNextPage()
-                .checkPreviousAndNextButtons();
-    }
-
-    @Test
-    public void checkQuantityOfRowsPerPage(){
-        openBrowser(TablePageName.TABLE_PAGINATION, TablePaginationPage.class)
-                .checkQuantityOfRows();
-    }
+	
+	@Test
+	public void checkActiveButtons() {
+		openBrowser(TablePageName.TABLE_PAGINATION, TablePaginationPage.class)
+				.clickNextPage()
+				.checkPreviousAndNextButtons();
+	}
+	
+	@Test
+	public void checkQuantityOfRowsPerPage() {
+		openBrowser(TablePageName.TABLE_PAGINATION, TablePaginationPage.class)
+				.checkQuantityOfRows()
+				.checkQuantityOfColumns();
+	}
 }

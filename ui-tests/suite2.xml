@@ -3,8 +3,8 @@
 <suite name="check for build">
     <test name="check for build">
         <classes>
-            <class name="CheckBoxTests"/>
-            <class name="InputFormSubmitTests"/>
+            <class name="com.seasy.ui.tests.form.tests.CheckBoxTests"/>
+            <class name="com.seasy.ui.tests.form.tests.InputFormSubmitTests"/>
         </classes>
     </test>
 </suite>
