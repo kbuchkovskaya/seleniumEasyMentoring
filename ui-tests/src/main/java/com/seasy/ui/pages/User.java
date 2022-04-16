@@ -17,6 +17,8 @@ public class User {
 	private String zipCode;
 	private String projectDescription;
 	private String webSite;
+	private String id;
+	private String username;
 	
 	public static class Builder {
 		
@@ -70,6 +72,15 @@ public class User {
 			user.projectDescription = description;
 			return this;
 		}
+		public Builder withId(String id) {
+			user.id = id;
+			return this;
+		}
+		
+		public Builder withUserName(String username) {
+			user.username = username;
+			return this;
+		}
 		
 		public User build() {
 			return user;
@@ -111,4 +122,8 @@ public class User {
 	public String getWebSite() {
 		return webSite;
 	}
+	
+	public String getId() { return id; }
+	
+	public String getUserName() { return username; }
 }

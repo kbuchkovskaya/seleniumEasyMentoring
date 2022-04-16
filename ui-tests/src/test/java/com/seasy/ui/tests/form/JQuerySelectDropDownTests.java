@@ -41,13 +41,14 @@ public class JQuerySelectDropDownTests extends BaseTest {
 	@Test
 	public void checkSelectedUsTerritories(@Optional("Select US Outlying Territories") String dropdownName, @Optional("Puerto Rico") String usTerritory) {
 		openBrowser(InputFormsPageName.JQUERY_SELECT_DROPDOWN, JQuerySelectDropDownPage.class)
-				.selectItemFromDropDown(dropdownName, usTerritory);
+				.selectItemFromDropDown(dropdownName, usTerritory)
+				.checkSingleDropdownIsSelected(dropdownName);
 	}
 	
 	@Test
-	public void checkNoResultFound(@Optional("Select Country") String dropdownName) {
+	public void checkNoResultFound(@Optional("Select Country") String dropdownName, @Optional("Puerto Rico") String country) {
 		openBrowser(InputFormsPageName.JQUERY_SELECT_DROPDOWN, JQuerySelectDropDownPage.class)
-				.selectItemFromDropDown(dropdownName, "WEr")
+				.selectItemFromDropDown(dropdownName, country)
 				.checkNoResultsFound();
 	}
 	
