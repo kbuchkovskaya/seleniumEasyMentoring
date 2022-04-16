@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Storage {
 	
-	public List<String> list = new ArrayList<>();
+	List<String> list = new ArrayList<>();
 	
 	public void addItemInDataList(String string) {
 		list.add(string);

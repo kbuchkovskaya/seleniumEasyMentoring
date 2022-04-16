@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import com.seasy.ui.pages.SubmitFormFieldsName;
+import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
 
 import java.util.Objects;
@@ -18,20 +19,16 @@ public class InputFormSubmitPage {
 	private final ElementsCollection hosting = $$(".radio");
 	private final ElementsCollection formInput = $$("div.form-group");
 	
+	@Step
 	public InputFormSubmitPage inputData(SubmitFormFieldsName fieldName, String fieldValue) {
 		SelenideElement input = formInput.findBy(Condition.have(Condition.text(fieldName.value))).$("input");
 		input.setValue(fieldValue);
 		return new InputFormSubmitPage();
 	}
 	
-	public InputFormSubmitPage checkEnteredData(String fieldName, String fieldValue) {
-		SelenideElement input = formInput.findBy(Condition.have(Condition.text(fieldName))).$("input");
-		input.shouldHave(Condition.value(fieldValue));
-		return new InputFormSubmitPage();
-	}
-	
 	public InputFormSubmitPage inputTextAreaData(SubmitFormFieldsName fieldName, String fieldValue) {
 		SelenideElement input = formInput.findBy(Condition.have(Condition.text(fieldName.value))).$("textarea");
+		//log
 		input.setValue(fieldValue);
 		return new InputFormSubmitPage();
 	}

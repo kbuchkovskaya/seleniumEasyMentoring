@@ -11,27 +11,22 @@ import java.util.List;
 
 public class JsonParser {
 	
-	public List getListNamesFromJson(String path) {
+	public List<String> getListNamesFromJson(String path) {
 		
 		Storage storage = new Storage();
 		
 		try {
-			
 			Object ob = new JSONParser().parse(new FileReader(path));
-
 			JSONArray jsonArray = (JSONArray) ob;
-			
 			for (Object o : jsonArray) {
 				JSONObject js = (JSONObject) o;
 				storage.addItemInDataList((String)js.get("name"));
 			}
-			
 		} catch (ParseException | IOException e) {
 			e.printStackTrace();
 		}
 		
 		return storage.getList();
-		
 	}
 	
 }
