@@ -29,7 +29,7 @@ public class BootstrapDatePickerPage {
 	}
 	
 	public BootstrapDatePickerPage checkTodayDayExampleDatePicker(LocalDate localDate) {
-		int day = localDate.getDayOfMonth();//Parses text from a string to produce a Date.
+		int day = localDate.getDayOfMonth();  //Parses text from a string to produce a Date.
 		selectedDayDateExample.shouldHave(Condition.text(String.valueOf(day)));
 		return new BootstrapDatePickerPage();
 	}

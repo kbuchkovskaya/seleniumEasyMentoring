@@ -2,13 +2,13 @@ package com.seasy.ui.tests.datepicker;
 
 import com.seasy.ui.pages.datepicker.BootstrapDatePickerPage;
 import com.seasy.ui.tests.BaseTest;
-import com.seasy.ui.pages.utils.Date;
+import com.seasy.ui.tests.utils.DateFormatter;
 import com.seasy.ui.tests.utils.pages.DatePickerPageName;
 import org.testng.annotations.Test;
 
 public class DatePickerTests extends BaseTest {
 	
-	Date date = new Date();
+	DateFormatter dateFormatter = new DateFormatter();
 	
 	@Test
 	public void checkDayToday() {
@@ -16,7 +16,7 @@ public class DatePickerTests extends BaseTest {
 				.openDateExampleDatePicker()
 				.selectTodayExampleDatePicker()
 				.openDateExampleDatePicker()
-				.checkTodayDayExampleDatePicker(date.getDayToday());
+				.checkTodayDayExampleDatePicker(dateFormatter.getDayToday());
 	}
 	
 	@Test
@@ -25,7 +25,7 @@ public class DatePickerTests extends BaseTest {
 				.openDateExampleDatePicker()
 				.clearDateDateExampleDatePicker()
 				.openDateExampleDatePicker()
-				.selectFutureDateExampleDatePicker(date.getDayToday())
-				.checkTodayIsSelectedExampleDatePicker(date.getDayToday());
+				.selectFutureDateExampleDatePicker(dateFormatter.getDayToday())
+				.checkTodayIsSelectedExampleDatePicker(dateFormatter.getDayToday());
 	}
 }
