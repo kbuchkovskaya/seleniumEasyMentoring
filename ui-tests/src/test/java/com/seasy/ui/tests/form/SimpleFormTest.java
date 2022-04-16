@@ -45,4 +45,12 @@ public class SimpleFormTest extends BaseTest {
 				.clickGetTotalButton()
 				.verifySumOfNonValidData("Nan");
 	}
+	
+	@Test
+	public void checkTotalResultWithEmptyFieldsTestTestFromGit() {
+		openBrowser(InputFormsPageName.SIMPLE_FORM_DEMO, SimpleFormPage.class)
+				.clearDataFields()
+				.clickGetTotalButton()
+				.verifySumOfNonValidData("Nan");
+	}
 }
