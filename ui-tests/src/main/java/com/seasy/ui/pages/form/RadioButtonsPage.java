@@ -1,33 +1,25 @@
 package com.seasy.ui.pages.form;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class RadioButtonsPage {
-	
-	private final SelenideElement femaleRadioButton = $("input[value='Female'][name='optradio']");
-	private final SelenideElement maleRadioButton = $("input[value='Male'][name='optradio']");
+
 	private final SelenideElement getCheckedValueButton = $("#buttoncheck");
 	private final SelenideElement selectedSingleRadioButtonCheck = $(".radiobutton");
-	private final SelenideElement maleGroupRadioButton = $("[value='Male'][name='gender']");
-	private final SelenideElement femaleGroupRadioButton = $("[value='Female'][name='gender']");
-	private final SelenideElement ageGroupFromZeroToFive = $("[value='0 - 5'][name='ageGroup']");
-	private final SelenideElement ageGroupFromFiveToFifteen = $("[value='5 - 15'][name='ageGroup']");
-	private final SelenideElement ageGroupFromFifteenToFifty = $("[value='15 - 50'][name='ageGroup']");
 	private final SelenideElement getValuesButton = $("[class='btn btn-default'][onclick='getValues();']");
 	private final SelenideElement selectedGroupRadioButtonCheck = $(".groupradiobutton");
 	
-	public RadioButtonsPage selectFemaleRadioButton() {
-		femaleRadioButton.click();
-		femaleRadioButton.shouldBe(Condition.selected);
-		return new RadioButtonsPage();
-	}
+	private final ElementsCollection ageGroups = $$("[name=\"ageGroup\"]");
+	private final ElementsCollection genderGroups = $$("[name='gender']");
+	private final ElementsCollection genders = $$("[name='optradio']");
 	
-	public RadioButtonsPage selectMaleRadioButton() {
-		maleRadioButton.click();
-		maleRadioButton.shouldBe(Condition.selected);
+	public RadioButtonsPage selectSingleGenderRadioButton(Gender gender) {
+		genders.findBy(Condition.attribute("value", gender.value)).click();
 		return new RadioButtonsPage();
 	}
 	
@@ -36,13 +28,8 @@ public class RadioButtonsPage {
 		return new RadioButtonsPage();
 	}
 	
-	public RadioButtonsPage verifySelectedMaleRadioButton() {
-		selectedSingleRadioButtonCheck.shouldHave(Condition.text("Male"));
-		return new RadioButtonsPage();
-	}
-	
-	public RadioButtonsPage verifySelectedFemaleRadioButton() {
-		selectedSingleRadioButtonCheck.shouldHave(Condition.text("Female"));
+	public RadioButtonsPage verifySelectedSingleGender(Gender gender) {
+		selectedSingleRadioButtonCheck.shouldHave(Condition.text(gender.value));
 		return new RadioButtonsPage();
 	}
 	
@@ -51,33 +38,13 @@ public class RadioButtonsPage {
 		return new RadioButtonsPage();
 	}
 	
-	public RadioButtonsPage selectMaleGroupRadioButton() {
-		maleGroupRadioButton.click();
-		maleGroupRadioButton.shouldBe(Condition.selected);
+	public RadioButtonsPage selectGenderInRadioButtonsGroup(Gender gender) {
+		genderGroups.findBy(Condition.attribute("value", gender.value)).click();
 		return new RadioButtonsPage();
 	}
 	
-	public RadioButtonsPage selectFemaleGroupRadioButton() {
-		femaleGroupRadioButton.click();
-		femaleGroupRadioButton.shouldBe(Condition.selected);
-		return new RadioButtonsPage();
-	}
-	
-	public RadioButtonsPage selectAgeGroupFromZeroToFive() {
-		ageGroupFromZeroToFive.click();
-		ageGroupFromZeroToFive.shouldBe(Condition.selected);
-		return new RadioButtonsPage();
-	}
-	
-	public RadioButtonsPage selectAgeGroupFromFiveToFifteen() {
-		ageGroupFromFiveToFifteen.click();
-		ageGroupFromFiveToFifteen.shouldBe(Condition.selected);
-		return new RadioButtonsPage();
-	}
-	
-	public RadioButtonsPage selectAgeGroupFromFifteenToFifty() {
-		ageGroupFromFifteenToFifty.click();
-		ageGroupFromFifteenToFifty.shouldBe(Condition.selected);
+	public RadioButtonsPage selectAgeGroupInRadioButtonsGroup(AgeGroup ageGroup) {
+		ageGroups.findBy(Condition.attribute("value", ageGroup.value)).click();
 		return new RadioButtonsPage();
 	}
 	
@@ -86,38 +53,23 @@ public class RadioButtonsPage {
 		return new RadioButtonsPage();
 	}
 	
-	public RadioButtonsPage verifyGenderIsFemale() {
-		selectedGroupRadioButtonCheck.shouldHave(Condition.text("Sex : Female"));
+	public RadioButtonsPage verifyGender(Gender gender) {
+		selectedGroupRadioButtonCheck.shouldHave(Condition.text(gender.value));
 		return new RadioButtonsPage();
 	}
 	
-	public RadioButtonsPage verifyGenderIsMale() {
-		selectedGroupRadioButtonCheck.shouldHave(Condition.text("Sex : Male"));
+	public RadioButtonsPage verifyAgeGroupIsSelected(AgeGroup ageGroup) {
+		selectedGroupRadioButtonCheck.shouldHave(Condition.text(ageGroup.value));
 		return new RadioButtonsPage();
 	}
 	
-	public RadioButtonsPage verifyAgeGroupIsFromZeroToFive() {
-		selectedGroupRadioButtonCheck.shouldHave(Condition.text("Age group: 0 - 5"));
+	public RadioButtonsPage verifyGenderIsNotSelected(Gender gender) {
+		selectedGroupRadioButtonCheck.shouldNotHave(Condition.text(gender.value));
 		return new RadioButtonsPage();
 	}
 	
-	public RadioButtonsPage verifyAgeGroupIsFromFiveToFifteen() {
-		selectedGroupRadioButtonCheck.shouldHave(Condition.text("Age group: 5 - 15"));
-		return new RadioButtonsPage();
-	}
-	
-	public RadioButtonsPage verifyAgeGroupIsFromFifteenToFifty() {
-		selectedGroupRadioButtonCheck.shouldHave(Condition.text("Age group: 15 - 50"));
-		return new RadioButtonsPage();
-	}
-	
-	public RadioButtonsPage verifyGenderIsNotSelected() {
-		selectedGroupRadioButtonCheck.shouldNotHave(Condition.text("Female"));
-		return new RadioButtonsPage();
-	}
-	
-	public RadioButtonsPage verifyAgeGroupIsNotSelected() {
-		selectedGroupRadioButtonCheck.shouldHave(Condition.text(" Age group: "));
+	public RadioButtonsPage verifyAgeGroupIsNotSelected(AgeGroup ageGroup) {
+		selectedGroupRadioButtonCheck.shouldNotHave(Condition.text(ageGroup.value));
 		return new RadioButtonsPage();
 	}
 	

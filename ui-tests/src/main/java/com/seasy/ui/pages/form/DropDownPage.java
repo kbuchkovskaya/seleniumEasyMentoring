@@ -34,8 +34,7 @@ public class DropDownPage {
 	
 	public DropDownPage selectCityFromMultiDropDown(String city) {
 		citiesList.filterBy(Condition.text(city)).forEach(SelenideElement::click);
-		return new DropDownPage();
-		//return this;
+		return new DropDownPage(); //return this;
 	}
 	
 	public DropDownPage selectTwoCitiesFromList(String city1, String city2) {

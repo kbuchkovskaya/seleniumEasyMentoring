@@ -35,13 +35,7 @@ public class CheckBoxPage {
 		return new CheckBoxPage();
 	}
 	
-	//start from 1
 	public CheckBoxPage selectMultipleCheckboxByIndex(int index, boolean isSelected) {
-		optionsCollection.findBy(text("Option " + index)).$("input").setSelected(isSelected);
-		return new CheckBoxPage();
-	}
-	
-	public CheckBoxPage unselectMultipleCheckBoxByIndex(int index, boolean isSelected) {
 		optionsCollection.findBy(text("Option " + index)).$("input").setSelected(isSelected);
 		return new CheckBoxPage();
 	}
@@ -51,12 +45,7 @@ public class CheckBoxPage {
 		return new CheckBoxPage();
 	}
 	
-	public CheckBoxPage verifyMultipleCheckBoxIsNotSelected(int index, Condition condition) {
-		optionsCollection.findBy(text("Option " + index)).$("input").should(condition);
-		return new CheckBoxPage();
-	}
-	
-	public CheckBoxPage selectAllCheckboxes() {
+	public CheckBoxPage clickAllCheckboxes() {
 		optionsCollection.forEach(checkbox -> checkbox.$("input").click());
 		return new CheckBoxPage();
 	}
@@ -68,11 +57,6 @@ public class CheckBoxPage {
 	
 	public CheckBoxPage checkCheckAllButtonIsDisplayed() {
 		checkButton.shouldHave(attribute("value", "Check All"));
-		return new CheckBoxPage();
-	}
-	
-	public CheckBoxPage unselectAllCheckboxes() {
-		optionsCollection.forEach(checkbox -> checkbox.$("input").click());
 		return new CheckBoxPage();
 	}
 	

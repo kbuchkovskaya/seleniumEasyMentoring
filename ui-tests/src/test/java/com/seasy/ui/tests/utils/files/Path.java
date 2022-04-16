@@ -5,6 +5,6 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class Path {
 	
-	String PATH_TO_URL_FILE = "src/main/resources/paths.properties";
-	String PATH_TO_DATALIST = "src/test/java/com/seasy/ui/tests/utils/files/dataList.json";
+	public String PATH_TO_URL_FILE = "src/main/resources/paths.properties";
+	public String PATH_TO_DATALIST = "src/test/java/com/seasy/ui/tests/utils/files/dataList.json";
 }

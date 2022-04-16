@@ -44,7 +44,6 @@ public class AjaxFormSubmitPage {
 	public AjaxFormSubmitPage verifyFormIsSubmitted() {
 		submitResult.shouldHave(Condition.text("Form submited Successfully!"));
 		submitButton.shouldBe(Condition.hidden);
-		
 		return new AjaxFormSubmitPage();
 	}
 }
