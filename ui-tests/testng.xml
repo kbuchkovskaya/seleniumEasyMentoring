@@ -10,7 +10,7 @@
 <!--        <parameter name="browser" value="chrome"></parameter>
         <parameter name="Port" value="5900"></parameter>-->
         <classes>
-            <class name="SimpleFormTest"/>
+            <class name="com.seasy.ui.tests.form.SimpleFormTest"/>
 <!--            <class name="AjaxSubmitFormTests"/>
             <class name="CheckBoxTests"/>
             <class name="DropDownTests"/>

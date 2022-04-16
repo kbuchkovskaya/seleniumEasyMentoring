@@ -3,8 +3,8 @@
 <suite name="Selenium Easy" parallel="methods">
     <test name="Table tests">
         <classes>
-            <class name="TableDataSearchTests"/>
-            <class name="TablePaginationTests"/>
+            <class name="com.seasy.ui.tests.table.TableDataSearchTests"/>
+            <class name="com.seasy.ui.tests.table.TablePaginationTests"/>
         </classes>
     </test>
 
