@@ -13,20 +13,31 @@ public class AjaxSubmitFormTests extends BaseTest {
 			.withProjectDescription("Project Description")
 			.build();
 	
+	//incorrect label 'Form submited Successfully!'
 	@Test
-	public void checkFormIsSubmitted() {
+	public void checkFormIsSubmittedWithOneFilledField() {
 		openBrowser(InputFormsPageName.AJAX_FORM_SUBMIT, AjaxFormSubmitPage.class)
-				.enterName(user.getFirstName())
-				.enterDescription(user.getProjectDescription())
+				.enterData("title", user.getFirstName())
 				.clickSubmitButton()
 				.verifyFormIsProcessing()
 				.verifyFormIsSubmitted();
 	}
 	
+	//incorrect label 'Form submited Successfully!'
+	@Test
+	public void checkFormIsSubmittedWithAllFilledFields() {
+		openBrowser(InputFormsPageName.AJAX_FORM_SUBMIT, AjaxFormSubmitPage.class)
+				.enterData("title", user.getFirstName())
+				.enterData("description", user.getProjectDescription())
+				.clickSubmitButton()
+				.verifyFormIsProcessing()
+				.verifyFormIsSubmitted();
+	}
+ 
 	@Test
 	public void checkRequiredNameField() {
 		openBrowser(InputFormsPageName.AJAX_FORM_SUBMIT, AjaxFormSubmitPage.class)
 				.clickSubmitButton()
-				.checkNameIsRequiredField();
+				.checkNameIsRequiredField("title");
 	}
 }

@@ -14,6 +14,7 @@ public class DatePickerTests extends BaseTest {
 	public void checkDayToday() {
 		openBrowser(DatePickerPageName.BOOTSTRAP_DATE_PICKER, BootstrapDatePickerPage.class)
 				.openDateExampleDatePicker()
+				.checkDateExampleDatePickerIsOpened()
 				.selectTodayExampleDatePicker()
 				.openDateExampleDatePicker()
 				.checkTodayDayExampleDatePicker(dateFormatter.getDayToday());
@@ -23,7 +24,9 @@ public class DatePickerTests extends BaseTest {
 	public void checkUnavailableFutureDay() {
 		openBrowser(DatePickerPageName.BOOTSTRAP_DATE_PICKER, BootstrapDatePickerPage.class)
 				.openDateExampleDatePicker()
+				.checkDateExampleDatePickerIsOpened()
 				.clearDateDateExampleDatePicker()
+				.checkDateExampleDatePickerIsEmpty()
 				.openDateExampleDatePicker()
 				.selectFutureDateExampleDatePicker(dateFormatter.getDayToday())
 				.checkTodayIsSelectedExampleDatePicker(dateFormatter.getDayToday());

@@ -22,7 +22,7 @@ public class JsonParser {
 				JSONObject js = (JSONObject) o;
 				storage.addItemInDataList((String)js.get("name"));
 			}
-		} catch (ParseException | IOException e) {
+		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
 		

@@ -33,7 +33,7 @@ public class JQuerySelectDropDownTests extends BaseTest {
 	@Test
 	public void checkSelectedRandomItems(@Optional("Select US Outlying Territories") String dropdownName) {
 		openBrowser(InputFormsPageName.JQUERY_SELECT_DROPDOWN, JQuerySelectDropDownPage.class)
-				.randomItemFromDropdown(dropdownName, 1)
+				.selectRandomItemFromDropdown(dropdownName, 1)
 				.checkSingleDropdownIsSelected(dropdownName);
 	}
 	

@@ -45,7 +45,7 @@ public class JQuerySelectDropDownPage {
 		return new JQuerySelectDropDownPage();
 	}
 	
-	public JQuerySelectDropDownPage randomItemFromDropdown(String dropdownName, int itemsQuantity) {
+	public JQuerySelectDropDownPage selectRandomItemFromDropdown(String dropdownName, int itemsQuantity) {
 		SelenideElement input = dropdowns.findBy(text(dropdownName)).$(".select2-selection.select2-selection");
 		SelenideElement disabledItem = dropdownResults.findBy(attribute("aria-disabled"));
 		if (!dropdownResults.isEmpty()) {

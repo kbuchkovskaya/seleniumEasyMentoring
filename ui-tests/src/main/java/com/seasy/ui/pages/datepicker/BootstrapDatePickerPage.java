@@ -19,6 +19,10 @@ public class BootstrapDatePickerPage {
 	
 	public BootstrapDatePickerPage openDateExampleDatePicker() {
 		openDateExampleDatePicker.click();
+		return new BootstrapDatePickerPage();
+	}
+	
+	public BootstrapDatePickerPage checkDateExampleDatePickerIsOpened() {
 		dateExampleDatePicker.shouldBe(Condition.visible);
 		return new BootstrapDatePickerPage();
 	}
@@ -36,6 +40,10 @@ public class BootstrapDatePickerPage {
 	
 	public BootstrapDatePickerPage clearDateDateExampleDatePicker() {
 		clearDateInDateExample.click();
+		return new BootstrapDatePickerPage();
+	}
+	
+	public BootstrapDatePickerPage checkDateExampleDatePickerIsEmpty() {
 		dayInInputDateExample.shouldBe(Condition.empty);
 		return new BootstrapDatePickerPage();
 	}

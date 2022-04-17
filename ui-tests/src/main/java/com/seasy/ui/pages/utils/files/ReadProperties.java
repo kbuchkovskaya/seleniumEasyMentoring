@@ -22,7 +22,7 @@ public class ReadProperties implements PathToPages {
 			
 			fileInputStream.close();
 			
-			LOGGER.info("test log");
+			LOGGER.info("Page is found");
 			
 			return properties.getProperty(property);
 			

@@ -27,7 +27,7 @@ public class InputFormSubmitPage {
 	}
 	
 	public InputFormSubmitPage inputTextAreaData(SubmitFormFieldsName fieldName, String fieldValue) {
-		SelenideElement input = formInput.findBy(Condition.have(Condition.text(fieldName.value))).$("textarea");
+		SelenideElement input = formInput.findBy(Condition.text(fieldName.value)).$("textarea");
 		//log
 		input.setValue(fieldValue);
 		return new InputFormSubmitPage();

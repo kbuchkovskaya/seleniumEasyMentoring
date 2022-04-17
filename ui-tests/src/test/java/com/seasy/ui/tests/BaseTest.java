@@ -14,7 +14,7 @@ public abstract class BaseTest {
 	public <PageObjectClass> PageObjectClass openBrowser(String pageName, Class<PageObjectClass> pageObjectClassClass) {
 		//Configuration.browser = SelenoidChromeDriverProvider.class.getName();
 		open(path.getPropertiesValue(pageName, Path.PATH_TO_URL_FILE));
-		Selenide.switchTo().activeElement().sendKeys(Keys.ESCAPE); //close adv popup
+		Selenide.switchTo().activeElement().sendKeys(Keys.ESCAPE);             //close adv popup
 		return page(pageObjectClassClass);
 	}
 	
