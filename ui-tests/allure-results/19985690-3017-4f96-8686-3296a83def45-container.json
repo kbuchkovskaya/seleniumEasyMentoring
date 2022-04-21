@@ -1,1 +1,0 @@
-{"uuid":"19985690-3017-4f96-8686-3296a83def45","name":"com.seasy.ui.tests.form.InputFormSubmitTests","children":["87ceef7d-5e7a-4eff-8b16-638d45d78305"],"befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1650221092371,"stop":1650221092379}],"afters":[],"start":1650221092317,"stop":1650221101761}
