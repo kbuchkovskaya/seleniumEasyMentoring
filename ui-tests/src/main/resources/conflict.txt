@@ -1,3 +1,0 @@
-conflict1=test
-conflict2=test2
-conflict3=conflict
