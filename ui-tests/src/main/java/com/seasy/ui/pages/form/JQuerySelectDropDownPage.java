@@ -24,7 +24,7 @@ public class JQuerySelectDropDownPage {
 	Random random = new Random();
 	
 	public JQuerySelectDropDownPage selectItemFromDropDown(String dropDownName, String dropDownItem) {
-		SelenideElement dropdown = dropdowns.findBy(text(dropDownName)).$(".select2-selection.select2-selection");
+		SelenideElement dropdown = dropdowns.findBy(text(dropDownName)).$(".select2-selection.select2-selection.test");
 		dropdown.click();
 		dropdownInput.setValue(dropDownItem).sendKeys(Keys.ENTER);
 		return new JQuerySelectDropDownPage();
