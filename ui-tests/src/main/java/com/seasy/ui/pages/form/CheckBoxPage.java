@@ -12,7 +12,9 @@ public class CheckBoxPage {
 	private final SelenideElement singleCheckBox = $("#isAgeSelected");
 	private final SelenideElement checkButton = $("#check1");
 	
-	private final ElementsCollection optionsCollection = $x("//div[@class=\"panel panel-default\"][contains(., \"Multiple Checkbox Demo\")]").$$(".checkbox");
+	private final ElementsCollection optionsCollection =
+			$x("//div[@class=\"panel panel-default\"][contains(., \"Multiple Checkbox Demo\")]")
+					.$$(".checkbox");
 	
 	public CheckBoxPage selectSingleCheckBox() {
 		singleCheckBox.click();

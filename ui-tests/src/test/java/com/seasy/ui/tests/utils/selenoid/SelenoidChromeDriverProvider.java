@@ -19,7 +19,9 @@ public class SelenoidChromeDriverProvider implements SelenoidProvider {
 		//WebDriverManager.chromedriver().browserVersion("97").setup();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, getChromeOptions());
 		try {
-			return new RemoteWebDriver(new URL(System.getProperty("remoteUrl") == null ? "http://localhost:4444/wd/hub" : System.getProperty("remoteUrl")), capabilities);
+			return new RemoteWebDriver(new URL(System.getProperty("remoteUrl") == null
+											  ? "http://localhost:4444/wd/hub"
+											  : System.getProperty("remoteUrl")), capabilities);
 		} catch (MalformedURLException e) {
 			throw new RuntimeException(e);
 		}

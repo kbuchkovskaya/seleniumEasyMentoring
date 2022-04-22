@@ -33,7 +33,8 @@ public class TablePaginationPage {
 	
 	public TablePaginationPage checkVisibilityOfRows() {
 		for (int i = 0; i < visibleRowsInTable.size(); i++) {
-			visibleRowsInTable.findBy(Condition.attribute("style", "display: table-row;")).shouldBe(Condition.visible);
+			visibleRowsInTable.findBy(Condition.attribute("style", "display: table-row;"))
+					.shouldBe(Condition.visible);
 		}
 		return new TablePaginationPage();
 	}

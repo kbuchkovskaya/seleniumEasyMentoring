@@ -16,7 +16,8 @@ public class TableDataSearchPage {
 	private final SelenideElement noResultsLabelInSimpleTable = $("tr.filterTable_no_results");
 	
 	private final ElementsCollection simpleTableRows = $$("#task-table > tbody > tr");
-	private final ElementsCollection tableWithFiltersRows = $$(".panel.panel-primary.filterable > table > tbody > tr");
+	private final ElementsCollection tableWithFiltersRows =
+			$$(".panel.panel-primary.filterable > table > tbody > tr");
 	private final ElementsCollection filtersTableWithFilters = $$(".filters input");
 	private final ElementsCollection columnsFromTaskTable = $$("#task-table th");
 	

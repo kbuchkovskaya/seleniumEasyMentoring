@@ -44,7 +44,9 @@ public class InputFormSubmitPage {
 	
 	public InputFormSubmitPage checkFieldValidation(SubmitFormFieldsName fieldName, Condition condition) {
 		ElementsCollection validations = formInput.findBy(Condition.have(Condition.text(fieldName.value))).$$("small");
-		SelenideElement validation = validations.filterBy((Condition.attribute("data-bv-result", "INVALID"))).get(0);
+		SelenideElement validation = validations.filterBy(
+				(Condition.attribute("data-bv-result", "INVALID"))
+		).get(0);
 		validation.shouldBe(condition);
 		return new InputFormSubmitPage();
 	}

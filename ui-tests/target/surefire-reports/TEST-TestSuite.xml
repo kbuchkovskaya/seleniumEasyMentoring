@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="40.44" tests="27" errors="0" skipped="1" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="19.104" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="webdriver.chrome.driver" value="C:\Users\kbuch\.cache\selenium\chromedriver\win32\98.0.4758.102\chromedriver.exe"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\kbuch\.cache\selenium\chromedriver\win32\100.0.4896.60\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="C:\Users\kbuch\Desktop\test-project\ui-tests\target\test-classes;C:\Users\kbuch\Desktop\test-project\ui-tests\target\classes;C:\Users\kbuch\.m2\repository\com\codeborne\selenide\5.22.1\selenide-5.22.1.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\kbuch\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\kbuch\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\kbuch\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\kbuch\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.3\webdrivermanager-4.4.3.jar;C:\Users\kbuch\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\kbuch\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\kbuch\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1\httpclient5-5.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.1\httpcore5-5.1.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.1\httpcore5-h2-5.1.1.jar;C:\Users\kbuch\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\kbuch\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\kbuch\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kbuch\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kbuch\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kbuch\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\kbuch\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\kbuch\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\kbuch\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;C:\Users\kbuch\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;C:\Users\kbuch\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\kbuch\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\kbuch\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kbuch\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kbuch\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\kbuch\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\kbuch\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-testng\2.17.1\allure-testng-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-java-commons\2.17.1\allure-java-commons-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-model\2.17.1\allure-model-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-test-filter\2.17.1\allure-test-filter-2.17.1.jar;"/>
@@ -19,13 +19,12 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\kbuch\AppData\Local\Temp\surefire4437036223006560983\surefirebooter7307117163006878951.jar C:\Users\kbuch\AppData\Local\Temp\surefire4437036223006560983 2022-02-20T16-40-42_341-jvmRun1 surefire6943530014336151958tmp surefire_01902043382047071649tmp"/>
+    <property name="sun.java.command" value="C:\Users\kbuch\AppData\Local\Temp\surefire1649204353519301600\surefirebooter877508945652995763.jar C:\Users\kbuch\AppData\Local\Temp\surefire1649204353519301600 2022-04-22T12-06-01_088-jvmRun1 surefire5580583925238039005tmp surefire_06243870265619288251tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\kbuch\Desktop\test-project\ui-tests\target\test-classes;C:\Users\kbuch\Desktop\test-project\ui-tests\target\classes;C:\Users\kbuch\.m2\repository\com\codeborne\selenide\5.22.1\selenide-5.22.1.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\kbuch\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\kbuch\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\kbuch\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\kbuch\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\kbuch\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.3\webdrivermanager-4.4.3.jar;C:\Users\kbuch\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\kbuch\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\kbuch\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\kbuch\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1\httpclient5-5.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.1\httpcore5-5.1.1.jar;C:\Users\kbuch\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.1\httpcore5-h2-5.1.1.jar;C:\Users\kbuch\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\kbuch\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\kbuch\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kbuch\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kbuch\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kbuch\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\kbuch\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\kbuch\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\kbuch\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\kbuch\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;C:\Users\kbuch\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;C:\Users\kbuch\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\kbuch\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\kbuch\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kbuch\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kbuch\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\kbuch\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\kbuch\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-testng\2.17.1\allure-testng-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-java-commons\2.17.1\allure-java-commons-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-model\2.17.1\allure-model-2.17.1.jar;C:\Users\kbuch\.m2\repository\io\qameta\allure\allure-test-filter\2.17.1\allure-test-filter-2.17.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\kbuch"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name=".surefire.suitexmlfiles" value="testng.xml"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_291\jre"/>
     <property name="basedir" value="C:\Users\kbuch\Desktop\test-project\ui-tests"/>
     <property name="file.separator" value="\"/>
@@ -33,7 +32,8 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\kbuch\AppData\Local\Temp\surefire4437036223006560983\surefirebooter7307117163006878951.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kbuch\AppData\Local\Temp\surefire1649204353519301600\surefirebooter877508945652995763.jar"/>
+    <property name="surefire.SuiteXmlFiles" value="testng.xml"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_291\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,133 +62,112 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="checkAllCheckboxesAreSelected" classname="com.seasy.ui.tests.form.tests.CheckBoxTests" time="7.249">
+  <testcase name="checkAllCheckboxesAreSelected" classname="com.seasy.ui.tests.form.CheckBoxTests" time="6.224">
+    <system-out><![CDATA[2022-04-22 12:06:03,388 [main] INFO  com.seasy.ui.pages.utils.files.ReadProperties - Page is found
+]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 2104
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: C:\Users\kbuch\Desktop\test-project\ui-testssrcmainesources\Logs.log (The filename, directory name, or volume label syntax is incorrect)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:294)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:207)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:165)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:307)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:172)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:104)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:842)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:768)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:648)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:514)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:580)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:526)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:127)
+	at org.apache.log4j.Logger.getLogger(Logger.java:117)
+	at com.seasy.ui.pages.utils.files.ReadProperties.<clinit>(ReadProperties.java:11)
+	at com.seasy.ui.tests.BaseTest.<init>(BaseTest.java:12)
+	at com.seasy.ui.tests.form.CheckBoxTests.<init>(CheckBoxTests.java:10)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.objects.SimpleObjectDispenser.dispense(SimpleObjectDispenser.java:25)
+	at org.testng.internal.objects.GuiceBasedObjectDispenser.dispense(GuiceBasedObjectDispenser.java:30)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:112)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:165)
+	at org.testng.TestClass.getInstances(TestClass.java:122)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:102)
+	at org.testng.TestClass.init(TestClass.java:94)
+	at org.testng.TestClass.<init>(TestClass.java:59)
+	at org.testng.TestRunner.initMethods(TestRunner.java:463)
+	at org.testng.TestRunner.init(TestRunner.java:339)
+	at org.testng.TestRunner.init(TestRunner.java:292)
+	at org.testng.TestRunner.<init>(TestRunner.java:183)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:596)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:173)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:107)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1300)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1276)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 14362
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Feb 20, 2022 4:40:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 22, 2022 12:06:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="checkCheckAllButtonWithOneUnselectedCheckbox" classname="com.seasy.ui.tests.form.tests.CheckBoxTests" time="1.251"/>
-  <testcase name="checkMultipleCheckBoxIsSelected" classname="com.seasy.ui.tests.form.tests.CheckBoxTests" time="0.648"/>
-  <testcase name="checkMultipleCheckBoxIsUnselected" classname="com.seasy.ui.tests.form.tests.CheckBoxTests" time="1.259"/>
-  <testcase name="checkUnselectOfSelectedCheckBoxTest" classname="com.seasy.ui.tests.form.tests.CheckBoxTests" time="0.486"/>
-  <testcase name="checkUnselectedCheckBox" classname="com.seasy.ui.tests.form.tests.CheckBoxTests" time="0.344"/>
-  <testcase name="selectSingleCheckBoxTest" classname="com.seasy.ui.tests.form.tests.CheckBoxTests" time="0.389"/>
-  <testcase name="checkDeletedFirstName" classname="com.seasy.ui.tests.form.tests.InputFormSubmitTests" time="1.525"/>
-  <testcase name="checkFromSubmitWithAllDataEntered" classname="com.seasy.ui.tests.form.tests.InputFormSubmitTests" time="3.651"/>
-  <testcase name="checkSubmitButtonIsDisabled" classname="com.seasy.ui.tests.form.tests.InputFormSubmitTests" time="1.054"/>
-  <testcase name="checkTotalResultWithEmptyFieldsTest" classname="com.seasy.ui.tests.form.tests.SimpleFormTest" time="8.441">
-    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 11006
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 9706
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 3410
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-ChromeDriver was started successfully.
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 42186
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 7377
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Feb 20, 2022 4:41:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Feb 20, 2022 4:41:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Feb 20, 2022 4:41:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Feb 20, 2022 4:41:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Feb 20, 2022 4:41:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
+  <testcase name="checkCheckAllButtonWithOneUnselectedCheckbox" classname="com.seasy.ui.tests.form.CheckBoxTests" time="1.323">
+    <system-out><![CDATA[2022-04-22 12:06:09,787 [main] INFO  com.seasy.ui.pages.utils.files.ReadProperties - Page is found
+]]></system-out>
   </testcase>
-  <testcase name="checkTotalResultWithIntegerValuesTest" classname="com.seasy.ui.tests.form.tests.SimpleFormTest" time="0.133"/>
-  <testcase name="checkYourMessageTest" classname="com.seasy.ui.tests.form.tests.SimpleFormTest" time="0.071"/>
-  <testcase name="checkTotalResultWithStringValuesTest" classname="com.seasy.ui.tests.form.tests.SimpleFormTest" time="0.079"/>
-  <testcase name="checkEmptyMessageTest" classname="com.seasy.ui.tests.form.tests.SimpleFormTest" time="0.328"/>
-  <testcase name="checkCategoriesOptions" classname="com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests" time="0.122"/>
-  <testcase name="checkSelectedState" classname="com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests" time="0">
-    <skipped message="1"/>
-    <system-err><![CDATA[[Utils] [ERROR] [Error] java.lang.ArrayIndexOutOfBoundsException: 1
-	at org.testng.internal.Parameters.createParams(Parameters.java:273)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
-]]></system-err>
+  <testcase name="checkMultipleCheckBoxIsSelected" classname="com.seasy.ui.tests.form.CheckBoxTests" time="0.726">
+    <system-out><![CDATA[2022-04-22 12:06:11,107 [main] INFO  com.seasy.ui.pages.utils.files.ReadProperties - Page is found
+]]></system-out>
   </testcase>
-  <testcase name="checkSelectedUsTerritories" classname="com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests" time="0.377">
-    <failure message="&#10;[public void com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests.checkSelectedUsTerritories(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).&#10;Data provider mismatch&#10;Method: checkSelectedUsTerritories([Parameter{index=0, type=java.lang.String, declaredAnnotations=[@org.testng.annotations.Optional(value=Select US Outlying Territories)]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])&#10;Arguments: [(java.lang.String) Puerto Rico]" type="org.testng.internal.reflect.MethodMatcherException"><![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-
-[public void com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests.checkSelectedUsTerritories(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkSelectedUsTerritories([Parameter{index=0, type=java.lang.String, declaredAnnotations=[@org.testng.annotations.Optional(value=Select US Outlying Territories)]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) Puerto Rico]
-]]></failure>
+  <testcase name="checkMultipleCheckBoxIsUnselected" classname="com.seasy.ui.tests.form.CheckBoxTests" time="1.301">
+    <system-out><![CDATA[2022-04-22 12:06:11,831 [main] INFO  com.seasy.ui.pages.utils.files.ReadProperties - Page is found
+]]></system-out>
   </testcase>
-  <testcase name="checkCategoriesOptionsInNotEmpty" classname="com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests" time="0.786"/>
-  <testcase name="checkSelectedRandomItems[Select US Outlying Territories](1)" classname="com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests" time="1.128"/>
-  <testcase name="checkNoResultFound[Select Country](1)" classname="com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests" time="1.249"/>
-  <testcase name="checkSelectedCountry[Select Country](1)" classname="com.seasy.ui.tests.form.tests.JQuerySelectDropDownTests" time="1.355"/>
-  <testcase name="checkActiveButtons" classname="com.seasy.ui.tests.table.tests.TablePaginationTests" time="9.543">
-    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 38771
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 28158
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 2655
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-ChromeDriver was started successfully.
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 12444
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 26076
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-ChromeDriver was started successfully.
-ChromeDriver was started successfully.
-Feb 20, 2022 4:41:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Feb 20, 2022 4:41:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Feb 20, 2022 4:41:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Feb 20, 2022 4:41:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Feb 20, 2022 4:41:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
+  <testcase name="checkUnselectOfSelectedCheckBoxTest" classname="com.seasy.ui.tests.form.CheckBoxTests" time="0.576">
+    <system-out><![CDATA[2022-04-22 12:06:13,130 [main] INFO  com.seasy.ui.pages.utils.files.ReadProperties - Page is found
+]]></system-out>
   </testcase>
-  <testcase name="checkQuantityOfRowsPerPage" classname="com.seasy.ui.tests.table.tests.TablePaginationTests" time="9.543"/>
-  <testcase name="checkFilterInSimpleTable" classname="com.seasy.ui.tests.table.tests.TableDataSearchTests" time="9.543"/>
-  <testcase name="removingDataAfterSearchingInSimpleTable" classname="com.seasy.ui.tests.table.tests.TableDataSearchTests" time="9.591"/>
-  <testcase name="checkFiltersInTableWithFilters" classname="com.seasy.ui.tests.table.tests.TableDataSearchTests" time="10.813"/>
+  <testcase name="checkUnselectedCheckBox" classname="com.seasy.ui.tests.form.CheckBoxTests" time="0.453">
+    <system-out><![CDATA[2022-04-22 12:06:13,710 [main] INFO  com.seasy.ui.pages.utils.files.ReadProperties - Page is found
+]]></system-out>
+  </testcase>
+  <testcase name="selectSingleCheckBoxTest" classname="com.seasy.ui.tests.form.CheckBoxTests" time="0.498">
+    <system-out><![CDATA[2022-04-22 12:06:14,162 [main] INFO  com.seasy.ui.pages.utils.files.ReadProperties - Page is found
+]]></system-out>
+  </testcase>
+  <testcase name="checkDeletedFirstName" classname="com.seasy.ui.tests.form.InputFormSubmitTests" time="1.683">
+    <system-out><![CDATA[2022-04-22 12:06:14,666 [main] INFO  com.seasy.ui.pages.utils.files.ReadProperties - Page is found
+]]></system-out>
+  </testcase>
+  <testcase name="checkFromSubmitWithAllDataEntered" classname="com.seasy.ui.tests.form.InputFormSubmitTests" time="3.853">
+    <system-out><![CDATA[2022-04-22 12:06:16,346 [main] INFO  com.seasy.ui.pages.utils.files.ReadProperties - Page is found
+]]></system-out>
+  </testcase>
+  <testcase name="checkSubmitButtonIsDisabled" classname="com.seasy.ui.tests.form.InputFormSubmitTests" time="1.199">
+    <system-out><![CDATA[2022-04-22 12:06:20,198 [main] INFO  com.seasy.ui.pages.utils.files.ReadProperties - Page is found
+]]></system-out>
+  </testcase>
 </testsuite>

@@ -59,7 +59,9 @@ public class BootstrapDatePickerPage {
 	}
 	
 	public BootstrapDatePickerPage checkTodayIsSelectedExampleDatePicker(LocalDate localDate) {
-		dayInInputDateExample.shouldHave(Condition.attribute("value", localDate.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))));
+		dayInInputDateExample.shouldHave(
+				Condition.attribute("value", localDate.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")))
+		);
 		return new BootstrapDatePickerPage();
 	}
 	

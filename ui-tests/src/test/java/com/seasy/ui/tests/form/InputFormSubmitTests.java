@@ -25,11 +25,6 @@ public class InputFormSubmitTests extends BaseTest {
 			.withProjectDescription("Project description")
 			.build();
 	
-	@BeforeClass
-	public void init() {
-		// Configuration.browserSize=1024x768;
-	}
-	
 	@Test
 	public void checkDeletedFirstName() {
 		openBrowser(InputFormsPageName.INPUT_FORM_SUBMIT, InputFormSubmitPage.class)

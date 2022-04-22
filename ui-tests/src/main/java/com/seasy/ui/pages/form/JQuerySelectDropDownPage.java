@@ -13,10 +13,12 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class JQuerySelectDropDownPage {
 	
-	private final SelenideElement dropdownInput = $("span.select2-container.select2-container--default.select2-container--open input");
+	private final SelenideElement dropdownInput =
+			$("span.select2-container.select2-container--default.select2-container--open input");
 	private final SelenideElement dropdownWithCategories = $("#files");
 	
-	private final ElementsCollection selectedItems = $$("ul.select2-selection__rendered > li.select2-selection__choice");
+	private final ElementsCollection selectedItems =
+			$$("ul.select2-selection__rendered > li.select2-selection__choice");
 	private final ElementsCollection dropdownResults = $$(".select2-results__options > li");
 	private final ElementsCollection dropdowns = $$(".panel-body");
 	private final ElementsCollection options = $$("optgroup > option");
@@ -61,7 +63,9 @@ public class JQuerySelectDropDownPage {
 	}
 	
 	public JQuerySelectDropDownPage checkEmptyMultipleDropDown() {
-		selectedItems.forEach(item -> item.shouldNotHave(attribute("class", "select2-selection__choice")));
+		selectedItems.forEach(item -> item.shouldNotHave(
+				attribute("class", "select2-selection__choice"))
+		);
 		return new JQuerySelectDropDownPage();
 	}
 	

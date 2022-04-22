@@ -1,12 +1,14 @@
+C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\form\AgeGroup.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\User.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\form\AjaxFormSubmitPage.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\form\CheckBoxPage.java
+C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\services\Storage.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\listbox\DataListFilterPage.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\table\FilterName.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\form\InputFormSubmitPage.java
+C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\utils\files\PathToPages.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\form\DropDownPage.java
-C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\utils\DataList.java
-C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\utils\JsonParser.java
+C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\form\Gender.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\services\JsonParser.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\form\RadioButtonsPage.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\table\TableDataSearchPage.java
@@ -15,6 +17,6 @@ C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\ta
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\form\JQuerySelectDropDownPage.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\form\SimpleFormPage.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\form\Language.java
-C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\listbox\Storage.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\listbox\JQueryDualListBoxPage.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\datepicker\BootstrapDatePickerPage.java
+C:\Users\kbuch\Desktop\test-project\ui-tests\src\main\java\com\seasy\ui\pages\utils\files\ReadProperties.java
