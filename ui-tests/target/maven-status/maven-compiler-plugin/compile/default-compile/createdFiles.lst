@@ -8,6 +8,7 @@ com\seasy\ui\pages\utils\files\PathToPages.class
 com\seasy\ui\pages\form\AjaxFormSubmitPage.class
 com\seasy\ui\pages\form\SimpleFormPage.class
 com\seasy\ui\pages\User.class
+com\seasy\ui\pages\others\DragAndDropPage.class
 com\seasy\ui\pages\form\AgeGroup.class
 com\seasy\ui\pages\table\TablePaginationPage.class
 com\seasy\ui\pages\SubmitFormFieldsName.class

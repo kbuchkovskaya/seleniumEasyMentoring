@@ -16,7 +16,9 @@ com\seasy\ui\tests\form\CheckBoxTests.class
 com\seasy\ui\tests\form\RadioButtonPageTests.class
 com\seasy\ui\tests\table\TableDataSearchTests.class
 com\seasy\ui\tests\utils\selenoid\SelenoidProvider.class
+com\seasy\ui\tests\others\DragAndDropTests.class
 com\seasy\ui\tests\utils\DateFormatter.class
 com\seasy\ui\tests\utils\pages\InputFormsPageName.class
 com\seasy\ui\tests\ListBox\JQueryDualListBoxTest.class
+com\seasy\ui\tests\utils\pages\OthersPageName.class
 com\seasy\ui\tests\utils\pages\ListBoxPageName.class

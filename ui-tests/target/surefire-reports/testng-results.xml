@@ -2,54 +2,50 @@
 <testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="check for build" duration-ms="18087" started-at="2022-04-22T12:06:03 EEST" finished-at="2022-04-22T12:06:21 EEST">
+  <suite name="check for build" duration-ms="22278" started-at="2022-07-31T17:59:28 EEST" finished-at="2022-07-31T17:59:50 EEST">
     <groups>
     </groups>
-    <test name="check for build" duration-ms="18087" started-at="2022-04-22T12:06:03 EEST" finished-at="2022-04-22T12:06:21 EEST">
+    <test name="check for build" duration-ms="22278" started-at="2022-07-31T17:59:28 EEST" finished-at="2022-07-31T17:59:50 EEST">
       <class name="com.seasy.ui.tests.form.InputFormSubmitTests">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.seasy.ui.tests.form.InputFormSubmitTests@21de60b4]" name="init" is-config="true" duration-ms="5" started-at="2022-04-22T12:06:14 EEST" finished-at="2022-04-22T12:06:14 EEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="checkDeletedFirstName()[pri:0, instance:com.seasy.ui.tests.form.InputFormSubmitTests@21de60b4]" name="checkDeletedFirstName" duration-ms="1677" started-at="2022-04-22T12:06:14 EEST" finished-at="2022-04-22T12:06:16 EEST">
+        <test-method status="PASS" signature="checkDeletedFirstName()[pri:0, instance:com.seasy.ui.tests.form.InputFormSubmitTests@3d680b5a]" name="checkDeletedFirstName" duration-ms="1928" started-at="2022-07-31T17:59:40 EEST" finished-at="2022-07-31T17:59:42 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDeletedFirstName -->
-        <test-method status="PASS" signature="checkFromSubmitWithAllDataEntered()[pri:0, instance:com.seasy.ui.tests.form.InputFormSubmitTests@21de60b4]" name="checkFromSubmitWithAllDataEntered" duration-ms="3850" started-at="2022-04-22T12:06:16 EEST" finished-at="2022-04-22T12:06:20 EEST">
+        <test-method status="PASS" signature="checkFromSubmitWithAllDataEntered()[pri:0, instance:com.seasy.ui.tests.form.InputFormSubmitTests@3d680b5a]" name="checkFromSubmitWithAllDataEntered" duration-ms="6150" started-at="2022-07-31T17:59:42 EEST" finished-at="2022-07-31T17:59:48 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFromSubmitWithAllDataEntered -->
-        <test-method status="PASS" signature="checkSubmitButtonIsDisabled()[pri:0, instance:com.seasy.ui.tests.form.InputFormSubmitTests@21de60b4]" name="checkSubmitButtonIsDisabled" duration-ms="1199" started-at="2022-04-22T12:06:20 EEST" finished-at="2022-04-22T12:06:21 EEST">
+        <test-method status="PASS" signature="checkSubmitButtonIsDisabled()[pri:0, instance:com.seasy.ui.tests.form.InputFormSubmitTests@3d680b5a]" name="checkSubmitButtonIsDisabled" duration-ms="1760" started-at="2022-07-31T17:59:48 EEST" finished-at="2022-07-31T17:59:50 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSubmitButtonIsDisabled -->
       </class> <!-- com.seasy.ui.tests.form.InputFormSubmitTests -->
       <class name="com.seasy.ui.tests.form.CheckBoxTests">
-        <test-method status="PASS" signature="checkAllCheckboxesAreSelected()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@2473d930]" name="checkAllCheckboxesAreSelected" duration-ms="6364" started-at="2022-04-22T12:06:03 EEST" finished-at="2022-04-22T12:06:09 EEST">
+        <test-method status="PASS" signature="checkAllCheckboxesAreSelected()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@1d119efb]" name="checkAllCheckboxesAreSelected" duration-ms="6973" started-at="2022-07-31T17:59:28 EEST" finished-at="2022-07-31T17:59:35 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAllCheckboxesAreSelected -->
-        <test-method status="PASS" signature="checkCheckAllButtonWithOneUnselectedCheckbox()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@2473d930]" name="checkCheckAllButtonWithOneUnselectedCheckbox" duration-ms="1318" started-at="2022-04-22T12:06:09 EEST" finished-at="2022-04-22T12:06:11 EEST">
+        <test-method status="PASS" signature="checkCheckAllButtonWithOneUnselectedCheckbox()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@1d119efb]" name="checkCheckAllButtonWithOneUnselectedCheckbox" duration-ms="1608" started-at="2022-07-31T17:59:35 EEST" finished-at="2022-07-31T17:59:37 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCheckAllButtonWithOneUnselectedCheckbox -->
-        <test-method status="PASS" signature="checkMultipleCheckBoxIsSelected()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@2473d930]" name="checkMultipleCheckBoxIsSelected" duration-ms="722" started-at="2022-04-22T12:06:11 EEST" finished-at="2022-04-22T12:06:11 EEST">
+        <test-method status="PASS" signature="checkMultipleCheckBoxIsSelected()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@1d119efb]" name="checkMultipleCheckBoxIsSelected" duration-ms="750" started-at="2022-07-31T17:59:37 EEST" finished-at="2022-07-31T17:59:37 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkMultipleCheckBoxIsSelected -->
-        <test-method status="PASS" signature="checkMultipleCheckBoxIsUnselected()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@2473d930]" name="checkMultipleCheckBoxIsUnselected" duration-ms="1293" started-at="2022-04-22T12:06:11 EEST" finished-at="2022-04-22T12:06:13 EEST">
+        <test-method status="PASS" signature="checkMultipleCheckBoxIsUnselected()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@1d119efb]" name="checkMultipleCheckBoxIsUnselected" duration-ms="1513" started-at="2022-07-31T17:59:37 EEST" finished-at="2022-07-31T17:59:39 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkMultipleCheckBoxIsUnselected -->
-        <test-method status="PASS" signature="checkUnselectOfSelectedCheckBoxTest()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@2473d930]" name="checkUnselectOfSelectedCheckBoxTest" duration-ms="579" started-at="2022-04-22T12:06:13 EEST" finished-at="2022-04-22T12:06:13 EEST">
+        <test-method status="PASS" signature="checkUnselectOfSelectedCheckBoxTest()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@1d119efb]" name="checkUnselectOfSelectedCheckBoxTest" duration-ms="579" started-at="2022-07-31T17:59:39 EEST" finished-at="2022-07-31T17:59:39 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUnselectOfSelectedCheckBoxTest -->
-        <test-method status="PASS" signature="checkUnselectedCheckBox()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@2473d930]" name="checkUnselectedCheckBox" duration-ms="449" started-at="2022-04-22T12:06:13 EEST" finished-at="2022-04-22T12:06:14 EEST">
+        <test-method status="PASS" signature="checkUnselectedCheckBox()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@1d119efb]" name="checkUnselectedCheckBox" duration-ms="360" started-at="2022-07-31T17:59:39 EEST" finished-at="2022-07-31T17:59:40 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUnselectedCheckBox -->
-        <test-method status="PASS" signature="selectSingleCheckBoxTest()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@2473d930]" name="selectSingleCheckBoxTest" duration-ms="494" started-at="2022-04-22T12:06:14 EEST" finished-at="2022-04-22T12:06:14 EEST">
+        <test-method status="PASS" signature="selectSingleCheckBoxTest()[pri:0, instance:com.seasy.ui.tests.form.CheckBoxTests@1d119efb]" name="selectSingleCheckBoxTest" duration-ms="437" started-at="2022-07-31T17:59:40 EEST" finished-at="2022-07-31T17:59:40 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSingleCheckBoxTest -->

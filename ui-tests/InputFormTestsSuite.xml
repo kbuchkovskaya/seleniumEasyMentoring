@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Selenium Easy" parallel="methods">
-    <test name="Chrome tests">
+<suite name="Selenium Easy - Forms" parallel="methods">
+    <test name="Tests related to the form">
         <parameter name="state1" value="Iowa"></parameter>
         <parameter name="state2" value="Alaska"></parameter>
         <parameter name="state3" value="Nevada"></parameter>
@@ -11,6 +11,12 @@
         <parameter name="Port" value="5900"></parameter>-->
         <classes>
             <class name="com.seasy.ui.tests.form.SimpleFormTest"/>
+            <class name="com.seasy.ui.tests.form.AjaxSubmitFormTests"/>
+            <class name="com.seasy.ui.tests.form.CheckBoxTests"/>
+            <class name="com.seasy.ui.tests.form.DropDownTests"/>
+            <class name="com.seasy.ui.tests.form.InputFormSubmitTests"/>
+            <class name="com.seasy.ui.tests.form.JQuerySelectDropDownTests"/>
+            <class name="com.seasy.ui.tests.form.RadioButtonPageTests"></class>
         </classes>
     </test>
 </suite>

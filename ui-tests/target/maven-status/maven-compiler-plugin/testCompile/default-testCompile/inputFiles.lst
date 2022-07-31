@@ -9,6 +9,7 @@ C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\Li
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\utils\pages\InputFormsPageName.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\utils\selenoid\SelenoidChromeDriverProvider.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\form\AjaxSubmitFormTests.java
+C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\others\DragAndDropTests.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\ListBox\JQueryDualListBoxTest.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\utils\files\Path.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\utils\selenoid\SelenoidProvider.java
@@ -16,6 +17,7 @@ C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\ut
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\exception\NoPageNameException.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\utils\DateFormatter.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\form\JQuerySelectDropDownTests.java
+C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\utils\pages\OthersPageName.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\form\InputFormSubmitTests.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\utils\pages\TablePageName.java
 C:\Users\kbuch\Desktop\test-project\ui-tests\src\test\java\com\seasy\ui\tests\form\SimpleFormTest.java
